@@ -1,3 +1,3 @@
 # HDM
 
-A short coming soon page.
+A short overview of the company in their products.

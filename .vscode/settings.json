@@ -1,0 +1,31 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true
+  },
+  "files.watcherExclude": {
+    "**/node_modules/**": true
+  },
+
+  // Extensions
+  // ----------
+
+  // Stylelint
+  "css.validate": false,
+  "scss.validate": false,
+
+  // Tailwind CSS IntelliSense
+  "tailwindCSS.emmetCompletions": true,
+
+  // Twig Language
+  "[html]": {
+    "editor.formatOnPaste": false
+  }
+}

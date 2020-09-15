@@ -1,0 +1,32 @@
+{
+  "Inserts useEffect hook": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": "ueh",
+    "body": ["useEffect(() => {$0}, [])"],
+    "description": "Inserts useEffect hook"
+  },
+  "Inserts useState hook": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": "ush",
+    "body": "const [${1}, set${1/(.)/${1:/upcase}/}] = useState(${2})",
+    "description": "Inserts useState hook"
+  },
+  "Inserts useRef hook": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": "ureh",
+    "body": ["const ${1}Ref = useRef(${2})"],
+    "description": "Inserts useRef hook"
+  },
+  "Inserts useRouter hook": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": "uroh",
+    "body": ["const router = useRouter()"],
+    "description": "Inserts useRouter hook"
+  },
+  "Add a styled jsx block": {
+    "scope": "javascriptreact,typescriptreact",
+    "prefix": "jsx",
+    "body": ["<style jsx>{`", "  ${0}", "`}</style>"],
+    "description": "Add a styled jsx block"
+  }
+}

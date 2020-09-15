@@ -1,0 +1,47 @@
+{
+  "React functional Component": {
+    "scope": "typescriptreact",
+    "prefix": "rfc",
+    "body": [
+      "type Props = {",
+      "  className?: string",
+      "}",
+      "",
+      "const $TM_FILENAME_BASE: React.FC<Props> = ({ className = \"\" }: Props) => {",
+      "  return (",
+      "    <div className={className}>",
+      "      ${0}",
+      "    </div>",
+      "  )",
+      "}",
+      "",
+      "export default $TM_FILENAME_BASE",
+      ""
+    ],
+    "description": "React functional Component"
+  },
+  "React functional Component with children": {
+    "scope": "typescriptreact",
+    "prefix": "rfcc",
+    "body": [
+      "import { ReactNode } from \"react\"",
+      "",
+      "type Props = {",
+      "  className?: string",
+      "  children: ReactNode",
+      "}",
+      "",
+      "const $TM_FILENAME_BASE: React.FC<Props> = ({ className = \"\", children }: Props) => {",
+      "  return (",
+      "    <div className={className}>",
+      "      ${0:{children}}",
+      "    </div>",
+      "  )",
+      "}",
+      "",
+      "export default $TM_FILENAME_BASE",
+      ""
+    ],
+    "description": "React functional Component"
+  }
+}
