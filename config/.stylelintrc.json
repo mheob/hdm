@@ -1,0 +1,28 @@
+{
+  "root": true,
+  "extends": [
+    "stylelint-config-recommended",
+    "stylelint-config-rational-order"
+  ],
+  "rules": {
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "tailwind",
+          "apply",
+          "variants",
+          "responsive",
+          "screen",
+          "each",
+          "mixin",
+          "include",
+          "if",
+          "else",
+          "function",
+          "return"
+        ]
+      }
+    ]
+  }
+}

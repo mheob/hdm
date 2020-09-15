@@ -1,0 +1,108 @@
+/* jaldi-regular - latin */
+@font-face {
+  font-family: 'Jaldi';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Jaldi'), local('Jaldi-Regular'),
+    url('../fonts/jaldi-v6-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/jaldi-v6-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* jaldi-700 - latin */
+@font-face {
+  font-family: 'Jaldi';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Jaldi Bold'), local('Jaldi-Bold'),
+    url('../fonts/jaldi-v6-latin-700.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/jaldi-v6-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* fjalla-one-regular - latin */
+@font-face {
+  font-family: 'Fjalla One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Fjalla One'), local('FjallaOne-Regular'),
+    url('../fonts/fjalla-one-v7-latin-regular.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/fjalla-one-v7-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Jaldi', sans-serif;
+}
+
+/* WYSIWYG */
+.wysiwyg h1 {
+  color: black;
+  line-height: 1.25;
+  margin-top: 4rem;
+}
+
+.wysiwyg h2,
+.wysiwyg h3,
+.wysiwyg h4 {
+  color: #2d3748;
+  line-height: 1.25;
+  margin-top: 1rem;
+}
+
+.wysiwyg h1 {
+  font-size: 3rem;
+}
+
+.wysiwyg h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.wysiwyg h3 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+}
+
+.wysiwyg h4 {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+.wysiwyg p {
+  font-size: 1.125rem;
+  margin-top: 1rem;
+  color: #2d3748;
+}
+
+.wysiwyg ul {
+  list-style-type: disc;
+  margin-top: 1rem;
+  padding-left: 2rem;
+}
+
+.wysiwyg li {
+  padding: 0.25rem;
+  color: #2d3748;
+}
+
+/* REsponsive Video */
+.video {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9, for an aspect ratio of 1:1 change to this value to 100% */
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ytp-pause-overlay {
+  display: none;
+}
