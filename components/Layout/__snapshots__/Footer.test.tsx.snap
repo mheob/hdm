@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer Testings matches snapshot 1`] = `
+<footer
+  className="container px-6  "
+>
+  <section>
+    <h2
+      className="py-16 text-4xl font-bold leading-10"
+    >
+      Nehmen Sie 
+      <br />
+      Kontakt mit 
+      <br />
+      uns auf
+    </h2>
+    <Footer__Address>
+      Holz Design Moers GmbH 
+      <br />
+      Am Schürmannshütt 23 
+      <br />
+      47441 Moers
+    </Footer__Address>
+    <Footer__Address
+      className="mt-6"
+    >
+      Telefon:
+       
+      <a
+        className="underline"
+        href="tel:+49284114010"
+      >
+        +49 2841 1401 0
+      </a>
+       
+      <br />
+      Telefax: +49 2841 1401 180 
+      <br />
+      E-Mail:
+       
+      <a
+        className="underline"
+        href="mailto:info@hdm.gmbh"
+      >
+        info@hdm.gmbh
+      </a>
+    </Footer__Address>
+    <div
+      className="mt-24"
+    >
+      <img
+        alt="Logo der HDM GmbH"
+        className="w-48"
+        src="/ci/hdm-logo.svg"
+      />
+    </div>
+  </section>
+  <section
+    className="mt-6 text-lg leading-10"
+  >
+    © 2020 Holz Design Moers GmbH
+    <nav
+      className="mt-2"
+    >
+      <Link
+        as="impressum"
+        href="/imprint"
+      >
+        <a>
+          Impressum
+        </a>
+      </Link>
+      <Link
+        as="datenschutz"
+        href="/privacy"
+      >
+        <a
+          className="ml-8"
+        >
+          Datenschutz
+        </a>
+      </Link>
+    </nav>
+  </section>
+  <div
+    className="mt-10 text-right"
+  >
+    <button>
+      <svg
+        className="inline-block w-6 transform -rotate-90"
+        viewBox="0 0 24.242 45"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M126.031,21.266,105.252.486A1.732,1.732,0,0,0,102.8,2.935L122.359,22.49,102.8,42.045a1.731,1.731,0,0,0,2.448,2.448l20.779-20.779A1.732,1.732,0,0,0,126.031,21.266Z"
+          fill="#0084b0"
+          transform="translate(-102.297 0)"
+        />
+      </svg>
+    </button>
+  </div>
+</footer>
+`;
