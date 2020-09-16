@@ -36,7 +36,7 @@
     "extends": "@commitlint/config-conventional"
   },
   "lint-staged": {
-    "*.+(ts|tsx)": "cross-env NODE_ENV=test jest",
+    "*.+(ts|tsx)": "cross-env NODE_ENV=test jest --passWithNoTests",
     "*.{css,pcss,scss}": "echo \"stylelint --fix\"",
     "*.{js,ts,jsx,tsx}": "echo \"eslint --fix\""
   },
