@@ -57,9 +57,9 @@ const Footer: React.FC<Props> = ({ className = "" }: Props) => {
 
       <section className="container mt-6 text-lg leading-10 lg:flex lg:justify-center">
         <p>&copy; 2020 Holz Design Moers GmbH</p>
-        <nav className="mt-2 underline lg:mt-0">
+        <nav className="mt-2 leading-8 lg:mt-0">
           <Link href="/imprint" as="impressum">
-            <a className="lg:ml-8">Impressum</a>
+            <a className="underline lg:ml-8">Impressum</a>
           </Link>
           <Link href="/privacy" as="datenschutz">
             <a className="ml-8 underline">Datenschutz</a>

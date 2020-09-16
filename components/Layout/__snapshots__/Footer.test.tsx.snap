@@ -64,14 +64,14 @@ exports[`Footer Testings matches snapshot 1`] = `
       © 2020 Holz Design Moers GmbH
     </p>
     <nav
-      className="mt-2 underline lg:mt-0"
+      className="mt-2 leading-8 lg:mt-0"
     >
       <Link
         as="impressum"
         href="/imprint"
       >
         <a
-          className="lg:ml-8"
+          className="underline lg:ml-8"
         >
           Impressum
         </a>

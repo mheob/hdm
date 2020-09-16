@@ -32,7 +32,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        hdm: "#0084b0",
+        hdm: "#007ab0",
         cerastar: "#f8efef",
       },
       zIndex: {

@@ -52,8 +52,8 @@ const Header: React.FC<Props> = ({ className = "" }: Props) => {
         </nav>
       </div>
 
-      <Section className="container pt-12 pb-20 text-xl leading-10 lg:text-3xl lg:py-40">
-        <p className="lg:max-w-3xl lg:ml-24">
+      <Section className="container pt-12 pb-20 lg:py-40">
+        <p className="text-xl leading-10 lg:text-3xl lg:max-w-3xl lg:ml-24">
           <strong>Produkt. Idee. Erfolg.</strong> Die Holz Design Moers GmbH bietet ihren Handelspartnern auch in
           Zukunft abverkaufsstarke Produkte, Konzepte und Ideen für eine erfolgreiche Zusammenarbeit.
         </p>

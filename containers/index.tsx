@@ -1,9 +1,10 @@
 import Layout from "@/components/Layout"
+import Crossflex from "@/components/Layout/Products/Crossflex"
 
 const index: React.FC = () => {
   return (
     <Layout title="HDM &ndash; Holz Design Moers">
-      <div className="h-screen"></div>
+      <Crossflex />
     </Layout>
   )
 }

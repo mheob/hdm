@@ -48,10 +48,10 @@ exports[`Header Testings matches snapshot 1`] = `
     </nav>
   </div>
   <Header__Section
-    className="container pt-12 pb-20 text-xl leading-10 lg:text-3xl lg:py-40"
+    className="container pt-12 pb-20 lg:py-40"
   >
     <p
-      className="lg:max-w-3xl lg:ml-24"
+      className="text-xl leading-10 lg:text-3xl lg:max-w-3xl lg:ml-24"
     >
       <strong>
         Produkt. Idee. Erfolg.
