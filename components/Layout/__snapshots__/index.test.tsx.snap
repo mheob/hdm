@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IndexPage Testings matches snapshot 1`] = `
+<div
+  className="antialiased"
+>
+  <Head>
+    <title>
+      This is the default title
+    </title>
+    <meta
+      charSet="utf-8"
+    />
+    <meta
+      content="initial-scale=1.0, width=device-width"
+      name="viewport"
+    />
+    <meta
+      content="Die Holz Design Moers GmbH bietet ihren Handelspartnern auch in Zukunft abverkaufsstarke Produkte, Konzepte und Ideen für eine erfolgreiche Zusammenarbeit."
+      name="description"
+    />
+    <link
+      href="/ci/hdm-logo.svg"
+      rel="shortcut icon"
+      sizes="any"
+      type="image/svg+xml"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;1,200;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </Head>
+  <Header />
+  <main />
+  <Footer />
+</div>
+`;

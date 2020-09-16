@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Testings matches snapshot 1`] = `
+<header
+  className="container px-6 bg-gray-100 "
+>
+  <img
+    alt="Logo der HDM GmbH"
+    className="w-56 pt-8 m-auto"
+    src="/ci/hdm-logo.svg"
+  />
+  <nav
+    className="flex justify-between my-12 font-semibold "
+  >
+    <Link
+      href="/#produkte"
+    >
+      <a>
+        Produkte
+      </a>
+    </Link>
+    <Link
+      href="/#unternehmen"
+    >
+      <a>
+        Unternehmen
+      </a>
+    </Link>
+    <Link
+      href="/#kontakt"
+    >
+      <a>
+        Kontakt
+      </a>
+    </Link>
+  </nav>
+  <Header__Section
+    className="pt-12 pb-20 text-xl leading-10"
+  >
+    <strong>
+      Produkt. Idee. Erfolg.
+    </strong>
+     Die Holz Design Moers GmbH bietet ihren Handelspartnern auch in Zukunft abverkaufsstarke Produkte, Konzepte und Ideen für eine erfolgreiche Zusammenarbeit.
+  </Header__Section>
+</header>
+`;

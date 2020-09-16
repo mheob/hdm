@@ -9,7 +9,7 @@ import Layout from "@/components/Layout"
 
 const index: React.FC = () => {
   return (
-    <Layout title="Oops … da ist ein Fehler aufgetreten :( &mdash; HSV Neuwied">
+    <Layout title="HDM &ndash; Holz Design Moers">
       <div></div>
     </Layout>
   )
