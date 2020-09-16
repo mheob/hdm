@@ -1,74 +1,48 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Cerastar Testings matches snapshot 1`] = `
-<section
-  className="container relative lg:grid lg:grid-cols-2 lg:gap-16 mt-32 pt-20 pb-24 lg:-mt-24 "
+exports[`Massivholztueren Testings matches snapshot 1`] = `
+<Massivholztueren__Section
+  className="container bg-gray-100 relative pt-20 pb-20 lg:mt-24 "
 >
-  <Cerastar__BackgroundImage />
-  <header>
-    <div
-      className="lg:ml-32"
-    >
+  <header
+    className="lg:ml-32 lg:mt-16"
+  >
+    <div>
       <h2
         className="text-4xl font-bold lg:text-5xl"
       >
-        Cerastar
+        Massivholztüren
       </h2>
-      <p
-        className="text-xl lg:text-2xl"
-      >
-        Der neue Star unter 
-        <br />
-        den Bodenbelägen
-      </p>
     </div>
-    <picture
-      className="block mt-16 -mx-6 lg:-ml-32"
-    >
-      <source
-        srcSet="images/hdm-cerastar.webp"
-        type="image/webp"
-      />
-      <source
-        srcSet="images/hdm-cerastar.png"
-        type="image/png"
-      />
-      <img
-        alt="Cerastar - der neue Star unten den Bodenbelägen"
-        src="images/hdm-cerastar.png"
-      />
-    </picture>
   </header>
-  <div
-    className="lg:mt-48"
+  <picture
+    className="block mt-16 -mx-6 lg:ml-0 lg:-mr-32 lg:mt-0"
   >
-    <h3
-      className="mt-12 font-bold lg:text-lg"
-    >
-      Cerastar heißt der neue Designbodenbelag mit keramischer Nanocoat Oberflächenversiegelung.
-    </h3>
+    <source
+      srcSet="images/hdm-massivholztueren.webp"
+      type="image/webp"
+    />
+    <source
+      srcSet="images/hdm-massivholztueren.png"
+      type="image/png"
+    />
+    <img
+      alt="Massivholztüren - Sorglos die Schönheit massiven Holzes genießen"
+      src="images/hdm-massivholztueren.png"
+    />
+  </picture>
+  <div
+    className="lg:-mt-32 lg:ml-32"
+  >
     <p
-      className="mt-8 lg:text-lg"
+      className="mt-12 lg:text-lg"
     >
-      1,2 Mio. feinste Keramikpartikel pro Quadratzentimeter machen die Oberfläche von Cerastar – gegenüber Oberflächen vergleichbarer Bodenbeläge – bis zu dreimal kratzfester und strapazierfähiger.
+      Sorglos die Schönheit massiven Holzes genießen. Massivholz sorgt für behagliche Wärme und ist nie langweilig.
     </p>
     <p
       className="mt-8 lg:text-lg"
     >
-      So entsteht eine äußerst abriebfeste Schutzschicht, die deutlich resistenter gegen Mikrokratzer ist. Zugleich verleiht die hochtransparente Versiegelung den Dekoren eine einzigartige brillante Farbtiefe und eleganten Glanz.
-    </p>
-    <p
-      className="mt-8 lg:text-lg"
-    >
-      Weitere Informationen finden Sie unter
-       
-      <a
-        className="text-hdm"
-        href="https://cerastar.eu"
-      >
-        cerastar.eu
-      </a>
-      .
+      Denn Holz ist pure Natur und bringt eine angenehme, freundliche Atmosphäre ins Haus, unterstrichen von ruhigen Licht- und Schattenspielen der offenen Lamellen- und Gittertüren.
     </p>
     <div
       className="mt-16 text-center lg:text-left lg:mt-24"
@@ -92,9 +66,9 @@ exports[`Cerastar Testings matches snapshot 1`] = `
             transform="translate(-110.524 -164.909)"
           />
         </svg>
-        Cerastar Katalog downloaden
+        Massivholztüren Katalog downloaden
       </a>
     </div>
   </div>
-</section>
+</Massivholztueren__Section>
 `;

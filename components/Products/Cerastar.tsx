@@ -35,13 +35,11 @@ type Props = {
 
 const Cerastar: React.FC<Props> = ({ className = "" }: Props) => {
   return (
-    <section
-      className={`lg:container relative lg:grid lg:grid-cols-2 lg:gap-16 mt-32 pt-20 pb-24 lg:-mt-24 ${className}`}
-    >
+    <section className={`container relative lg:grid lg:grid-cols-2 lg:gap-16 mt-32 pt-20 pb-24 lg:-mt-24 ${className}`}>
       <BackgroundImage />
 
-      <header className="container">
-        <div className="">
+      <header>
+        <div className="lg:ml-32">
           <h2 className="text-4xl font-bold lg:text-5xl">Cerastar</h2>
           <p className="text-xl lg:text-2xl">
             Der neue Star unter <br />
@@ -49,27 +47,27 @@ const Cerastar: React.FC<Props> = ({ className = "" }: Props) => {
           </p>
         </div>
 
-        <picture className="block mt-16 -mx-6 lg:-ml-40">
+        <picture className="block mt-16 -mx-6 lg:-ml-32">
           <source srcSet="images/hdm-cerastar.webp" type="image/webp" />
           <source srcSet="images/hdm-cerastar.png" type="image/png" />
           <img src="images/hdm-cerastar.png" alt="Cerastar - der neue Star unten den Bodenbelägen" />
         </picture>
       </header>
 
-      <div className="container lg:mt-48">
-        <h3 className="mt-12 font-bold">
+      <div className="lg:mt-48">
+        <h3 className="mt-12 font-bold lg:text-lg">
           Cerastar heißt der neue Designbodenbelag mit keramischer Nanocoat Oberflächenversiegelung.
         </h3>
-        <p className="mt-8">
+        <p className="mt-8 lg:text-lg">
           1,2 Mio. feinste Keramikpartikel pro Quadratzentimeter machen die Oberfläche von Cerastar – gegenüber
           Oberflächen vergleichbarer Bodenbeläge – bis zu dreimal kratzfester und strapazierfähiger.
         </p>
-        <p className="mt-8">
+        <p className="mt-8 lg:text-lg">
           So entsteht eine äußerst abriebfeste Schutzschicht, die deutlich resistenter gegen Mikrokratzer ist. Zugleich
           verleiht die hochtransparente Versiegelung den Dekoren eine einzigartige brillante Farbtiefe und eleganten
           Glanz.
         </p>
-        <p className="mt-8">
+        <p className="mt-8 lg:text-lg">
           Weitere Informationen finden Sie unter{" "}
           <a className="text-hdm" href="https://cerastar.eu">
             cerastar.eu
