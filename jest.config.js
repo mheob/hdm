@@ -1,7 +1,7 @@
 module.exports = {
   roots: ["<rootDir>"],
   moduleFileExtensions: ["js", "ts", "tsx", "json"],
-  setupFiles: ["<rootDir>/config/setup.ts"],
+  setupFiles: ["<rootDir>/test/setup.ts"],
   testPathIgnorePatterns: ["<rootDir>[/\\\\](build|docs|node_modules|.next)[/\\\\]"],
   transformIgnorePatterns: ["[/\\\\]node_modules[/\\\\].+\\.(ts|tsx)$"],
   testEnvironment: "jsdom",

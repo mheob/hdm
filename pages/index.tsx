@@ -1,9 +1,3 @@
-type Props = {
-  className?: string
-}
+import IndexPage from "@/containers/index"
 
-const index: React.FC<Props> = ({ className = "" }: Props) => {
-  return <div className={className}>TODO</div>
-}
-
-export default index
+export default IndexPage
