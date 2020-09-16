@@ -7,10 +7,23 @@ const Section = styled.section`
   &::before {
     position: absolute;
     top: 0;
+    right: 0;
+    bottom: 0;
     left: 0;
+    z-index: -2;
+    background-color: #f7fafc;
+    content: "";
+  }
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
     width: calc(2.9333 * 90%);
     height: 90%;
-    background: url(/ci/hdm-bg.svg) no-repeat;
+    background-image: url(/ci/hdm-bg.svg);
+    background-repeat: no-repeat;
     opacity: 0.05;
     content: "";
   }
@@ -18,7 +31,7 @@ const Section = styled.section`
   @media (min-width: 768px) {
     position: static;
 
-    &::before {
+    &::after {
       left: 6rem;
       width: calc(2.9333 * 100%);
       height: 100%;
@@ -32,7 +45,7 @@ type Props = {
 
 const Header: React.FC<Props> = ({ className = "" }: Props) => {
   return (
-    <header className={`bg-gray-100 relative overflow-x-hidden ${className}`}>
+    <header className={`relative overflow-x-hidden ${className}`}>
       <div className="container justify-between my-6 lg:flex">
         <h1 className="pt-8">
           <img className="w-56 mx-auto" src="/ci/hdm-logo.svg" alt="Logo der HDM GmbH" />

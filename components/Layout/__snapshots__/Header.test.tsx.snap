@@ -2,7 +2,7 @@
 
 exports[`Header Testings matches snapshot 1`] = `
 <header
-  className="bg-gray-100 relative overflow-x-hidden "
+  className="relative overflow-x-hidden "
 >
   <div
     className="container justify-between my-6 lg:flex"
