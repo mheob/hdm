@@ -1,6 +1,6 @@
 import Layout from "@/components/Layout"
-import Crossflex from "@/components/Layout/Products/Crossflex"
-import Purity from "@/components/Layout/Products/Purity"
+import Crossflex from "@/components/Products/Crossflex"
+import Purity from "@/components/Products/Purity"
 
 const index: React.FC = () => {
   return (

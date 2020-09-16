@@ -20,7 +20,7 @@ exports[`IndexPage Testings matches snapshot 1`] = `
       name="description"
     />
     <link
-      href="/ci/hdm-logo.svg"
+      href="/ci/hdm-bg.svg"
       rel="shortcut icon"
       sizes="any"
       type="image/svg+xml"

@@ -22,9 +22,9 @@
     "lint:style": "stylelint **/*.{css,scss} --fix --ignore-path .gitignore",
     "semantic-release": "semantic-release",
     "start": "next start",
-    "test": "jest",
-    "test:cov": "jest --coverage",
-    "test:watch": "jest --watch",
+    "test": "cross-env NODE_ENV=test jest",
+    "test:cov": "cross-env NODE_ENV=test jest --coverage",
+    "test:watch": "cross-env NODE_ENV=test jest --watch",
     "type-check": "tsc"
   },
   "husky": {
@@ -100,6 +100,7 @@
     "eslint-plugin-react": "^7.20.6",
     "husky": "^4.3.0",
     "jest": "^26.4.2",
+    "jest-styled-components": "^7.0.3",
     "jest-watch-typeahead": "^0.6.1",
     "lint-staged": "^10.3.0",
     "node-sass": "^4.14.1",

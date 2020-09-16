@@ -11,6 +11,7 @@ describe("Crossflex Testings", () => {
   })
 
   test("matches snapshot", () => {
+    console.log(wrapper.debug())
     expect(toJSON(wrapper)).toMatchSnapshot()
   })
 })

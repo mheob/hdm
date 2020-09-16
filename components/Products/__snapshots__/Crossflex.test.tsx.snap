@@ -4,7 +4,7 @@ exports[`Crossflex Testings matches snapshot 1`] = `
 <section
   className=""
 >
-  <styled.header
+  <Crossflex__Header
     className="container grid mt-6 lg:mt-32"
   >
     <div
@@ -47,7 +47,7 @@ exports[`Crossflex Testings matches snapshot 1`] = `
     >
       Mit hochglänzenden bis hin zu supermatten Oberflächen, unterschiedlichen Fugenbreiten und einer Vielfalt an Dekoren, Formaten und Stärken sind der modernen und kreativen Raumgestaltung keine Grenzen gesetzt.
     </p>
-  </styled.header>
+  </Crossflex__Header>
   <div
     className="container lg:grid lg:gap-x-16 lg:grid-cols-2 lg:mt-20"
   >
