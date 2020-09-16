@@ -1,12 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Footer Testings matches snapshot 1`] = `
-<footer
-  className="container px-6  "
+<Footer__FooterStyled
+  className="lg:mt-40 pb-10 "
 >
-  <section>
+  <section
+    className="container lg:flex lg:justify-between lg:space-x-6"
+  >
     <h2
-      className="py-16 text-4xl font-bold leading-10"
+      className="py-16 text-4xl font-bold leading-10 lg:pt-0"
     >
       Nehmen Sie 
       <br />
@@ -22,7 +24,7 @@ exports[`Footer Testings matches snapshot 1`] = `
       47441 Moers
     </Footer__Address>
     <Footer__Address
-      className="mt-6"
+      className="mt-6 lg:mt-0"
     >
       Telefon:
        
@@ -46,7 +48,7 @@ exports[`Footer Testings matches snapshot 1`] = `
       </a>
     </Footer__Address>
     <div
-      className="mt-24"
+      className="mt-24 lg:mt-0"
     >
       <img
         alt="Logo der HDM GmbH"
@@ -56,17 +58,21 @@ exports[`Footer Testings matches snapshot 1`] = `
     </div>
   </section>
   <section
-    className="mt-6 text-lg leading-10"
+    className="container mt-6 text-lg leading-10 lg:flex lg:justify-center"
   >
-    © 2020 Holz Design Moers GmbH
+    <p>
+      © 2020 Holz Design Moers GmbH
+    </p>
     <nav
-      className="mt-2"
+      className="mt-2 underline lg:mt-0"
     >
       <Link
         as="impressum"
         href="/imprint"
       >
-        <a>
+        <a
+          className="lg:ml-8"
+        >
           Impressum
         </a>
       </Link>
@@ -75,7 +81,7 @@ exports[`Footer Testings matches snapshot 1`] = `
         href="/privacy"
       >
         <a
-          className="ml-8"
+          className="ml-8 underline"
         >
           Datenschutz
         </a>
@@ -83,7 +89,7 @@ exports[`Footer Testings matches snapshot 1`] = `
     </nav>
   </section>
   <div
-    className="mt-10 text-right"
+    className="container mt-10 text-right lg:text-center"
   >
     <button>
       <svg
@@ -99,5 +105,5 @@ exports[`Footer Testings matches snapshot 1`] = `
       </svg>
     </button>
   </div>
-</footer>
+</Footer__FooterStyled>
 `;
