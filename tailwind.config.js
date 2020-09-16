@@ -18,6 +18,10 @@ module.exports = {
     fontFamily: {
       sans: ["Open Sans", "sans-serif"],
     },
+    container: {
+      center: true,
+      padding: "1.5rem",
+    },
     cursor: {
       auto: "auto",
       default: "default",
@@ -28,12 +32,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        hdm: {
-          light: "#9db9dc",
-          base: "#366093",
-          dark: "#1a2e46",
-        },
-        text: "#272f38",
+        hdm: "#0084b0",
+        cerastar: "#f8efef",
       },
       zIndex: {
         "-1": "-1",

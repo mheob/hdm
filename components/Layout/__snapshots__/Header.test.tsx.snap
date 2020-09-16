@@ -2,45 +2,120 @@
 
 exports[`Header Testings matches snapshot 1`] = `
 <header
-  className="container px-6 bg-gray-100 "
+  className="bg-gray-100 relative overflow-x-hidden "
 >
-  <img
-    alt="Logo der HDM GmbH"
-    className="w-56 pt-8 m-auto"
-    src="/ci/hdm-logo.svg"
-  />
+  <div
+    className="container justify-between my-6 lg:flex"
+  >
+    <h1
+      className="pt-8"
+    >
+      <img
+        alt="Logo der HDM GmbH"
+        className="w-56 mx-auto"
+        src="/ci/hdm-logo.svg"
+      />
+      <span
+        className="sr-only"
+      >
+        HDM - Holz Design Moers GmbH
+      </span>
+    </h1>
+    <nav
+      className="flex justify-between my-16 font-semibold lg:text-lg lg:container lg:mb-0 lg:space-x-12 lg:justify-end"
+    >
+      <Link
+        href="/#produkte"
+      >
+        <a>
+          Produkte
+        </a>
+      </Link>
+      <Link
+        href="/#unternehmen"
+      >
+        <a>
+          Unternehmen
+        </a>
+      </Link>
+      <Link
+        href="/#kontakt"
+      >
+        <a>
+          Kontakt
+        </a>
+      </Link>
+    </nav>
+  </div>
+  <Header__Section
+    className="container pt-12 pb-20 text-xl leading-10 lg:text-3xl lg:py-40"
+  >
+    <p
+      className="lg:max-w-3xl lg:ml-24"
+    >
+      <strong>
+        Produkt. Idee. Erfolg.
+      </strong>
+       Die Holz Design Moers GmbH bietet ihren Handelspartnern auch in Zukunft abverkaufsstarke Produkte, Konzepte und Ideen für eine erfolgreiche Zusammenarbeit.
+    </p>
+  </Header__Section>
   <nav
-    className="flex justify-between my-12 font-semibold "
+    className="justify-around hidden px-20 my-8 text-lg font-semibold lg:flex"
   >
     <Link
-      href="/#produkte"
+      href="/#crossflex"
     >
-      <a>
-        Produkte
+      <a
+        className="px-2"
+      >
+        Crossflex
       </a>
     </Link>
     <Link
-      href="/#unternehmen"
+      href="/#purity"
     >
-      <a>
-        Unternehmen
+      <a
+        className="px-2"
+      >
+        Purity
       </a>
     </Link>
     <Link
-      href="/#kontakt"
+      href="/#cerastar"
     >
-      <a>
-        Kontakt
+      <a
+        className="px-2 border-b-4 border-hdm"
+      >
+        Cerastar
+      </a>
+    </Link>
+    <Link
+      href="/#massivholztueren"
+    >
+      <a
+        className="px-2"
+      >
+        Massivholztüren
+      </a>
+    </Link>
+    <Link
+      href="/#moebelbauplatten"
+    >
+      <a
+        className="px-2"
+      >
+        Möbelbauplatten
+      </a>
+    </Link>
+    <Link
+      href="/#dazu-zubehoer"
+    >
+      <a
+        className="px-2"
+      >
+        Dazu Zubehör
       </a>
     </Link>
   </nav>
-  <Header__Section
-    className="pt-12 pb-20 text-xl leading-10"
-  >
-    <strong>
-      Produkt. Idee. Erfolg.
-    </strong>
-     Die Holz Design Moers GmbH bietet ihren Handelspartnern auch in Zukunft abverkaufsstarke Produkte, Konzepte und Ideen für eine erfolgreiche Zusammenarbeit.
-  </Header__Section>
 </header>
 `;
