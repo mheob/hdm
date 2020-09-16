@@ -105,7 +105,7 @@ type Props = {
 
 const Purity: React.FC<Props> = ({ className = "" }: Props) => {
   return (
-    <section className={`lg:relative lg:overflow-hidden mt-12 lg:mt-32 pt-20 lg:pb-64 ${className}`}>
+    <section className={`lg:relative overflow-x-hidden mt-12 lg:mt-32 pt-20 lg:pb-64 ${className}`}>
       <BackgroundImage />
       <header className="container mt-6">
         <div className="lg:ml-32">
@@ -116,7 +116,7 @@ const Purity: React.FC<Props> = ({ className = "" }: Props) => {
 
       <GridBio className="lg:container">
         <div className="relative mt-10 ml-6 lg:mt-16 lg:-ml-6">
-          <picture className="block">
+          <picture>
             <source srcSet="images/hdm-purity-bio-selection.webp" type="image/webp" />
             <source srcSet="images/hdm-purity-bio-selection.png" type="image/png" />
             <img src="images/hdm-purity-bio-selection.png" alt="Purity - Natürlich, sauber, rein" />
@@ -166,7 +166,7 @@ const Purity: React.FC<Props> = ({ className = "" }: Props) => {
           </div>
         </div>
 
-        <div className="container flex -mt-4 space-x-6 lg:-mt-16 lg:-ml-6 lg:px-0">
+        <div className="container flex justify-between -mt-4 lg:space-x-6 lg:-mt-16 lg:-ml-6 lg:px-0">
           <img className="hidden h-24 lg:inline-block" src="/icons/hdm-blauer-engel-176.svg" alt="Blauer Engel 176" />
           <svg className="w-16 h-16 lg:w-24 lg:h-24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
             <g id="Rectangle_7" data-name="Rectangle 7" fill="#ddd" stroke="#707070" strokeWidth="1">
@@ -199,7 +199,7 @@ const Purity: React.FC<Props> = ({ className = "" }: Props) => {
             href="/documents/hdm-purity-bio-selection.pdf"
             target="_blank"
             title="Den Katalog Purity Bio selection ansehen und herunterladen"
-            className="px-6 py-3 text-sm text-white rounded-full bg-hdm"
+            className="inline-block px-6 py-3 text-sm text-white rounded-full bg-hdm"
           >
             <svg
               className="inline-block mr-3"
@@ -227,8 +227,8 @@ const Purity: React.FC<Props> = ({ className = "" }: Props) => {
           </div>
         </header>
 
-        <GridHome className="lg:container lg:mb-12">
-          <picture className="block mt-10 ml-6 lg:-mt-16">
+        <GridHome className="overflow-hidden lg:container lg:mb-12">
+          <picture className="mt-10 ml-6 lg:-mt-16">
             <source srcSet="images/hdm-purity-home-selection.webp" type="image/webp" />
             <source srcSet="images/hdm-purity-home-selection.png" type="image/png" />
             <img src="images/hdm-purity-home-selection.png" alt="Purity - Natürlich, sauber, rein" />
@@ -244,7 +244,7 @@ const Purity: React.FC<Props> = ({ className = "" }: Props) => {
             <h3 className="mt-8 font-bold ">BLOOM – Einfach natürlich</h3>
           </div>
 
-          <div className="container flex mt-16 space-x-6">
+          <div className="container flex justify-between mt-16 lg:space-x-6">
             <svg xmlns="http://www.w3.org/2000/svg" width="98" height="98" viewBox="0 0 98 98">
               <g id="Rectangle_7" data-name="Rectangle 7" fill="#ddd" stroke="#707070" strokeWidth="1">
                 <rect width="98" height="98" stroke="none" />
@@ -270,7 +270,7 @@ const Purity: React.FC<Props> = ({ className = "" }: Props) => {
               href="/documents/hdm-purity-home-selection.pdf"
               target="_blank"
               title="Den Katalog Purity Home selection ansehen und herunterladen"
-              className="px-6 py-3 text-sm text-white rounded-full bg-hdm"
+              className="inline-block px-6 py-3 text-sm text-white rounded-full bg-hdm"
             >
               <svg
                 className="inline-block mr-3"

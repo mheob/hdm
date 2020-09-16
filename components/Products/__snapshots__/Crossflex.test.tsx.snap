@@ -124,7 +124,7 @@ exports[`Crossflex Testings matches snapshot 1`] = `
     className="container mt-12 text-center lg:mt-24"
   >
     <a
-      className="px-6 py-3 text-sm text-white rounded-full bg-hdm"
+      className="inline-block px-6 py-3 text-sm text-white rounded-full bg-hdm"
       href="/documents/hdm-crossflex.pdf"
       target="_blank"
       title="Den Katalog Crossflex ansehen und herunterladen"

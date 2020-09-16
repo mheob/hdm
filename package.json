@@ -24,7 +24,7 @@
     "start": "next start",
     "test": "cross-env NODE_ENV=test jest",
     "test:cov": "cross-env NODE_ENV=test jest --coverage",
-    "test:watch": "cross-env NODE_ENV=test jest --watch",
+    "test:watch": "cross-env NODE_ENV=test jest --watch --updateSnapshot",
     "type-check": "tsc"
   },
   "husky": {

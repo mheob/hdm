@@ -2,7 +2,7 @@
 
 exports[`Purity Testings matches snapshot 1`] = `
 <section
-  className="lg:relative lg:overflow-hidden mt-12 lg:mt-32 pt-20 lg:pb-64 "
+  className="lg:relative overflow-x-hidden mt-12 lg:mt-32 pt-20 lg:pb-64 "
 >
   <Purity__BackgroundImage />
   <header
@@ -29,9 +29,7 @@ exports[`Purity Testings matches snapshot 1`] = `
     <div
       className="relative mt-10 ml-6 lg:mt-16 lg:-ml-6"
     >
-      <picture
-        className="block"
-      >
+      <picture>
         <source
           srcSet="images/hdm-purity-bio-selection.webp"
           type="image/webp"
@@ -96,7 +94,7 @@ exports[`Purity Testings matches snapshot 1`] = `
       </div>
     </div>
     <div
-      className="container flex -mt-4 space-x-6 lg:-mt-16 lg:-ml-6 lg:px-0"
+      className="container flex justify-between -mt-4 lg:space-x-6 lg:-mt-16 lg:-ml-6 lg:px-0"
     >
       <img
         alt="Blauer Engel 176"
@@ -212,7 +210,7 @@ exports[`Purity Testings matches snapshot 1`] = `
       className="container text-center lg:text-left lg:-mt-6 lg:px-0"
     >
       <a
-        className="px-6 py-3 text-sm text-white rounded-full bg-hdm"
+        className="inline-block px-6 py-3 text-sm text-white rounded-full bg-hdm"
         href="/documents/hdm-purity-bio-selection.pdf"
         target="_blank"
         title="Den Katalog Purity Bio selection ansehen und herunterladen"
@@ -256,10 +254,10 @@ exports[`Purity Testings matches snapshot 1`] = `
       </div>
     </header>
     <Purity__GridHome
-      className="lg:container lg:mb-12"
+      className="overflow-hidden lg:container lg:mb-12"
     >
       <picture
-        className="block mt-10 ml-6 lg:-mt-16"
+        className="mt-10 ml-6 lg:-mt-16"
       >
         <source
           srcSet="images/hdm-purity-home-selection.webp"
@@ -293,7 +291,7 @@ exports[`Purity Testings matches snapshot 1`] = `
         </h3>
       </div>
       <div
-        className="container flex mt-16 space-x-6"
+        className="container flex justify-between mt-16 lg:space-x-6"
       >
         <svg
           height="98"
@@ -381,7 +379,7 @@ exports[`Purity Testings matches snapshot 1`] = `
         className="container mt-16 text-center lg:mt-24"
       >
         <a
-          className="px-6 py-3 text-sm text-white rounded-full bg-hdm"
+          className="inline-block px-6 py-3 text-sm text-white rounded-full bg-hdm"
           href="/documents/hdm-purity-home-selection.pdf"
           target="_blank"
           title="Den Katalog Purity Home selection ansehen und herunterladen"
