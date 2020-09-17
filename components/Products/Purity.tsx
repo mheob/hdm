@@ -117,9 +117,9 @@ const Purity: React.FC<Props> = ({ className = "" }: Props) => {
       <GridBio className="lg:container">
         <div className="relative mt-10 ml-6 lg:mt-16 lg:-ml-6">
           <picture>
-            <source srcSet="images/hdm-purity-bio-selection.webp" type="image/webp" />
-            <source srcSet="images/hdm-purity-bio-selection.png" type="image/png" />
-            <img src="images/hdm-purity-bio-selection.png" alt="Purity - Natürlich, sauber, rein" />
+            <source srcSet="/images/hdm-purity-bio-selection.webp" type="image/webp" />
+            <source srcSet="/images/hdm-purity-bio-selection.png" type="image/png" />
+            <img src="/images/hdm-purity-bio-selection.png" alt="Purity - Natürlich, sauber, rein" />
           </picture>
           <Badge
             className="hidden lg:block"
@@ -229,9 +229,9 @@ const Purity: React.FC<Props> = ({ className = "" }: Props) => {
 
         <GridHome className="overflow-hidden lg:container lg:mb-12">
           <picture className="mt-10 ml-6 lg:-mt-16">
-            <source srcSet="images/hdm-purity-home-selection.webp" type="image/webp" />
-            <source srcSet="images/hdm-purity-home-selection.png" type="image/png" />
-            <img src="images/hdm-purity-home-selection.png" alt="Purity - Natürlich, sauber, rein" />
+            <source srcSet="/images/hdm-purity-home-selection.webp" type="image/webp" />
+            <source srcSet="/images/hdm-purity-home-selection.png" type="image/png" />
+            <img src="/images/hdm-purity-home-selection.png" alt="Purity - Natürlich, sauber, rein" />
           </picture>
 
           <div className="container mt-24 lg:grid lg:mt-20">

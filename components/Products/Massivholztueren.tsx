@@ -43,10 +43,10 @@ const Massivholztueren: React.FC<Props> = ({ className = "" }: Props) => {
       </header>
 
       <picture className="block mt-16 -mx-6 lg:ml-0 lg:-mr-32 lg:mt-0">
-        <source srcSet="images/hdm-massivholztueren.webp" type="image/webp" />
-        <source srcSet="images/hdm-massivholztueren.png" type="image/png" />
+        <source srcSet="/images/hdm-massivholztueren.webp" type="image/webp" />
+        <source srcSet="/images/hdm-massivholztueren.png" type="image/png" />
         <img
-          src="images/hdm-massivholztueren.png"
+          src="/images/hdm-massivholztueren.png"
           alt="Massivholztüren - Sorglos die Schönheit massiven Holzes genießen"
         />
       </picture>

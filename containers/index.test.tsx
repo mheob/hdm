@@ -5,6 +5,7 @@ import IndexPage from "./index"
 import Crossflex from "@/components/Products/Crossflex"
 import Purity from "@/components/Products/Purity"
 import Cerastar from "@/components/Products/Cerastar"
+import Massivholztueren from "@/components/Products/Massivholztueren"
 
 describe("IndexPage Testings", () => {
   let wrapper: ShallowWrapper
@@ -30,5 +31,10 @@ describe("IndexPage Testings", () => {
   test("render one Cerastar component", () => {
     const wrapper = shallow(<IndexPage />)
     expect(wrapper.find(Cerastar)).toHaveLength(1)
+  })
+
+  test("render one Massivholztueren component", () => {
+    const wrapper = shallow(<IndexPage />)
+    expect(wrapper.find(Massivholztueren)).toHaveLength(1)
   })
 })

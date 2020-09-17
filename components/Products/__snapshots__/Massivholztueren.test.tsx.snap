@@ -19,16 +19,16 @@ exports[`Massivholztueren Testings matches snapshot 1`] = `
     className="block mt-16 -mx-6 lg:ml-0 lg:-mr-32 lg:mt-0"
   >
     <source
-      srcSet="images/hdm-massivholztueren.webp"
+      srcSet="/images/hdm-massivholztueren.webp"
       type="image/webp"
     />
     <source
-      srcSet="images/hdm-massivholztueren.png"
+      srcSet="/images/hdm-massivholztueren.png"
       type="image/png"
     />
     <img
       alt="Massivholztüren - Sorglos die Schönheit massiven Holzes genießen"
-      src="images/hdm-massivholztueren.png"
+      src="/images/hdm-massivholztueren.png"
     />
   </picture>
   <div

@@ -48,9 +48,9 @@ const Cerastar: React.FC<Props> = ({ className = "" }: Props) => {
         </div>
 
         <picture className="block mt-16 -mx-6 lg:-ml-32">
-          <source srcSet="images/hdm-cerastar.webp" type="image/webp" />
-          <source srcSet="images/hdm-cerastar.png" type="image/png" />
-          <img src="images/hdm-cerastar.png" alt="Cerastar - der neue Star unten den Bodenbelägen" />
+          <source srcSet="/images/hdm-cerastar.webp" type="image/webp" />
+          <source srcSet="/images/hdm-cerastar.png" type="image/png" />
+          <img src="/images/hdm-cerastar.png" alt="Cerastar - der neue Star unten den Bodenbelägen" />
         </picture>
       </header>
 

@@ -26,16 +26,16 @@ exports[`Cerastar Testings matches snapshot 1`] = `
       className="block mt-16 -mx-6 lg:-ml-32"
     >
       <source
-        srcSet="images/hdm-cerastar.webp"
+        srcSet="/images/hdm-cerastar.webp"
         type="image/webp"
       />
       <source
-        srcSet="images/hdm-cerastar.png"
+        srcSet="/images/hdm-cerastar.png"
         type="image/png"
       />
       <img
         alt="Cerastar - der neue Star unten den Bodenbelägen"
-        src="images/hdm-cerastar.png"
+        src="/images/hdm-cerastar.png"
       />
     </picture>
   </header>

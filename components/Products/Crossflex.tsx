@@ -44,9 +44,9 @@ const Crossflex: React.FC<Props> = ({ className = "" }: Props) => {
         </div>
 
         <picture className="mt-4 -ml-6 -mr-6 lg:mt-16">
-          <source srcSet="images/hdm-crossflex.webp" type="image/webp" />
-          <source srcSet="images/hdm-crossflex.jpg" type="image/jpeg" />
-          <img src="images/hdm-crossflex.jpg" alt="Crossflex - Dekorpaneele für Wand und Decke" />
+          <source srcSet="/images/hdm-crossflex.webp" type="image/webp" />
+          <source srcSet="/images/hdm-crossflex.jpg" type="image/jpeg" />
+          <img src="/images/hdm-crossflex.jpg" alt="Crossflex - Dekorpaneele für Wand und Decke" />
         </picture>
 
         <p className="mt-8 lg:mt-0 lg:mr-32 lg:text-lg">

@@ -30,16 +30,16 @@ exports[`Crossflex Testings matches snapshot 1`] = `
       className="mt-4 -ml-6 -mr-6 lg:mt-16"
     >
       <source
-        srcSet="images/hdm-crossflex.webp"
+        srcSet="/images/hdm-crossflex.webp"
         type="image/webp"
       />
       <source
-        srcSet="images/hdm-crossflex.jpg"
+        srcSet="/images/hdm-crossflex.jpg"
         type="image/jpeg"
       />
       <img
         alt="Crossflex - Dekorpaneele für Wand und Decke"
-        src="images/hdm-crossflex.jpg"
+        src="/images/hdm-crossflex.jpg"
       />
     </picture>
     <p
