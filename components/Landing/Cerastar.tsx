@@ -35,7 +35,10 @@ type Props = {
 
 const Cerastar: React.FC<Props> = ({ className = "" }: Props) => {
   return (
-    <section className={`container relative lg:grid lg:grid-cols-2 lg:gap-16 mt-32 pt-20 pb-24 lg:-mt-24 ${className}`}>
+    <section
+      id="cerastar"
+      className={`container relative lg:grid lg:grid-cols-2 lg:gap-16 mt-32 pt-20 pb-24 lg:-mt-24 ${className}`}
+    >
       <BackgroundImage />
 
       <header>

@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { animateScroll } from "react-scroll"
 import styled from "styled-components"
 
 const FooterStyled = styled.footer`
@@ -23,7 +24,7 @@ type Props = {
 
 const Footer: React.FC<Props> = ({ className = "" }: Props) => {
   return (
-    <FooterStyled className={`lg:mt-40 pb-10 ${className}`}>
+    <FooterStyled id="kontakt" className={`lg:mt-40 pb-10 ${className}`}>
       <section className="container lg:flex lg:justify-between lg:space-x-6">
         <h2 className="py-16 text-4xl font-bold leading-10 lg:pt-0">
           Nehmen Sie <br />
@@ -68,7 +69,7 @@ const Footer: React.FC<Props> = ({ className = "" }: Props) => {
       </section>
 
       <div className="container my-10 text-right lg:text-center">
-        <button>
+        <button onClick={() => animateScroll.scrollToTop({ duration: 800 })}>
           <svg
             className="inline-block w-6 transform -rotate-90"
             xmlns="http://www.w3.org/2000/svg"

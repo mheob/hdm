@@ -105,7 +105,7 @@ type Props = {
 
 const Purity: React.FC<Props> = ({ className = "" }: Props) => {
   return (
-    <section className={`lg:relative overflow-x-hidden mt-12 lg:mt-32 pt-20 lg:pb-64 ${className}`}>
+    <section id="purity" className={`lg:relative overflow-x-hidden mt-12 lg:mt-32 pt-20 lg:pb-64 ${className}`}>
       <BackgroundImage />
       <header className="container mt-6">
         <div className="lg:ml-32">

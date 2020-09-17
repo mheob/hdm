@@ -35,7 +35,7 @@ type Props = {
 
 const Massivholztueren: React.FC<Props> = ({ className = "" }: Props) => {
   return (
-    <section className={`overflow-x-hidden relative lg:mt-24 ${className}`}>
+    <section id="massivholztueren" className={`overflow-x-hidden relative lg:mt-24 ${className}`}>
       <Grid className="container pt-20 pb-20 bg-gray-100">
         <header className="lg:ml-32 lg:mt-8">
           <div>

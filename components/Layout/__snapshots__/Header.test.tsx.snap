@@ -2,13 +2,13 @@
 
 exports[`Header Testings matches snapshot 1`] = `
 <header
-  className="relative overflow-x-hidden "
+  className="relative overflow-x-hidden lg:h-600 "
 >
   <div
-    className="container justify-between my-6 lg:flex"
+    className="justify-between mt-6 lg:container lg:flex"
   >
     <h1
-      className="pt-8"
+      className="pt-8 mb-10 lg:mb-0"
     >
       <img
         alt="Logo der HDM GmbH"
@@ -21,34 +21,59 @@ exports[`Header Testings matches snapshot 1`] = `
         HDM - Holz Design Moers GmbH
       </span>
     </h1>
-    <nav
-      className="flex justify-between my-16 font-semibold lg:text-lg lg:container lg:mb-0 lg:space-x-12 lg:justify-end"
+    <Sticky
+      activeClass="active"
+      bottomBoundary={0}
+      enableTransforms={true}
+      enabled={true}
+      innerClass=""
+      innerZ="101"
+      onStateChange={null}
+      releasedClass="released"
+      shouldFreeze={[Function]}
+      top={0}
     >
-      <Link
-        href="/#produkte"
+      <nav
+        className="flex justify-between py-3 font-semibold bg-white lg:bg-transparent lg:text-lg lg:container lg:mb-0 lg:space-x-12 lg:justify-end lg:mt-10 lg:py-0"
       >
-        <a>
+        <Link
+          activeClass="active"
+          className="px-4 py-2 my-2 hover:text-hdm"
+          duration={600}
+          offset={-60}
+          smooth={true}
+          spy={true}
+          to="produkte"
+        >
           Produkte
-        </a>
-      </Link>
-      <Link
-        href="/#unternehmen"
-      >
-        <a>
+        </Link>
+        <Link
+          activeClass="active"
+          className="px-4 py-2 my-2 hover:text-hdm"
+          duration={1000}
+          offset={-60}
+          smooth={true}
+          spy={true}
+          to="unternehmen"
+        >
           Unternehmen
-        </a>
-      </Link>
-      <Link
-        href="/#kontakt"
-      >
-        <a>
+        </Link>
+        <Link
+          activeClass="active"
+          className="px-4 py-2 my-2 hover:text-hdm"
+          duration={1200}
+          offset={0}
+          smooth={true}
+          spy={true}
+          to="kontakt"
+        >
           Kontakt
-        </a>
-      </Link>
-    </nav>
+        </Link>
+      </nav>
+    </Sticky>
   </div>
   <Header__Section
-    className="container pt-12 pb-20 lg:py-40"
+    className="container pt-12 pb-20 lg:pt-32 lg:pb-24"
   >
     <p
       className="text-xl leading-10 lg:text-3xl lg:max-w-3xl lg:ml-24"
@@ -59,63 +84,77 @@ exports[`Header Testings matches snapshot 1`] = `
        Die Holz Design Moers GmbH bietet ihren Handelspartnern auch in Zukunft abverkaufsstarke Produkte, Konzepte und Ideen für eine erfolgreiche Zusammenarbeit.
     </p>
   </Header__Section>
-  <nav
-    className="justify-around hidden px-20 my-8 text-lg font-semibold lg:flex"
+  <Sticky
+    activeClass="sticky-nav"
+    bottomBoundary={0}
+    enableTransforms={true}
+    enabled={false}
+    innerClass=""
+    innerZ="101"
+    onStateChange={null}
+    releasedClass="released"
+    shouldFreeze={[Function]}
+    top={0}
   >
-    <Link
-      href="/#crossflex"
+    <nav
+      className="justify-around hidden px-20 py-4 text-lg font-semibold lg:flex"
     >
-      <a
-        className="px-2"
+      <Link
+        activeClass="active"
+        className="px-4 py-2 my-2 hover:text-hdm"
+        duration={600}
+        offset={-120}
+        smooth={true}
+        spy={true}
+        to="crossflex"
       >
         Crossflex
-      </a>
-    </Link>
-    <Link
-      href="/#purity"
-    >
-      <a
-        className="px-2"
+      </Link>
+      <Link
+        activeClass="active"
+        className="px-4 py-2 my-2 hover:text-hdm"
+        duration={700}
+        offset={-25}
+        smooth={true}
+        spy={true}
+        to="purity"
       >
         Purity
-      </a>
-    </Link>
-    <Link
-      href="/#cerastar"
-    >
-      <a
-        className="px-2 border-b-4 border-hdm"
+      </Link>
+      <Link
+        activeClass="active"
+        className="px-4 py-2 my-2 hover:text-hdm"
+        duration={900}
+        offset={-40}
+        smooth={true}
+        spy={true}
+        to="cerastar"
       >
         Cerastar
-      </a>
-    </Link>
-    <Link
-      href="/#massivholztueren"
-    >
-      <a
-        className="px-2"
+      </Link>
+      <Link
+        activeClass="active"
+        className="px-4 py-2 my-2 hover:text-hdm"
+        duration={1000}
+        offset={-40}
+        smooth={true}
+        spy={true}
+        to="massivholztueren"
       >
         Massivholztüren
-      </a>
-    </Link>
-    <Link
-      href="/#moebelbauplatten"
-    >
-      <a
-        className="px-2"
+      </Link>
+      <Link
+        activeClass="active"
+        className="px-4 py-2 my-2 hover:text-hdm"
+        duration={1100}
+        offset={-20}
+        smooth={true}
+        spy={true}
+        to="accessories"
       >
-        Möbelbauplatten
-      </a>
-    </Link>
-    <Link
-      href="/#dazu-zubehoer"
-    >
-      <a
-        className="px-2"
-      >
-        Dazu Zubehör
-      </a>
-    </Link>
-  </nav>
+        Möbelbauplatten / Dazu Zubehör
+      </Link>
+    </nav>
+  </Sticky>
 </header>
 `;

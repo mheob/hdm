@@ -3,6 +3,7 @@
 exports[`Footer Testings matches snapshot 1`] = `
 <Footer__FooterStyled
   className="lg:mt-40 pb-10 "
+  id="kontakt"
 >
   <section
     className="container lg:flex lg:justify-between lg:space-x-6"
@@ -91,7 +92,9 @@ exports[`Footer Testings matches snapshot 1`] = `
   <div
     className="container my-10 text-right lg:text-center"
   >
-    <button>
+    <button
+      onClick={[Function]}
+    >
       <svg
         className="inline-block w-6 transform -rotate-90"
         viewBox="0 0 24.242 45"

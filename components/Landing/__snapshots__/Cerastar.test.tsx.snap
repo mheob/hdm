@@ -3,6 +3,7 @@
 exports[`Cerastar Testings matches snapshot 1`] = `
 <section
   className="container relative lg:grid lg:grid-cols-2 lg:gap-16 mt-32 pt-20 pb-24 lg:-mt-24 "
+  id="cerastar"
 >
   <Cerastar__BackgroundImage />
   <header>

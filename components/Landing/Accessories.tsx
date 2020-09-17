@@ -37,7 +37,7 @@ type Props = {
 
 const Accessories: React.FC<Props> = ({ className = "" }: Props) => {
   return (
-    <section className={`lg:bg-gray-100 overflow-x-hidden lg:mt-24 ${className}`}>
+    <section id="accessories" className={`lg:bg-gray-100 overflow-x-hidden lg:mt-24 ${className}`}>
       <BackgroundImage>
         <Grid className="container pt-20 lg:pb-20">
           <div className="lg:max-w-md">

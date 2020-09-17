@@ -3,6 +3,7 @@
 exports[`Accessories Testings matches snapshot 1`] = `
 <section
   className="lg:bg-gray-100 overflow-x-hidden lg:mt-24 "
+  id="accessories"
 >
   <Accessories__BackgroundImage>
     <Accessories__Grid

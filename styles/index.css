@@ -24,9 +24,17 @@ p {
 /* Stop purging. */
 
 /* Write you own custom component styles here */
-/* .btn-blue {
-  @apply px-4 py-2 font-bold text-white bg-blue-500 rounded;
-} */
+a {
+  @apply cursor-pointer;
+}
+
+a.active {
+  @apply border-b-4 border-hdm;
+}
+
+.sticky-nav nav {
+  @apply duration-300 bg-white shadow;
+}
 
 /* Start purging... */
 @tailwind utilities;

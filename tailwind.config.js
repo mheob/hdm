@@ -27,6 +27,9 @@ module.exports = {
         hdm: "#007ab0",
         cerastar: "#f8efef",
       },
+      height: {
+        600: "600px",
+      },
       maxWidth: {
         1400: "1400px",
       },

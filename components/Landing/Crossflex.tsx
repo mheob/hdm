@@ -34,7 +34,7 @@ type Props = {
 
 const Crossflex: React.FC<Props> = ({ className = "" }: Props) => {
   return (
-    <section className={className}>
+    <section id="crossflex" className={className}>
       <Header className="container grid mt-6 lg:mt-32">
         <div className="lg:ml-32">
           <h2 className="text-4xl font-bold lg:text-5xl">Crossflex</h2>

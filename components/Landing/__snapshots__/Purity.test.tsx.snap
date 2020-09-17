@@ -3,6 +3,7 @@
 exports[`Purity Testings matches snapshot 1`] = `
 <section
   className="lg:relative overflow-x-hidden mt-12 lg:mt-32 pt-20 lg:pb-64 "
+  id="purity"
 >
   <Purity__BackgroundImage />
   <header
