@@ -28,12 +28,14 @@ type Props = {
 
 const Company: React.FC<Props> = ({ className = "" }: Props) => {
   return (
-    <section className={`lg:max-w-1400 mx-auto overflow-x-hidden lg:mt-24 ${className}`}>
-      <header className="lg:mt-16 lg:ml-24">
-        <h2 className="text-4xl font-bold lg:text-5xl">Möbelbauplatten</h2>
+    <section
+      className={`bg-gray-100 lg:bg-transparent mt-10 pt-10 lg:max-w-1400 mx-auto overflow-x-hidden lg:mt-24 ${className}`}
+    >
+      <header className="container lg:mt-16 lg:ml-24">
+        <h2 className="text-4xl font-bold lg:text-5xl">Unternehmen</h2>
       </header>
 
-      <div className="relative pb-16/9 lg:mt-16">
+      <div className="relative mt-12 lg:mt-16 pb-16/9">
         <iframe
           className="absolute w-full h-full"
           src="https://www.youtube-nocookie.com/embed/-7ki7fK1prA?rel=0"
@@ -41,8 +43,8 @@ const Company: React.FC<Props> = ({ className = "" }: Props) => {
         ></iframe>
       </div>
 
-      <div className="bg-gray-100">
-        <Grid className="container pt-20 pb-20">
+      <div className="lg:bg-gray-100">
+        <Grid className="container pt-10 pb-20 lg:pt-20">
           <div>
             <h3 className="font-bold text-hdm lg:text-xl">
               Holz Design Moers GmbH ist strategischer Partner für Baumarktgruppen, Baufachmärkte und den Fachhandel.

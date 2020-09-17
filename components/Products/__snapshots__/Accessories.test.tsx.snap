@@ -6,7 +6,7 @@ exports[`Accessories Testings matches snapshot 1`] = `
 >
   <Accessories__BackgroundImage>
     <Accessories__Grid
-      className="container pt-20 pb-20"
+      className="container pt-20 lg:pb-20"
     >
       <div
         className="lg:max-w-md"
@@ -23,7 +23,7 @@ exports[`Accessories Testings matches snapshot 1`] = `
           </div>
         </header>
         <picture
-          className="block mt-16 lg:-mx-24"
+          className="block mt-12 lg:-mx-24"
         >
           <source
             srcSet="/images/hdm-moebelbauplatten.webp"
@@ -68,7 +68,7 @@ exports[`Accessories Testings matches snapshot 1`] = `
           </div>
         </header>
         <picture
-          className="block mt-16 lg:-mx-24"
+          className="block mt-12 lg:-mx-24"
         >
           <source
             srcSet="/images/hdm-dazu-zubehoer.webp"

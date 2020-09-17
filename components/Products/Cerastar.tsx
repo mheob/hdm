@@ -13,7 +13,7 @@ const BackgroundImage = styled.div`
   &::before {
     position: absolute;
     top: 3rem;
-    left: 40%;
+    left: 45%;
     z-index: -1;
     width: 581px;
     height: 409px;
@@ -41,7 +41,7 @@ const Cerastar: React.FC<Props> = ({ className = "" }: Props) => {
       <header>
         <div className="lg:ml-32">
           <h2 className="text-4xl font-bold lg:text-5xl">Cerastar</h2>
-          <p className="text-xl lg:text-2xl">
+          <p className="text-xl lg:text-2xl lg:mt-4">
             Der neue Star unter <br />
             den Bodenbelägen
           </p>
@@ -69,7 +69,7 @@ const Cerastar: React.FC<Props> = ({ className = "" }: Props) => {
         </p>
         <p className="mt-8 lg:text-lg">
           Weitere Informationen finden Sie unter{" "}
-          <a className="text-hdm" href="https://cerastar.eu">
+          <a className="underline text-hdm" href="https://cerastar.eu">
             cerastar.eu
           </a>
           .

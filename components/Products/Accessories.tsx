@@ -35,11 +35,11 @@ type Props = {
   className?: string
 }
 
-const Massivholztueren: React.FC<Props> = ({ className = "" }: Props) => {
+const Accessories: React.FC<Props> = ({ className = "" }: Props) => {
   return (
     <section className={`lg:bg-gray-100 overflow-x-hidden lg:mt-24 ${className}`}>
       <BackgroundImage>
-        <Grid className="container pt-20 pb-20">
+        <Grid className="container pt-20 lg:pb-20">
           <div className="lg:max-w-md">
             <header className="lg:mt-16">
               <div>
@@ -47,7 +47,7 @@ const Massivholztueren: React.FC<Props> = ({ className = "" }: Props) => {
               </div>
             </header>
 
-            <picture className="block mt-16 lg:-mx-24">
+            <picture className="block mt-12 lg:-mx-24">
               <source srcSet="/images/hdm-moebelbauplatten.webp" type="image/webp" />
               <source srcSet="/images/hdm-moebelbauplatten.webp" type="image/jpeg" />
               <img
@@ -74,7 +74,7 @@ const Massivholztueren: React.FC<Props> = ({ className = "" }: Props) => {
               </div>
             </header>
 
-            <picture className="block mt-16 lg:-mx-24">
+            <picture className="block mt-12 lg:-mx-24">
               <source srcSet="/images/hdm-dazu-zubehoer.webp" type="image/webp" />
               <source srcSet="/images/hdm-dazu-zubehoer.webp" type="image/jpeg" />
               <img src="/images/hdm-dazu-zubehoer.webp" alt="DAZU-Zubehörprogramm" />
@@ -94,4 +94,4 @@ const Massivholztueren: React.FC<Props> = ({ className = "" }: Props) => {
   )
 }
 
-export default Massivholztueren
+export default Accessories

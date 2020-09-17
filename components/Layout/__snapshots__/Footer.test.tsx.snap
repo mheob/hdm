@@ -89,7 +89,7 @@ exports[`Footer Testings matches snapshot 1`] = `
     </nav>
   </section>
   <div
-    className="container mt-10 text-right lg:text-center"
+    className="container my-10 text-right lg:text-center"
   >
     <button>
       <svg

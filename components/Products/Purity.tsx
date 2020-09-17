@@ -13,7 +13,7 @@ const BackgroundImage = styled.div`
     &::before {
       position: absolute;
       top: 5%;
-      right: -60%;
+      right: -50%;
       z-index: -1;
       width: calc(2.9333 * 90%);
       height: 90%;
@@ -110,7 +110,7 @@ const Purity: React.FC<Props> = ({ className = "" }: Props) => {
       <header className="container mt-6">
         <div className="lg:ml-32">
           <h2 className="text-4xl font-bold lg:text-5xl">Purity</h2>
-          <p className="text-xl lg:text-2xl">Bio Selection</p>
+          <p className="text-xl lg:text-2xl lg:mt-4">Bio Selection</p>
         </div>
       </header>
 
@@ -132,8 +132,11 @@ const Purity: React.FC<Props> = ({ className = "" }: Props) => {
           <p className="lg:text-lg">
             Natürlich, sauber, rein – Bei den hochwertigen Purity Laminatböden der Bio-Selection ist der Name Programm.
             Rund 96% FSC-zertifiziertes Holz, die faktisch formaldehydfreie E0-Qualität und die Schadstofffreiheit
-            dieser Böden sprechen für sich. Die Auszeichnung mit dem Blauen Engel bestätigt es. <br />
-            <br /> Die einfache und schnelle Verlegung ist neben den idealen Pflegeeigenschaften ein weiteres Argument.
+            dieser Böden sprechen für sich. Die Auszeichnung mit dem Blauen Engel bestätigt es. \
+          </p>
+
+          <p className="mt-8 text-lg">
+            Die einfache und schnelle Verlegung ist neben den idealen Pflegeeigenschaften ein weiteres Argument.
           </p>
 
           <div>
@@ -223,7 +226,7 @@ const Purity: React.FC<Props> = ({ className = "" }: Props) => {
         <header className="container mt-6">
           <div className="lg:ml-32">
             <h2 className="text-4xl font-bold lg:text-5xl">Purity</h2>
-            <p className="text-xl lg:text-2xl">Home Selection</p>
+            <p className="text-xl lg:text-2xl lg:mt-4">Home Selection</p>
           </div>
         </header>
 
@@ -244,7 +247,7 @@ const Purity: React.FC<Props> = ({ className = "" }: Props) => {
             <h3 className="mt-8 font-bold ">BLOOM – Einfach natürlich</h3>
           </div>
 
-          <div className="container flex justify-between mt-16 lg:space-x-6">
+          <div className="container flex justify-between mt-12 lg:mt-16 lg:space-x-6">
             <svg xmlns="http://www.w3.org/2000/svg" width="98" height="98" viewBox="0 0 98 98">
               <g id="Rectangle_7" data-name="Rectangle 7" fill="#ddd" stroke="#707070" strokeWidth="1">
                 <rect width="98" height="98" stroke="none" />
@@ -265,7 +268,7 @@ const Purity: React.FC<Props> = ({ className = "" }: Props) => {
             </svg>
           </div>
 
-          <div className="container mt-16 text-center lg:mt-24">
+          <div className="container mt-16 text-center lg:text-left lg:mt-24">
             <a
               href="/documents/hdm-purity-home-selection.pdf"
               target="_blank"

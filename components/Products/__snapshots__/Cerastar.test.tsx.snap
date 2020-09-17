@@ -15,7 +15,7 @@ exports[`Cerastar Testings matches snapshot 1`] = `
         Cerastar
       </h2>
       <p
-        className="text-xl lg:text-2xl"
+        className="text-xl lg:text-2xl lg:mt-4"
       >
         Der neue Star unter 
         <br />
@@ -63,7 +63,7 @@ exports[`Cerastar Testings matches snapshot 1`] = `
       Weitere Informationen finden Sie unter
        
       <a
-        className="text-hdm"
+        className="underline text-hdm"
         href="https://cerastar.eu"
       >
         cerastar.eu

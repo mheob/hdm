@@ -16,7 +16,7 @@ exports[`Crossflex Testings matches snapshot 1`] = `
         Crossflex
       </h2>
       <p
-        className="text-xl lg:text-2xl"
+        className="text-xl lg:text-2xl lg:mt-4"
       >
         Dekorpaneele für 
         <span

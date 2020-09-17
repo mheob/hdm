@@ -17,7 +17,7 @@ exports[`Purity Testings matches snapshot 1`] = `
         Purity
       </h2>
       <p
-        className="text-xl lg:text-2xl"
+        className="text-xl lg:text-2xl lg:mt-4"
       >
         Bio Selection
       </p>
@@ -55,10 +55,12 @@ exports[`Purity Testings matches snapshot 1`] = `
       <p
         className="lg:text-lg"
       >
-        Natürlich, sauber, rein – Bei den hochwertigen Purity Laminatböden der Bio-Selection ist der Name Programm. Rund 96% FSC-zertifiziertes Holz, die faktisch formaldehydfreie E0-Qualität und die Schadstofffreiheit dieser Böden sprechen für sich. Die Auszeichnung mit dem Blauen Engel bestätigt es. 
-        <br />
-        <br />
-         Die einfache und schnelle Verlegung ist neben den idealen Pflegeeigenschaften ein weiteres Argument.
+        Natürlich, sauber, rein – Bei den hochwertigen Purity Laminatböden der Bio-Selection ist der Name Programm. Rund 96% FSC-zertifiziertes Holz, die faktisch formaldehydfreie E0-Qualität und die Schadstofffreiheit dieser Böden sprechen für sich. Die Auszeichnung mit dem Blauen Engel bestätigt es. \\
+      </p>
+      <p
+        className="mt-8 text-lg"
+      >
+        Die einfache und schnelle Verlegung ist neben den idealen Pflegeeigenschaften ein weiteres Argument.
       </p>
       <div>
         <div>
@@ -247,7 +249,7 @@ exports[`Purity Testings matches snapshot 1`] = `
           Purity
         </h2>
         <p
-          className="text-xl lg:text-2xl"
+          className="text-xl lg:text-2xl lg:mt-4"
         >
           Home Selection
         </p>
@@ -291,7 +293,7 @@ exports[`Purity Testings matches snapshot 1`] = `
         </h3>
       </div>
       <div
-        className="container flex justify-between mt-16 lg:space-x-6"
+        className="container flex justify-between mt-12 lg:mt-16 lg:space-x-6"
       >
         <svg
           height="98"
@@ -376,7 +378,7 @@ exports[`Purity Testings matches snapshot 1`] = `
         </svg>
       </div>
       <div
-        className="container mt-16 text-center lg:mt-24"
+        className="container mt-16 text-center lg:text-left lg:mt-24"
       >
         <a
           className="inline-block px-6 py-3 text-sm text-white rounded-full bg-hdm"

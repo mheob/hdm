@@ -67,7 +67,7 @@ const Footer: React.FC<Props> = ({ className = "" }: Props) => {
         </nav>
       </section>
 
-      <div className="container mt-10 text-right lg:text-center">
+      <div className="container my-10 text-right lg:text-center">
         <button>
           <svg
             className="inline-block w-6 transform -rotate-90"

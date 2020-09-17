@@ -2,19 +2,19 @@
 
 exports[`Company Testings matches snapshot 1`] = `
 <section
-  className="lg:max-w-1400 mx-auto overflow-x-hidden lg:mt-24 "
+  className="bg-gray-100 lg:bg-transparent mt-10 pt-10 lg:max-w-1400 mx-auto overflow-x-hidden lg:mt-24 "
 >
   <header
-    className="lg:mt-16 lg:ml-24"
+    className="container lg:mt-16 lg:ml-24"
   >
     <h2
       className="text-4xl font-bold lg:text-5xl"
     >
-      Möbelbauplatten
+      Unternehmen
     </h2>
   </header>
   <div
-    className="relative pb-16/9 lg:mt-16"
+    className="relative mt-12 lg:mt-16 pb-16/9"
   >
     <iframe
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"
@@ -23,10 +23,10 @@ exports[`Company Testings matches snapshot 1`] = `
     />
   </div>
   <div
-    className="bg-gray-100"
+    className="lg:bg-gray-100"
   >
     <Company__Grid
-      className="container pt-20 pb-20"
+      className="container pt-10 pb-20 lg:pt-20"
     >
       <div>
         <h3
