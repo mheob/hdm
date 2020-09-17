@@ -4,6 +4,7 @@ import Purity from "@/components/Products/Purity"
 import Cerastar from "@/components/Products/Cerastar"
 import Massivholztueren from "@/components/Products/Massivholztueren"
 import Accessories from "@/components/Products/Accessories"
+import Company from "@/components/Products/Company"
 
 const index: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const index: React.FC = () => {
       <Cerastar />
       <Massivholztueren />
       <Accessories />
+      <Company />
     </Layout>
   )
 }

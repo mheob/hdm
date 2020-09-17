@@ -7,6 +7,7 @@ import Purity from "@/components/Products/Purity"
 import Cerastar from "@/components/Products/Cerastar"
 import Massivholztueren from "@/components/Products/Massivholztueren"
 import Accessories from "@/components/Products/Accessories"
+import Company from "@/components/Products/Company"
 
 describe("IndexPage Testings", () => {
   let wrapper: ShallowWrapper
@@ -42,5 +43,10 @@ describe("IndexPage Testings", () => {
   test("render one Accessories component", () => {
     const wrapper = shallow(<IndexPage />)
     expect(wrapper.find(Accessories)).toHaveLength(1)
+  })
+
+  test("render one Company component", () => {
+    const wrapper = shallow(<IndexPage />)
+    expect(wrapper.find(Company)).toHaveLength(1)
   })
 })

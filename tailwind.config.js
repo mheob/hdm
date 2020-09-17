@@ -22,18 +22,16 @@ module.exports = {
       center: true,
       padding: "1.5rem",
     },
-    cursor: {
-      auto: "auto",
-      default: "default",
-      pointer: "pointer",
-      text: "text",
-      "not-allowed": "not-allowed",
-      grab: "grab",
-    },
     extend: {
       colors: {
         hdm: "#007ab0",
         cerastar: "#f8efef",
+      },
+      maxWidth: {
+        1400: "1400px",
+      },
+      padding: {
+        "16/9": "56.25%",
       },
       zIndex: {
         "-1": "-1",
