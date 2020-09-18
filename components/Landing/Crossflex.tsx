@@ -99,7 +99,7 @@ const Crossflex: React.FC<Props> = ({ className = "" }: Props) => {
           href="/documents/hdm-crossflex.pdf"
           target="_blank"
           title="Den Katalog Crossflex ansehen und herunterladen"
-          className="inline-block px-6 py-3 text-sm text-white rounded-full bg-hdm"
+          className="inline-block px-6 py-3 text-sm text-white rounded-full bg-hdm hover:bg-hdm-dark"
         >
           <svg
             className="inline-block mr-3"

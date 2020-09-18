@@ -123,7 +123,7 @@ const Purity: React.FC<Props> = ({ className = "" }: Props) => {
           </picture>
           <Badge
             className="hidden lg:block"
-            src="/icons/hdm-oekosiegel.svg"
+            src="/certificates/hdm-oekosiegel.png"
             alt="HDM - Verantwortung für Mensch und Natur"
           />
         </div>
@@ -170,31 +170,14 @@ const Purity: React.FC<Props> = ({ className = "" }: Props) => {
         </div>
 
         <div className="container flex justify-between -mt-4 lg:space-x-6 lg:-mt-16 lg:-ml-6 lg:px-0">
-          <img className="hidden h-24 lg:inline-block" src="/icons/hdm-blauer-engel-176.svg" alt="Blauer Engel 176" />
-          <svg className="w-16 h-16 lg:w-24 lg:h-24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
-            <g id="Rectangle_7" data-name="Rectangle 7" fill="#ddd" stroke="#707070" strokeWidth="1">
-              <rect width="96" height="96" stroke="none" />
-              <rect x="0.5" y="0.5" width="95" height="95" fill="none" />
-            </g>
-          </svg>
-          <svg className="w-16 h-16 lg:w-24 lg:h-24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
-            <g id="Rectangle_7" data-name="Rectangle 7" fill="#ddd" stroke="#707070" strokeWidth="1">
-              <rect width="96" height="96" stroke="none" />
-              <rect x="0.5" y="0.5" width="95" height="95" fill="none" />
-            </g>
-          </svg>
-          <svg className="w-16 h-16 lg:w-24 lg:h-24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
-            <g id="Rectangle_7" data-name="Rectangle 7" fill="#ddd" stroke="#707070" strokeWidth="1">
-              <rect width="96" height="96" stroke="none" />
-              <rect x="0.5" y="0.5" width="95" height="95" fill="none" />
-            </g>
-          </svg>
-          <svg className="w-16 h-16 lg:w-24 lg:h-24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
-            <g id="Rectangle_7" data-name="Rectangle 7" fill="#ddd" stroke="#707070" strokeWidth="1">
-              <rect width="96" height="96" stroke="none" />
-              <rect x="0.5" y="0.5" width="95" height="95" fill="none" />
-            </g>
-          </svg>
+          <img className="h-24" src="/certificates/hdm-fsc.png" alt="FSC - zertifiziertes Holz" />
+          <img
+            className="hidden h-24 lg:inline-block"
+            src="/certificates/hdm-blauer-engel-176.png"
+            alt="Blauer Engel 176"
+          />
+          <img className="h-24" src="/certificates/hdm-ohne-formaldehyd.png" alt="ohne Formaldehyd" />
+          <img className="h-24" src="/certificates/hdm-e0.png" alt="E0 - DIN EN 717-1" />
         </div>
 
         <div className="container text-center lg:text-left lg:-mt-6 lg:px-0">
@@ -202,7 +185,7 @@ const Purity: React.FC<Props> = ({ className = "" }: Props) => {
             href="/documents/hdm-purity-bio-selection.pdf"
             target="_blank"
             title="Den Katalog Purity Bio selection ansehen und herunterladen"
-            className="inline-block px-6 py-3 text-sm text-white rounded-full bg-hdm"
+            className="inline-block px-6 py-3 text-sm text-white rounded-full bg-hdm hover:bg-hdm-dark"
           >
             <svg
               className="inline-block mr-3"
@@ -248,24 +231,9 @@ const Purity: React.FC<Props> = ({ className = "" }: Props) => {
           </div>
 
           <div className="container flex justify-between mt-12 lg:mt-16 lg:space-x-6">
-            <svg xmlns="http://www.w3.org/2000/svg" width="98" height="98" viewBox="0 0 98 98">
-              <g id="Rectangle_7" data-name="Rectangle 7" fill="#ddd" stroke="#707070" strokeWidth="1">
-                <rect width="98" height="98" stroke="none" />
-                <rect x="0.5" y="0.5" width="97" height="97" fill="none" />
-              </g>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="98" height="98" viewBox="0 0 98 98">
-              <g id="Rectangle_7" data-name="Rectangle 7" fill="#ddd" stroke="#707070" strokeWidth="1">
-                <rect width="98" height="98" stroke="none" />
-                <rect x="0.5" y="0.5" width="97" height="97" fill="none" />
-              </g>
-            </svg>
-            <svg xmlns="http://www.w3.org/2000/svg" width="98" height="98" viewBox="0 0 98 98">
-              <g id="Rectangle_7" data-name="Rectangle 7" fill="#ddd" stroke="#707070" strokeWidth="1">
-                <rect width="98" height="98" stroke="none" />
-                <rect x="0.5" y="0.5" width="97" height="97" fill="none" />
-              </g>
-            </svg>
+            <img className="h-24" src="/certificates/hdm-blauer-engel-176.png" alt="Blauer Engel 176" />
+            <img className="h-24" src="/certificates/hdm-fsc.png" alt="FSC - zertifiziertes Holz" />
+            <img className="h-24" src="/certificates/hdm-e1.png" alt="E1 - DIN EN 16156" />
           </div>
 
           <div className="container mt-16 text-center lg:text-left lg:mt-24">
@@ -273,7 +241,7 @@ const Purity: React.FC<Props> = ({ className = "" }: Props) => {
               href="/documents/hdm-purity-home-selection.pdf"
               target="_blank"
               title="Den Katalog Purity Home selection ansehen und herunterladen"
-              className="inline-block px-6 py-3 text-sm text-white rounded-full bg-hdm"
+              className="inline-block px-6 py-3 text-sm text-white rounded-full bg-hdm hover:bg-hdm-dark"
             >
               <svg
                 className="inline-block mr-3"

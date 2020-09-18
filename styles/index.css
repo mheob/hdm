@@ -15,7 +15,8 @@ h1,
 h2,
 h3,
 h4,
-p {
+p,
+li {
   @apply leading-8;
 }
 
@@ -26,6 +27,10 @@ p {
 /* Write you own custom component styles here */
 a {
   @apply cursor-pointer;
+}
+
+a:hover {
+  @apply transition duration-300;
 }
 
 a.active {

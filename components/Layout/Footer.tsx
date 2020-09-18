@@ -40,30 +40,34 @@ const Footer: React.FC<Props> = ({ className = "" }: Props) => {
 
         <Address className="mt-6 lg:mt-0">
           Telefon:{" "}
-          <a className="underline" href="tel:+49284114010">
+          <a className="underline hover:text-hdm-dark" href="tel:+49284114010">
             +49 2841 1401 0
           </a>{" "}
           <br />
           Telefax: +49 2841 1401 180 <br />
           E-Mail:{" "}
-          <a className="underline" href="mailto:info@hdm.gmbh">
+          <a className="underline hover:text-hdm-dark" href="mailto:info@hdm.gmbh">
             info@hdm.gmbh
           </a>
         </Address>
 
         <div className="mt-24 lg:mt-0">
-          <img className="w-48" src="/ci/hdm-logo.svg" alt="Logo der HDM GmbH" />
+          <Link href="/">
+            <a>
+              <img className="w-48" src="/ci/hdm-logo.svg" alt="Logo der HDM GmbH" />
+            </a>
+          </Link>
         </div>
       </section>
 
       <section className="container mt-6 text-lg leading-10 lg:flex lg:justify-center">
         <p>&copy; 2020 Holz Design Moers GmbH</p>
         <nav className="mt-2 leading-8 lg:mt-0">
-          <Link href="/imprint" as="impressum">
-            <a className="underline lg:ml-8">Impressum</a>
+          <Link href="/impressum">
+            <a className="underline hover:text-hdm-dark lg:ml-8">Impressum</a>
           </Link>
-          <Link href="/privacy" as="datenschutz">
-            <a className="ml-8 underline">Datenschutz</a>
+          <Link href="/datenschutz">
+            <a className="ml-8 underline hover:text-hdm-dark">Datenschutz</a>
           </Link>
         </nav>
       </section>
