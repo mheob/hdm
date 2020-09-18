@@ -52,17 +52,21 @@ const Footer: React.FC<Props> = ({ className = "" }: Props) => {
         </Address>
 
         <div className="mt-24 lg:mt-0">
-          <img className="w-48" src="/ci/hdm-logo.svg" alt="Logo der HDM GmbH" />
+          <Link href="/">
+            <a>
+              <img className="w-48" src="/ci/hdm-logo.svg" alt="Logo der HDM GmbH" />
+            </a>
+          </Link>
         </div>
       </section>
 
       <section className="container mt-6 text-lg leading-10 lg:flex lg:justify-center">
         <p>&copy; 2020 Holz Design Moers GmbH</p>
         <nav className="mt-2 leading-8 lg:mt-0">
-          <Link href="/imprint" as="impressum">
+          <Link href="/impressum">
             <a className="underline lg:ml-8">Impressum</a>
           </Link>
-          <Link href="/privacy" as="datenschutz">
+          <Link href="/datenschutz">
             <a className="ml-8 underline">Datenschutz</a>
           </Link>
         </nav>

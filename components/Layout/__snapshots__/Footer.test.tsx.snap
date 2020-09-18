@@ -51,11 +51,17 @@ exports[`Footer Testings matches snapshot 1`] = `
     <div
       className="mt-24 lg:mt-0"
     >
-      <img
-        alt="Logo der HDM GmbH"
-        className="w-48"
-        src="/ci/hdm-logo.svg"
-      />
+      <Link
+        href="/"
+      >
+        <a>
+          <img
+            alt="Logo der HDM GmbH"
+            className="w-48"
+            src="/ci/hdm-logo.svg"
+          />
+        </a>
+      </Link>
     </div>
   </section>
   <section
@@ -68,8 +74,7 @@ exports[`Footer Testings matches snapshot 1`] = `
       className="mt-2 leading-8 lg:mt-0"
     >
       <Link
-        as="impressum"
-        href="/imprint"
+        href="/impressum"
       >
         <a
           className="underline lg:ml-8"
@@ -78,8 +83,7 @@ exports[`Footer Testings matches snapshot 1`] = `
         </a>
       </Link>
       <Link
-        as="datenschutz"
-        href="/privacy"
+        href="/datenschutz"
       >
         <a
           className="ml-8 underline"

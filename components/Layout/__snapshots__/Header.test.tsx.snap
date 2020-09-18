@@ -10,16 +10,22 @@ exports[`Header Testings matches snapshot 1`] = `
     <h1
       className="pt-8 mb-10 lg:mb-0"
     >
-      <img
-        alt="Logo der HDM GmbH"
-        className="w-56 mx-auto"
-        src="/ci/hdm-logo.svg"
-      />
-      <span
-        className="sr-only"
+      <Link
+        href="/"
       >
-        HDM - Holz Design Moers GmbH
-      </span>
+        <a>
+          <img
+            alt="Logo der HDM GmbH"
+            className="w-56 mx-auto"
+            src="/ci/hdm-logo.svg"
+          />
+          <span
+            className="sr-only"
+          >
+            HDM - Holz Design Moers GmbH
+          </span>
+        </a>
+      </Link>
     </h1>
     <Sticky
       activeClass="active"

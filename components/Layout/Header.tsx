@@ -1,3 +1,4 @@
+import NavLink from "next/link"
 import { Link } from "react-scroll"
 import Sticky from "react-stickynode"
 import styled from "styled-components"
@@ -53,8 +54,12 @@ const Header: React.FC<Props> = ({ className = "" }: Props) => {
     <header className={`relative overflow-x-hidden lg:h-600 ${className}`}>
       <div className="justify-between mt-6 lg:container lg:flex">
         <h1 className="pt-8 mb-10 lg:mb-0">
-          <img className="w-56 mx-auto" src="/ci/hdm-logo.svg" alt="Logo der HDM GmbH" />
-          <span className="sr-only">HDM - Holz Design Moers GmbH</span>
+          <NavLink href="/">
+            <a>
+              <img className="w-56 mx-auto" src="/ci/hdm-logo.svg" alt="Logo der HDM GmbH" />
+              <span className="sr-only">HDM - Holz Design Moers GmbH</span>
+            </a>
+          </NavLink>
         </h1>
 
         <Sticky enabled={width < 1024} innerZ="101">
