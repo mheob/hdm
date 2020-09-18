@@ -43,37 +43,31 @@ exports[`Header Testings matches snapshot 1`] = `
         className="flex justify-between py-3 font-semibold bg-white lg:bg-transparent lg:text-lg lg:container lg:mb-0 lg:space-x-12 lg:justify-end lg:mt-10 lg:py-0"
       >
         <Link
-          activeClass="active"
-          className="px-4 py-2 my-2 hover:text-hdm"
-          duration={600}
-          offset={-60}
-          smooth={true}
-          spy={true}
-          to="produkte"
+          href="/#produkte"
         >
-          Produkte
+          <a
+            className="px-4 py-2 my-2 hover:text-hdm"
+          >
+            Produkte
+          </a>
         </Link>
         <Link
-          activeClass="active"
-          className="px-4 py-2 my-2 hover:text-hdm"
-          duration={1000}
-          offset={-60}
-          smooth={true}
-          spy={true}
-          to="unternehmen"
+          href="/#unternehmen"
         >
-          Unternehmen
+          <a
+            className="px-4 py-2 my-2 hover:text-hdm"
+          >
+            Unternehmen
+          </a>
         </Link>
         <Link
-          activeClass="active"
-          className="px-4 py-2 my-2 hover:text-hdm"
-          duration={1200}
-          offset={0}
-          smooth={true}
-          spy={true}
-          to="kontakt"
+          href="/#kontakt"
         >
-          Kontakt
+          <a
+            className="px-4 py-2 my-2 hover:text-hdm"
+          >
+            Kontakt
+          </a>
         </Link>
       </nav>
     </Sticky>
@@ -90,77 +84,5 @@ exports[`Header Testings matches snapshot 1`] = `
        Die Holz Design Moers GmbH bietet ihren Handelspartnern auch in Zukunft abverkaufsstarke Produkte, Konzepte und Ideen für eine erfolgreiche Zusammenarbeit.
     </p>
   </Header__Section>
-  <Sticky
-    activeClass="sticky-nav"
-    bottomBoundary={0}
-    enableTransforms={true}
-    enabled={false}
-    innerClass=""
-    innerZ="101"
-    onStateChange={null}
-    releasedClass="released"
-    shouldFreeze={[Function]}
-    top={0}
-  >
-    <nav
-      className="justify-around hidden px-20 py-4 text-lg font-semibold lg:flex"
-    >
-      <Link
-        activeClass="active"
-        className="px-4 py-2 my-2 hover:text-hdm"
-        duration={600}
-        offset={-120}
-        smooth={true}
-        spy={true}
-        to="crossflex"
-      >
-        Crossflex
-      </Link>
-      <Link
-        activeClass="active"
-        className="px-4 py-2 my-2 hover:text-hdm"
-        duration={700}
-        offset={-25}
-        smooth={true}
-        spy={true}
-        to="purity"
-      >
-        Purity
-      </Link>
-      <Link
-        activeClass="active"
-        className="px-4 py-2 my-2 hover:text-hdm"
-        duration={900}
-        offset={-40}
-        smooth={true}
-        spy={true}
-        to="cerastar"
-      >
-        Cerastar
-      </Link>
-      <Link
-        activeClass="active"
-        className="px-4 py-2 my-2 hover:text-hdm"
-        duration={1000}
-        offset={-40}
-        smooth={true}
-        spy={true}
-        to="massivholztueren"
-      >
-        Massivholztüren
-      </Link>
-      <Link
-        activeClass="active"
-        className="px-4 py-2 my-2 hover:text-hdm"
-        duration={1100}
-        offset={-20}
-        smooth={true}
-        spy={true}
-        to="accessories"
-      >
-        Möbelbauplatten / Dazu Zubehör
-      </Link>
-    </nav>
-  </Sticky>
 </header>
 `;

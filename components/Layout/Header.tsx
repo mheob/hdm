@@ -1,4 +1,5 @@
 import NavLink from "next/link"
+import { useRouter } from "next/router"
 import { Link } from "react-scroll"
 import Sticky from "react-stickynode"
 import styled from "styled-components"
@@ -48,6 +49,7 @@ type Props = {
 }
 
 const Header: React.FC<Props> = ({ className = "" }: Props) => {
+  const router = useRouter()
   const { width = 0 } = useWindowDimensions()
 
   return (
@@ -63,40 +65,54 @@ const Header: React.FC<Props> = ({ className = "" }: Props) => {
         </h1>
 
         <Sticky enabled={width < 1024} innerZ="101">
-          <nav className="flex justify-between py-3 font-semibold bg-white lg:bg-transparent lg:text-lg lg:container lg:mb-0 lg:space-x-12 lg:justify-end lg:mt-10 lg:py-0">
-            <Link
-              to="produkte"
-              activeClass="active"
-              spy={true}
-              smooth={true}
-              offset={-60}
-              duration={600}
-              className="px-4 py-2 my-2 hover:text-hdm"
-            >
-              Produkte
-            </Link>
-            <Link
-              to="unternehmen"
-              activeClass="active"
-              spy={true}
-              smooth={true}
-              offset={-60}
-              duration={1000}
-              className="px-4 py-2 my-2 hover:text-hdm"
-            >
-              Unternehmen
-            </Link>
-            <Link
-              to="kontakt"
-              activeClass="active"
-              spy={true}
-              smooth={true}
-              duration={1200}
-              className="px-4 py-2 my-2 hover:text-hdm"
-            >
-              Kontakt
-            </Link>
-          </nav>
+          {router && router.pathname === "/" ? (
+            <nav className="flex justify-between py-3 font-semibold bg-white lg:bg-transparent lg:text-lg lg:container lg:mb-0 lg:space-x-12 lg:justify-end lg:mt-10 lg:py-0">
+              <Link
+                to="produkte"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-60}
+                duration={600}
+                className="px-4 py-2 my-2 hover:text-hdm"
+              >
+                Produkte
+              </Link>
+              <Link
+                to="unternehmen"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                offset={-60}
+                duration={1000}
+                className="px-4 py-2 my-2 hover:text-hdm"
+              >
+                Unternehmen
+              </Link>
+              <Link
+                to="kontakt"
+                activeClass="active"
+                spy={true}
+                smooth={true}
+                duration={1200}
+                className="px-4 py-2 my-2 hover:text-hdm"
+              >
+                Kontakt
+              </Link>
+            </nav>
+          ) : (
+            <nav className="flex justify-between py-3 font-semibold bg-white lg:bg-transparent lg:text-lg lg:container lg:mb-0 lg:space-x-12 lg:justify-end lg:mt-10 lg:py-0">
+              <NavLink href="/#produkte">
+                <a className="px-4 py-2 my-2 hover:text-hdm">Produkte</a>
+              </NavLink>
+              <NavLink href="/#unternehmen">
+                <a className="px-4 py-2 my-2 hover:text-hdm">Unternehmen</a>
+              </NavLink>
+              <NavLink href="/#kontakt">
+                <a className="px-4 py-2 my-2 hover:text-hdm">Kontakt</a>
+              </NavLink>
+            </nav>
+          )}
         </Sticky>
       </div>
 
@@ -107,65 +123,67 @@ const Header: React.FC<Props> = ({ className = "" }: Props) => {
         </p>
       </Section>
 
-      <Sticky enabled={width >= 1024} innerZ="101" activeClass="sticky-nav">
-        <nav className="justify-around hidden px-20 py-4 text-lg font-semibold lg:flex">
-          <Link
-            to="crossflex"
-            activeClass="active"
-            spy={true}
-            smooth={true}
-            offset={-120}
-            duration={600}
-            className="px-4 py-2 my-2 hover:text-hdm"
-          >
-            Crossflex
-          </Link>
-          <Link
-            to="purity"
-            activeClass="active"
-            spy={true}
-            smooth={true}
-            offset={-25}
-            duration={700}
-            className="px-4 py-2 my-2 hover:text-hdm"
-          >
-            Purity
-          </Link>
-          <Link
-            to="cerastar"
-            activeClass="active"
-            spy={true}
-            smooth={true}
-            offset={-40}
-            duration={900}
-            className="px-4 py-2 my-2 hover:text-hdm"
-          >
-            Cerastar
-          </Link>
-          <Link
-            to="massivholztueren"
-            activeClass="active"
-            spy={true}
-            smooth={true}
-            offset={-40}
-            duration={1000}
-            className="px-4 py-2 my-2 hover:text-hdm"
-          >
-            Massivholztüren
-          </Link>
-          <Link
-            to="accessories"
-            activeClass="active"
-            spy={true}
-            smooth={true}
-            offset={-20}
-            duration={1100}
-            className="px-4 py-2 my-2 hover:text-hdm"
-          >
-            Möbelbauplatten / Dazu Zubehör
-          </Link>
-        </nav>
-      </Sticky>
+      {router && router.pathname === "/" && (
+        <Sticky enabled={width >= 1024} innerZ="101" activeClass="sticky-nav">
+          <nav className="justify-around hidden px-20 py-4 text-lg font-semibold lg:flex">
+            <Link
+              to="crossflex"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-120}
+              duration={600}
+              className="px-4 py-2 my-2 hover:text-hdm"
+            >
+              Crossflex
+            </Link>
+            <Link
+              to="purity"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-25}
+              duration={700}
+              className="px-4 py-2 my-2 hover:text-hdm"
+            >
+              Purity
+            </Link>
+            <Link
+              to="cerastar"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-40}
+              duration={900}
+              className="px-4 py-2 my-2 hover:text-hdm"
+            >
+              Cerastar
+            </Link>
+            <Link
+              to="massivholztueren"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-40}
+              duration={1000}
+              className="px-4 py-2 my-2 hover:text-hdm"
+            >
+              Massivholztüren
+            </Link>
+            <Link
+              to="accessories"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-20}
+              duration={1100}
+              className="px-4 py-2 my-2 hover:text-hdm"
+            >
+              Möbelbauplatten / Dazu Zubehör
+            </Link>
+          </nav>
+        </Sticky>
+      )}
     </header>
   )
 }
