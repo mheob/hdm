@@ -4,20 +4,18 @@ const Imprint: React.FC = () => {
   return (
     <Layout title="Impressum * HDM &ndash; Holz Design Moers">
       <article className="container max-w-3xl">
-        <h2 className="mt-16 text-4xl font-bold">Impressum</h2>
+        <h1 className="mt-16 text-4xl font-bold">Impressum</h1>
 
-        <h3 className="mt-16 text-2xl">Angaben gem&auml;&szlig; &sect; 5 TMG</h3>
+        <h2 className="mt-16 text-2xl">Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
         <p className="mt-8">
           Holz Design Moers GmbH <br />
           Am Schürmannshütt 2 <br />
           47441 Moers (Germany)
         </p>
-
         <p className="mt-8">
           Handelsregister: HRB 16687 <br />
           Registergericht: Amtsgericht Kleve
         </p>
-
         <p className="mt-8">
           <strong>Vertreten durch:</strong> <br />
           Ralph Döller <br />
@@ -25,25 +23,24 @@ const Imprint: React.FC = () => {
           Fernando Soler Wittke
         </p>
 
-        <h3 className="mt-8 text-2xl">Kontakt</h3>
+        <h2 className="mt-8 text-2xl">Kontakt</h2>
         <p className="mt-8">
           Telefon: +49 2841 1401 0 <br />
           Telefax: +49 2841 1401 180 <br />
           E-Mail: info@hdm.gmbh
         </p>
 
-        <h3 className="mt-8 text-2xl">Umsatzsteuer-ID</h3>
+        <h2 className="mt-8 text-2xl">Umsatzsteuer-ID</h2>
         <p className="mt-8">
           Umsatzsteuer-Identifikationsnummer gem&auml;&szlig; &sect; 27 a Umsatzsteuergesetz: <br />
           DE 330 636 096
         </p>
 
-        <h3 className="mt-8 text-2xl">Verbraucher&shy;streit&shy;beilegung/Universal&shy;schlichtungs&shy;stelle</h3>
+        <h2 className="mt-8 text-2xl">Verbraucher&shy;streit&shy;beilegung/Universal&shy;schlichtungs&shy;stelle</h2>
         <p className="mt-8">
           Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle
           teilzunehmen.
         </p>
-
         <p className="mt-8">
           Quelle: <a href="https://www.e-recht24.de">https://www.e-recht24.de</a>
         </p>

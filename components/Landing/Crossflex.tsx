@@ -38,7 +38,7 @@ const Crossflex: React.FC<Props> = ({ className = "" }: Props) => {
       <Header className="container grid mt-6 lg:mt-32">
         <div className="lg:ml-32">
           <h2 className="text-4xl font-bold lg:text-5xl">Crossflex</h2>
-          <p className="text-xl lg:text-2xl lg:mt-4">
+          <p className="mt-4 text-xl leading-snug lg:text-2xl">
             Dekorpaneele für <span className="lg:block">Wand und Decke</span>
           </p>
         </div>

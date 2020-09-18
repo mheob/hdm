@@ -213,7 +213,7 @@ const Purity: React.FC<Props> = ({ className = "" }: Props) => {
           </div>
         </header>
 
-        <GridHome className="overflow-hidden lg:container lg:mb-12">
+        <GridHome className="lg:container lg:mb-12">
           <picture className="mt-10 ml-6 lg:-mt-16">
             <source srcSet="/images/hdm-purity-home-selection.webp" type="image/webp" />
             <source srcSet="/images/hdm-purity-home-selection.png" type="image/png" />
