@@ -19,6 +19,10 @@ exports[`IndexPage Testings matches snapshot 1`] = `
       content="Die Holz Design Moers GmbH bietet ihren Handelspartnern auch in Zukunft abverkaufsstarke Produkte, Konzepte und Ideen für eine erfolgreiche Zusammenarbeit."
       name="description"
     />
+    <meta
+      content="noindex, nofollow"
+      name="robots"
+    />
     <link
       href="/ci/hdm-bg.svg"
       rel="shortcut icon"

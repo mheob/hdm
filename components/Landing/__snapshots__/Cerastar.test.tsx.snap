@@ -16,7 +16,7 @@ exports[`Cerastar Testings matches snapshot 1`] = `
         Cerastar
       </h2>
       <p
-        className="text-xl lg:text-2xl lg:mt-4"
+        className="mt-4 text-xl leading-snug lg:text-2xl"
       >
         Der neue Star unter 
         <br />
@@ -41,7 +41,7 @@ exports[`Cerastar Testings matches snapshot 1`] = `
     </picture>
   </header>
   <div
-    className="lg:mt-48"
+    className="lg:mt-40"
   >
     <h3
       className="mt-12 font-bold lg:text-lg"
@@ -64,7 +64,7 @@ exports[`Cerastar Testings matches snapshot 1`] = `
       Weitere Informationen finden Sie unter
        
       <a
-        className="underline text-hdm"
+        className="underline text-hdm hover:text-hdm-dark"
         href="https://cerastar.eu"
       >
         cerastar.eu
@@ -75,7 +75,7 @@ exports[`Cerastar Testings matches snapshot 1`] = `
       className="mt-16 text-center lg:text-left lg:mt-24"
     >
       <a
-        className="inline-block px-6 py-3 text-sm text-white rounded-full bg-hdm"
+        className="inline-block px-6 py-3 text-sm text-white rounded-full bg-hdm hover:bg-hdm-dark"
         href="/documents/hdm-cerastar.pdf"
         target="_blank"
         title="Den Katalog Cerastar ansehen und herunterladen"

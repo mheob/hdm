@@ -18,9 +18,11 @@ exports[`Purity Testings matches snapshot 1`] = `
         Purity
       </h2>
       <p
-        className="text-xl lg:text-2xl lg:mt-4"
+        className="mt-4 text-xl leading-snug lg:text-2xl"
       >
-        Bio Selection
+        Bio Selection 
+        <br />
+         Laminatboden
       </p>
     </div>
   </header>
@@ -47,7 +49,7 @@ exports[`Purity Testings matches snapshot 1`] = `
       <Purity__Badge
         alt="HDM - Verantwortung für Mensch und Natur"
         className="hidden lg:block"
-        src="/icons/hdm-oekosiegel.svg"
+        src="/certificates/hdm-oekosiegel.png"
       />
     </div>
     <div
@@ -56,7 +58,7 @@ exports[`Purity Testings matches snapshot 1`] = `
       <p
         className="lg:text-lg"
       >
-        Natürlich, sauber, rein – Bei den hochwertigen Purity Laminatböden der Bio-Selection ist der Name Programm. Rund 96% FSC-zertifiziertes Holz, die faktisch formaldehydfreie E0-Qualität und die Schadstofffreiheit dieser Böden sprechen für sich. Die Auszeichnung mit dem Blauen Engel bestätigt es. \\
+        Natürlich, sauber, rein – Bei den hochwertigen Purity Laminatböden der Bio-Selection ist der Name Programm. Rund 96% FSC-zertifiziertes Holz, die faktisch formaldehydfreie E0-Qualität und die Schadstofffreiheit dieser Böden sprechen für sich. Die Auszeichnung mit dem Blauen Engel bestätigt es.
       </p>
       <p
         className="mt-8 text-lg"
@@ -102,118 +104,29 @@ exports[`Purity Testings matches snapshot 1`] = `
       <img
         alt="Blauer Engel 176"
         className="hidden h-24 lg:inline-block"
-        src="/icons/hdm-blauer-engel-176.svg"
+        src="/certificates/hdm-blauer-engel-176.png"
       />
-      <svg
-        className="w-16 h-16 lg:w-24 lg:h-24"
-        viewBox="0 0 96 96"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <g
-          data-name="Rectangle 7"
-          fill="#ddd"
-          id="Rectangle_7"
-          stroke="#707070"
-          strokeWidth="1"
-        >
-          <rect
-            height="96"
-            stroke="none"
-            width="96"
-          />
-          <rect
-            fill="none"
-            height="95"
-            width="95"
-            x="0.5"
-            y="0.5"
-          />
-        </g>
-      </svg>
-      <svg
-        className="w-16 h-16 lg:w-24 lg:h-24"
-        viewBox="0 0 96 96"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <g
-          data-name="Rectangle 7"
-          fill="#ddd"
-          id="Rectangle_7"
-          stroke="#707070"
-          strokeWidth="1"
-        >
-          <rect
-            height="96"
-            stroke="none"
-            width="96"
-          />
-          <rect
-            fill="none"
-            height="95"
-            width="95"
-            x="0.5"
-            y="0.5"
-          />
-        </g>
-      </svg>
-      <svg
-        className="w-16 h-16 lg:w-24 lg:h-24"
-        viewBox="0 0 96 96"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <g
-          data-name="Rectangle 7"
-          fill="#ddd"
-          id="Rectangle_7"
-          stroke="#707070"
-          strokeWidth="1"
-        >
-          <rect
-            height="96"
-            stroke="none"
-            width="96"
-          />
-          <rect
-            fill="none"
-            height="95"
-            width="95"
-            x="0.5"
-            y="0.5"
-          />
-        </g>
-      </svg>
-      <svg
-        className="w-16 h-16 lg:w-24 lg:h-24"
-        viewBox="0 0 96 96"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <g
-          data-name="Rectangle 7"
-          fill="#ddd"
-          id="Rectangle_7"
-          stroke="#707070"
-          strokeWidth="1"
-        >
-          <rect
-            height="96"
-            stroke="none"
-            width="96"
-          />
-          <rect
-            fill="none"
-            height="95"
-            width="95"
-            x="0.5"
-            y="0.5"
-          />
-        </g>
-      </svg>
+      <img
+        alt="FSC - zertifiziertes Holz"
+        className="h-24"
+        src="/certificates/hdm-fsc.png"
+      />
+      <img
+        alt="ohne Formaldehyd"
+        className="h-24"
+        src="/certificates/hdm-formaldehydfrei.png"
+      />
+      <img
+        alt="E0 - DIN EN 717-1"
+        className="h-24"
+        src="/certificates/hdm-e0.svg"
+      />
     </div>
     <div
       className="container text-center lg:text-left lg:-mt-6 lg:px-0"
     >
       <a
-        className="inline-block px-6 py-3 text-sm text-white rounded-full bg-hdm"
+        className="inline-block px-6 py-3 text-sm text-white rounded-full bg-hdm hover:bg-hdm-dark"
         href="/documents/hdm-purity-bio-selection.pdf"
         target="_blank"
         title="Den Katalog Purity Bio selection ansehen und herunterladen"
@@ -250,14 +163,16 @@ exports[`Purity Testings matches snapshot 1`] = `
           Purity
         </h2>
         <p
-          className="text-xl lg:text-2xl lg:mt-4"
+          className="mt-4 text-xl leading-snug lg:text-2xl"
         >
-          Home Selection
+          Home Selection 
+          <br />
+           Laminatboden
         </p>
       </div>
     </header>
     <Purity__GridHome
-      className="overflow-hidden lg:container lg:mb-12"
+      className="lg:container lg:mb-12"
     >
       <picture
         className="mt-10 ml-6 lg:-mt-16"
@@ -296,93 +211,27 @@ exports[`Purity Testings matches snapshot 1`] = `
       <div
         className="container flex justify-between mt-12 lg:mt-16 lg:space-x-6"
       >
-        <svg
-          height="98"
-          viewBox="0 0 98 98"
-          width="98"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            data-name="Rectangle 7"
-            fill="#ddd"
-            id="Rectangle_7"
-            stroke="#707070"
-            strokeWidth="1"
-          >
-            <rect
-              height="98"
-              stroke="none"
-              width="98"
-            />
-            <rect
-              fill="none"
-              height="97"
-              width="97"
-              x="0.5"
-              y="0.5"
-            />
-          </g>
-        </svg>
-        <svg
-          height="98"
-          viewBox="0 0 98 98"
-          width="98"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            data-name="Rectangle 7"
-            fill="#ddd"
-            id="Rectangle_7"
-            stroke="#707070"
-            strokeWidth="1"
-          >
-            <rect
-              height="98"
-              stroke="none"
-              width="98"
-            />
-            <rect
-              fill="none"
-              height="97"
-              width="97"
-              x="0.5"
-              y="0.5"
-            />
-          </g>
-        </svg>
-        <svg
-          height="98"
-          viewBox="0 0 98 98"
-          width="98"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            data-name="Rectangle 7"
-            fill="#ddd"
-            id="Rectangle_7"
-            stroke="#707070"
-            strokeWidth="1"
-          >
-            <rect
-              height="98"
-              stroke="none"
-              width="98"
-            />
-            <rect
-              fill="none"
-              height="97"
-              width="97"
-              x="0.5"
-              y="0.5"
-            />
-          </g>
-        </svg>
+        <img
+          alt="Blauer Engel 176"
+          className="h-24"
+          src="/certificates/hdm-blauer-engel-176.png"
+        />
+        <img
+          alt="FSC - zertifiziertes Holz"
+          className="h-24"
+          src="/certificates/hdm-fsc.png"
+        />
+        <img
+          alt="E1 - DIN EN 16156"
+          className="h-24"
+          src="/certificates/hdm-e1.svg"
+        />
       </div>
       <div
         className="container mt-16 text-center lg:text-left lg:mt-24"
       >
         <a
-          className="inline-block px-6 py-3 text-sm text-white rounded-full bg-hdm"
+          className="inline-block px-6 py-3 text-sm text-white rounded-full bg-hdm hover:bg-hdm-dark"
           href="/documents/hdm-purity-home-selection.pdf"
           target="_blank"
           title="Den Katalog Purity Home selection ansehen und herunterladen"

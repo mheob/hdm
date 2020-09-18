@@ -17,7 +17,7 @@ exports[`IndexPage Testings matches snapshot 1`] = `
         Crossflex
       </h2>
       <p
-        className="text-xl lg:text-2xl lg:mt-4"
+        className="mt-4 text-xl leading-snug lg:text-2xl"
       >
         Dekorpaneele für 
         <span
@@ -125,7 +125,7 @@ exports[`IndexPage Testings matches snapshot 1`] = `
     className="container mt-12 text-center lg:mt-24"
   >
     <a
-      className="inline-block px-6 py-3 text-sm text-white rounded-full bg-hdm"
+      className="inline-block px-6 py-3 text-sm text-white rounded-full bg-hdm hover:bg-hdm-dark"
       href="/documents/hdm-crossflex.pdf"
       target="_blank"
       title="Den Katalog Crossflex ansehen und herunterladen"

@@ -7,16 +7,16 @@ exports[`Imprint Testings matches snapshot 1`] = `
   <article
     className="container max-w-3xl"
   >
-    <h2
+    <h1
       className="mt-16 text-4xl font-bold"
     >
       Impressum
-    </h2>
-    <h3
+    </h1>
+    <h2
       className="mt-16 text-2xl"
     >
       Angaben gemäß § 5 TMG
-    </h3>
+    </h2>
     <p
       className="mt-8"
     >
@@ -47,11 +47,11 @@ exports[`Imprint Testings matches snapshot 1`] = `
       <br />
       Fernando Soler Wittke
     </p>
-    <h3
+    <h2
       className="mt-8 text-2xl"
     >
       Kontakt
-    </h3>
+    </h2>
     <p
       className="mt-8"
     >
@@ -61,11 +61,11 @@ exports[`Imprint Testings matches snapshot 1`] = `
       <br />
       E-Mail: info@hdm.gmbh
     </p>
-    <h3
+    <h2
       className="mt-8 text-2xl"
     >
       Umsatzsteuer-ID
-    </h3>
+    </h2>
     <p
       className="mt-8"
     >
@@ -73,11 +73,11 @@ exports[`Imprint Testings matches snapshot 1`] = `
       <br />
       DE 330 636 096
     </p>
-    <h3
+    <h2
       className="mt-8 text-2xl"
     >
       Verbraucher­streit­beilegung/Universal­schlichtungs­stelle
-    </h3>
+    </h2>
     <p
       className="mt-8"
     >
