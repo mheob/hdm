@@ -72,7 +72,7 @@ const Header: React.FC<Props> = ({ className = "" }: Props) => {
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                offset={-60}
+                offset={-120}
                 duration={600}
                 className="px-4 py-2 my-2 hover:text-hdm"
               >
@@ -135,7 +135,7 @@ const Header: React.FC<Props> = ({ className = "" }: Props) => {
               duration={600}
               className="px-4 py-2 my-2 hover:text-hdm"
             >
-              Crossflex
+              Dekorpaneele
             </Link>
             <Link
               to="purity"
@@ -146,7 +146,7 @@ const Header: React.FC<Props> = ({ className = "" }: Props) => {
               duration={700}
               className="px-4 py-2 my-2 hover:text-hdm"
             >
-              Purity
+              Laminatb&ouml;den
             </Link>
             <Link
               to="cerastar"
@@ -157,7 +157,7 @@ const Header: React.FC<Props> = ({ className = "" }: Props) => {
               duration={900}
               className="px-4 py-2 my-2 hover:text-hdm"
             >
-              Cerastar
+              Designb&ouml;den
             </Link>
             <Link
               to="massivholztueren"
@@ -168,7 +168,7 @@ const Header: React.FC<Props> = ({ className = "" }: Props) => {
               duration={1000}
               className="px-4 py-2 my-2 hover:text-hdm"
             >
-              Massivholztüren
+              Massivholzt&uuml;re
             </Link>
             <Link
               to="accessories"
@@ -179,7 +179,18 @@ const Header: React.FC<Props> = ({ className = "" }: Props) => {
               duration={1100}
               className="px-4 py-2 my-2 hover:text-hdm"
             >
-              Möbelbauplatten / Dazu Zubehör
+              Regalb&ouml;den / M&ouml;belbauplatten
+            </Link>
+            <Link
+              to="accessories"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-20}
+              duration={1100}
+              className="px-4 py-2 my-2 hover:text-hdm"
+            >
+              DAZU Zubeh&ouml;r
             </Link>
           </nav>
         </Sticky>
