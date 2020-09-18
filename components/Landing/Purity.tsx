@@ -170,14 +170,14 @@ const Purity: React.FC<Props> = ({ className = "" }: Props) => {
         </div>
 
         <div className="container flex justify-between -mt-4 lg:space-x-6 lg:-mt-16 lg:-ml-6 lg:px-0">
-          <img className="h-24" src="/certificates/hdm-fsc.png" alt="FSC - zertifiziertes Holz" />
           <img
             className="hidden h-24 lg:inline-block"
             src="/certificates/hdm-blauer-engel-176.png"
             alt="Blauer Engel 176"
           />
-          <img className="h-24" src="/certificates/hdm-ohne-formaldehyd.png" alt="ohne Formaldehyd" />
-          <img className="h-24" src="/certificates/hdm-e0.png" alt="E0 - DIN EN 717-1" />
+          <img className="h-24" src="/certificates/hdm-fsc.png" alt="FSC - zertifiziertes Holz" />
+          <img className="h-24" src="/certificates/hdm-formaldehydfrei.png" alt="ohne Formaldehyd" />
+          <img className="h-24" src="/certificates/hdm-e0.svg" alt="E0 - DIN EN 717-1" />
         </div>
 
         <div className="container text-center lg:text-left lg:-mt-6 lg:px-0">
@@ -233,7 +233,7 @@ const Purity: React.FC<Props> = ({ className = "" }: Props) => {
           <div className="container flex justify-between mt-12 lg:mt-16 lg:space-x-6">
             <img className="h-24" src="/certificates/hdm-blauer-engel-176.png" alt="Blauer Engel 176" />
             <img className="h-24" src="/certificates/hdm-fsc.png" alt="FSC - zertifiziertes Holz" />
-            <img className="h-24" src="/certificates/hdm-e1.png" alt="E1 - DIN EN 16156" />
+            <img className="h-24" src="/certificates/hdm-e1.svg" alt="E1 - DIN EN 16156" />
           </div>
 
           <div className="container mt-16 text-center lg:text-left lg:mt-24">
