@@ -1,3 +1,12 @@
+# [2.0.0-next.2](https://github.com/100herz/hdm/compare/v2.0.0-next.1...v2.0.0-next.2) (2020-09-18)
+
+
+### Features
+
+* **header:** render the navigation dependent on page ([affeb65](https://github.com/100herz/hdm/commit/affeb65088b2b6ec8291d4ca2c3a019037758b83))
+* **legal:** add imprint and privacy pages ([da53b4f](https://github.com/100herz/hdm/commit/da53b4f97b099de0f209d012e26152979c049c97))
+* **purity:** add the certificate badge ([8c6955e](https://github.com/100herz/hdm/commit/8c6955ebeb228c40080c5c3328e8656668be70e9))
+
 # [2.0.0-next.1](https://github.com/100herz/hdm/compare/v1.0.0...v2.0.0-next.1) (2020-09-17)
 
 
