@@ -72,7 +72,7 @@ const Cerastar: React.FC<Props> = ({ className = "" }: Props) => {
         </p>
         <p className="mt-8 lg:text-lg">
           Weitere Informationen finden Sie unter{" "}
-          <a className="underline text-hdm" href="https://cerastar.eu">
+          <a className="underline text-hdm hover:text-hdm-dark" href="https://cerastar.eu">
             cerastar.eu
           </a>
           .
@@ -83,7 +83,7 @@ const Cerastar: React.FC<Props> = ({ className = "" }: Props) => {
             href="/documents/hdm-cerastar.pdf"
             target="_blank"
             title="Den Katalog Cerastar ansehen und herunterladen"
-            className="inline-block px-6 py-3 text-sm text-white rounded-full bg-hdm"
+            className="inline-block px-6 py-3 text-sm text-white rounded-full bg-hdm hover:bg-hdm-dark"
           >
             <svg
               className="inline-block mr-3"

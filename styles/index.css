@@ -29,6 +29,10 @@ a {
   @apply cursor-pointer;
 }
 
+a:hover {
+  @apply transition duration-300;
+}
+
 a.active {
   @apply border-b-4 border-hdm;
 }

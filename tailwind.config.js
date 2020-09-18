@@ -25,6 +25,7 @@ module.exports = {
     extend: {
       colors: {
         hdm: "#007ab0",
+        "hdm-dark": "#006999",
         cerastar: "#f8efef",
       },
       height: {
