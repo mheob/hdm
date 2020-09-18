@@ -110,7 +110,9 @@ const Purity: React.FC<Props> = ({ className = "" }: Props) => {
       <header className="container mt-6">
         <div className="lg:ml-32">
           <h2 className="text-4xl font-bold lg:text-5xl">Purity</h2>
-          <p className="text-xl lg:text-2xl lg:mt-4">Bio Selection</p>
+          <p className="mt-4 text-xl leading-snug lg:text-2xl">
+            Bio Selection <br /> Laminatboden
+          </p>
         </div>
       </header>
 
@@ -132,7 +134,7 @@ const Purity: React.FC<Props> = ({ className = "" }: Props) => {
           <p className="lg:text-lg">
             Natürlich, sauber, rein – Bei den hochwertigen Purity Laminatböden der Bio-Selection ist der Name Programm.
             Rund 96% FSC-zertifiziertes Holz, die faktisch formaldehydfreie E0-Qualität und die Schadstofffreiheit
-            dieser Böden sprechen für sich. Die Auszeichnung mit dem Blauen Engel bestätigt es. \
+            dieser Böden sprechen für sich. Die Auszeichnung mit dem Blauen Engel bestätigt es.
           </p>
 
           <p className="mt-8 text-lg">
@@ -209,7 +211,9 @@ const Purity: React.FC<Props> = ({ className = "" }: Props) => {
         <header className="container mt-6">
           <div className="lg:ml-32">
             <h2 className="text-4xl font-bold lg:text-5xl">Purity</h2>
-            <p className="text-xl lg:text-2xl lg:mt-4">Home Selection</p>
+            <p className="mt-4 text-xl leading-snug lg:text-2xl">
+              Home Selection <br /> Laminatboden
+            </p>
           </div>
         </header>
 

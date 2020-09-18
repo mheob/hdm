@@ -40,8 +40,8 @@ const Footer: React.FC<Props> = ({ className = "" }: Props) => {
 
         <Address className="mt-6 lg:mt-0">
           Telefon:{" "}
-          <a className="underline hover:text-hdm-dark" href="tel:+49284114010">
-            +49 2841 1401 0
+          <a className="underline hover:text-hdm-dark" href="tel:+4928411401101">
+            +49 2841 1401 101
           </a>{" "}
           <br />
           Telefax: +49 2841 1401 180 <br />

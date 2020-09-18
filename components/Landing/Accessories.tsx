@@ -85,7 +85,6 @@ const Accessories: React.FC<Props> = ({ className = "" }: Props) => {
                 Alles was zum Anbringen von Dekorpaneele, zur Bodenverlegung, zum Bau von Mobiliar oder dem dekorativen
                 Innenausbau notwendig ist, hat Holz Design Moers im DAZU®-Zubehörprogramm.
               </p>
-              <p className="mt-8 lg:text-lg">Auch die dekorativ ummantelten UMA®-Leisten finden sich im Sortiment.</p>
             </div>
           </div>
         </Grid>

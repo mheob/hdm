@@ -55,6 +55,16 @@ const Privacy: React.FC = () => {
         <p className="mt-8">
           Detaillierte Informationen zu diesen Analyseprogrammen finden Sie in der folgenden Datenschutzerkl&auml;rung.
         </p>
+        <h3 className="mt-8 text-2xl">Bestellter Datenschutzbeauftragter gem. Art. 37 DSGVO</h3>
+        <p className="mt-8">Wir haben für unser Unternehmen einen Datenschutzbeauftragten bestellt.</p>
+        <p className="mt-8">
+          Dieter Meyer <br />
+          HWG Marketing & Werbung <br />
+          Wiedbachstr. 50 <br />
+          56564 Neuwied <br />
+          Telefon: 02631 964628 <br />
+          E-Mail: info@hdm.gmbh
+        </p>
         <h2 className="mt-16 text-3xl">2. Hosting und Content Delivery Networks (CDN)</h2>
         <h3 className="mt-16 text-2xl">Externes Hosting</h3>
         <p className="mt-8">

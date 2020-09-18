@@ -54,17 +54,16 @@ const Massivholztueren: React.FC<Props> = ({ className = "" }: Props) => {
 
         <div className="lg:-mt-32 lg:ml-32">
           <p className="mt-12 lg:text-lg">
-            Sorglos die Schönheit massiven Holzes genießen. Massivholz sorgt für behagliche Wärme und ist nie
-            langweilig.
+            Sorglos die Schönheit massiven Holzes genießen. Denn Holz ist pure Natur und bringt eine angenehme,
+            freundliche Atmosphäre ins Haus, unterstrichen von ruhigen Licht- und Schattenspielen der offenen Lamellen-
+            und Gittertüren.
           </p>
-          <p className="mt-8 lg:text-lg">
-            Denn Holz ist pure Natur und bringt eine angenehme, freundliche Atmosphäre ins Haus, unterstrichen von
-            ruhigen Licht- und Schattenspielen der offenen Lamellen- und Gittertüren.
-          </p>
+
+          <p className="mt-8 lg:text-lg">Massivholz sorgt für behagliche Wärme und ist nie langweilig.</p>
 
           <div className="mt-16 text-center lg:text-left lg:mt-24">
             <a
-              href="/documents/hdm-cerastar.pdf"
+              href="/documents/hdm-massivholztueren.pdf"
               target="_blank"
               title="Den Katalog Cerastar ansehen und herunterladen"
               className="inline-block px-6 py-3 text-sm text-white rounded-full bg-hdm hover:bg-hdm-dark"
