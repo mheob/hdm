@@ -20,9 +20,9 @@ exports[`Purity Testings matches snapshot 1`] = `
       <p
         className="mt-4 text-xl leading-snug lg:text-2xl"
       >
-        Bio Selection 
+        Laminatboden 
         <br />
-         Laminatboden
+         Bio Selection
       </p>
     </div>
   </header>
@@ -165,9 +165,9 @@ exports[`Purity Testings matches snapshot 1`] = `
         <p
           className="mt-4 text-xl leading-snug lg:text-2xl"
         >
-          Home Selection 
+          Laminatboden 
           <br />
-           Laminatboden
+           Home Selection
         </p>
       </div>
     </header>
