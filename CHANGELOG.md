@@ -1,3 +1,17 @@
+# [2.0.0-next.3](https://github.com/100herz/hdm/compare/v2.0.0-next.2...v2.0.0-next.3) (2020-09-21)
+
+
+### Bug Fixes
+
+* styling issues after release meeting ([195a560](https://github.com/100herz/hdm/commit/195a56034a747051c66f28a07eee4dd08f26f954))
+* **purity:** change the certificates to a better quality ([b9424e9](https://github.com/100herz/hdm/commit/b9424e9bbb03496aa9955c74787a27892964ac66)), closes [#1](https://github.com/100herz/hdm/issues/1)
+* typos on the whole site ([a48ad6a](https://github.com/100herz/hdm/commit/a48ad6a29438e53ba2ca2a4feb2af20929d8c0b7))
+
+
+### Features
+
+* improve the product navigation structure ([ec537f4](https://github.com/100herz/hdm/commit/ec537f40159e6c4da9f39bbacf8376282ef189a6))
+
 # [2.0.0-next.2](https://github.com/100herz/hdm/compare/v2.0.0-next.1...v2.0.0-next.2) (2020-09-18)
 
 
