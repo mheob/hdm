@@ -37,7 +37,7 @@
     "extends": "@commitlint/config-conventional"
   },
   "lint-staged": {
-    "*.+(ts|tsx)": "cross-env NODE_ENV=test jest --passWithNoTests",
+    "*.+(ts|tsx)": "cross-env NODE_ENV=test jest --updateSnapshot --passWithNoTests",
     "*.{css,pcss,scss}": "stylelint 'src/**/*.{css,scss}' --fix --ignore-path .gitignore",
     "*.{js,ts,jsx,tsx}": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix --ignore-path .gitignore"
   },
