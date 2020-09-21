@@ -1,3 +1,18 @@
+# [2.0.0-next.4](https://github.com/100herz/hdm/compare/v2.0.0-next.3...v2.0.0-next.4) (2020-09-21)
+
+
+### Bug Fixes
+
+* **typo:** adjust all texts given from PM ([791c5bc](https://github.com/100herz/hdm/commit/791c5bc87abbd9b88316b06161a302c3193eb203))
+
+
+### Features
+
+* **footer:** improve smooth scrolling for the footer icon link ([b99430f](https://github.com/100herz/hdm/commit/b99430f053593ac59c9cd17b9171ea203f08d7fa))
+* **header:** add the eco certificate ([0a7ed03](https://github.com/100herz/hdm/commit/0a7ed033a1197686d6cb9c9057e10b120ffc979f)), closes [#9](https://github.com/100herz/hdm/issues/9)
+* **pwa:** add the pwa manifest to the html head ([5f0aea2](https://github.com/100herz/hdm/commit/5f0aea2d42e3cadd1c63bd94a7c0853613bf34db))
+* **pwa:** include manifest for the usage as pwa ([89b81d4](https://github.com/100herz/hdm/commit/89b81d46c1b5c0dce08081741c42e11224cd9883))
+
 # [2.0.0-next.3](https://github.com/100herz/hdm/compare/v2.0.0-next.2...v2.0.0-next.3) (2020-09-21)
 
 
