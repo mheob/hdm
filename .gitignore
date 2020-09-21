@@ -13,11 +13,9 @@
 /coverage
 
 # next.js
-/.next/
-/out/
-
-# production
-/build
+**/.next/**
+**/out/**
+/src/public
 
 # misc
 .DS_Store

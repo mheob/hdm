@@ -111,7 +111,7 @@ const Purity: React.FC<Props> = ({ className = "" }: Props) => {
         <div className="lg:ml-32">
           <h2 className="text-4xl font-bold lg:text-5xl">Purity</h2>
           <p className="mt-4 text-xl leading-snug lg:text-2xl">
-            Bio Selection <br /> Laminatboden
+            Laminatboden <br /> Bio Selection
           </p>
         </div>
       </header>
@@ -212,7 +212,7 @@ const Purity: React.FC<Props> = ({ className = "" }: Props) => {
           <div className="lg:ml-32">
             <h2 className="text-4xl font-bold lg:text-5xl">Purity</h2>
             <p className="mt-4 text-xl leading-snug lg:text-2xl">
-              Home Selection <br /> Laminatboden
+              Laminatboden <br /> Home Selection
             </p>
           </div>
         </header>
