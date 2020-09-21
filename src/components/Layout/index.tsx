@@ -29,7 +29,7 @@ const Layout: React.FC<Props> = ({
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="description" content={description} />
         <meta name="robots" content="noindex, nofollow" />
-        <link rel="shortcut icon" href="/ci/hdm-bg.svg" type="image/svg+xml" sizes="any" />
+        <link rel="shortcut icon" href="/ci/favicon.svg" type="image/svg+xml" sizes="any" />
         <link
           href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
           rel="stylesheet"
