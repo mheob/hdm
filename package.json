@@ -17,7 +17,7 @@
     "build": "next build src",
     "commit": "git-cz",
     "dev": "next",
-    "export": "rimraf src/.next src/out src/public && copyfiles public/**/* src && yarn build && next export src",
+    "export": "rimraf src/.next src/out src/public && copyfiles public/{*,**/*} src && yarn build && next export src",
     "lint": "yarn lint:js && yarn lint:style",
     "lint:js": "eslint 'src/*/**/*.{js,ts,tsx}' --quiet --fix --ignore-path .gitignore",
     "lint:style": "stylelint 'src/**/*.{css,pcss,scss}' --fix --ignore-path .gitignore",
