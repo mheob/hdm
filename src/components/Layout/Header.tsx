@@ -121,18 +121,29 @@ const Header: React.FC<Props> = ({ className = "" }: Props) => {
           <strong>Produkt. Idee. Erfolg.</strong> Die Holz Design Moers GmbH bietet ihren Handelspartnern auch in
           Zukunft abverkaufsstarke Produkte, Konzepte und Ideen für eine erfolgreiche Zusammenarbeit.
         </p>
-        <Link to="purity" activeClass="active" spy={true} smooth={true} offset={-25} duration={700}>
-          <a className="hidden -mt-16 lg:block hover:text-green-600">
-            <figure className="text-center group">
-              <img
-                className="w-56 transition-all duration-500 transform -rotate-10 group-hover:rotate-0"
-                src="/certificates/hdm-oekosiegel-header.png"
-                alt="HDM - Verantwortung für Mensch und Natur"
-                title="Mehr über die den BIO ... logischen Laminatboden erfahren"
-              />
-            </figure>
-          </a>
-        </Link>
+        {router && router.pathname === "/" ? (
+          <Link to="purity" activeClass="active" spy={true} smooth={true} offset={-25} duration={700}>
+            <a>
+              <figure className="hidden -mt-16 text-center group lg:block">
+                <img
+                  className="w-56 transition-all duration-500 transform -rotate-10 group-hover:rotate-0"
+                  src="/certificates/hdm-oekosiegel-header.png"
+                  alt="HDM - Verantwortung für Mensch und Natur"
+                  title="Mehr über die den BIO ... logischen Laminatboden erfahren"
+                />
+              </figure>
+            </a>
+          </Link>
+        ) : (
+          <figure className="hidden -mt-16 text-center lg:block">
+            <img
+              className="w-56"
+              src="/certificates/hdm-oekosiegel-header.png"
+              alt="HDM - Verantwortung für Mensch und Natur"
+              title="Mehr über die den BIO ... logischen Laminatboden erfahren"
+            />
+          </figure>
+        )}
       </Section>
 
       {router && router.pathname === "/" && (

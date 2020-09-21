@@ -83,29 +83,16 @@ exports[`Header Testings matches snapshot 1`] = `
       </strong>
        Die Holz Design Moers GmbH bietet ihren Handelspartnern auch in Zukunft abverkaufsstarke Produkte, Konzepte und Ideen für eine erfolgreiche Zusammenarbeit.
     </p>
-    <Link
-      activeClass="active"
-      duration={700}
-      offset={-25}
-      smooth={true}
-      spy={true}
-      to="purity"
+    <figure
+      className="hidden -mt-16 text-center lg:block"
     >
-      <a
-        className="hidden -mt-16 lg:block hover:text-green-600"
-      >
-        <figure
-          className="text-center group"
-        >
-          <img
-            alt="HDM - Verantwortung für Mensch und Natur"
-            className="w-56 transition-all duration-500 transform -rotate-10 group-hover:rotate-0"
-            src="/certificates/hdm-oekosiegel-header.png"
-            title="Mehr über die den BIO ... logischen Laminatboden erfahren"
-          />
-        </figure>
-      </a>
-    </Link>
+      <img
+        alt="HDM - Verantwortung für Mensch und Natur"
+        className="w-56"
+        src="/certificates/hdm-oekosiegel-header.png"
+        title="Mehr über die den BIO ... logischen Laminatboden erfahren"
+      />
+    </figure>
   </Header__Section>
 </header>
 `;
