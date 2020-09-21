@@ -32,20 +32,23 @@ module.exports = {
         "hdm-dark": "#006999",
         cerastar: "#f8efef",
       },
-      height: {
-        600: "600px",
-      },
       maxWidth: {
         1400: "1400px",
       },
       padding: {
         "16/9": "56.25%",
       },
+      rotate: {
+        "-10": "-10deg",
+        10: "10deg",
+      },
       zIndex: {
         "-1": "-1",
       },
     },
   },
-  variants: {},
+  variants: {
+    rotate: ["hover", "group-hover"],
+  },
   plugins: [],
 }
