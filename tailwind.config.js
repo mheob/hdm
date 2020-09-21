@@ -12,7 +12,11 @@ module.exports = {
   purge: {
     // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
     enabled: process.env.NODE_ENV === "production",
-    content: ["components/**/*.{js,ts,jsx,tsx}", "containers/**/*.{js,ts,jsx,tsx}", "pages/**/*.{js,ts,jsx,tsx}"],
+    content: [
+      "src/components/**/*.{js,ts,jsx,tsx}",
+      "src/containers/**/*.{js,ts,jsx,tsx}",
+      "src/pages/**/*.{js,ts,jsx,tsx}",
+    ],
   },
   theme: {
     fontFamily: {
@@ -28,20 +32,23 @@ module.exports = {
         "hdm-dark": "#006999",
         cerastar: "#f8efef",
       },
-      height: {
-        600: "600px",
-      },
       maxWidth: {
         1400: "1400px",
       },
       padding: {
         "16/9": "56.25%",
       },
+      rotate: {
+        "-10": "-10deg",
+        10: "10deg",
+      },
       zIndex: {
         "-1": "-1",
       },
     },
   },
-  variants: {},
+  variants: {
+    rotate: ["hover", "group-hover"],
+  },
   plugins: [],
 }

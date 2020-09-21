@@ -49,9 +49,12 @@ const Crossflex: React.FC<Props> = ({ className = "" }: Props) => {
           <img src="/images/hdm-crossflex.jpg" alt="Crossflex - Dekorpaneele für Wand und Decke" />
         </picture>
 
-        <p className="mt-8 lg:mt-0 lg:mr-32 lg:text-lg">
+        <p className="mt-8 lg:mt-0 lg:-ml-24 lg:mr-8 lg:text-lg">
           Mit hochglänzenden bis hin zu supermatten Oberflächen, unterschiedlichen Fugenbreiten und einer Vielfalt an
-          Dekoren, Formaten und Stärken sind der modernen und kreativen Raumgestaltung keine Grenzen gesetzt.
+          Dekoren, Formaten und Stärken sind der modernen und kreativen Raumgestaltung keine Grenzen gesetzt. <br /> Der
+          Begriff Paneele neu gedacht: Das Dekorpaneel als großflächige oder partielle Wandverkleidung, ansprechendes
+          Design-Element oder nur ein Akzent. <br /> <br />
+          Das Crossflex Dekorpaneel: Wand- und Deckenpaneele der neuen Genenration.
         </p>
       </Header>
 

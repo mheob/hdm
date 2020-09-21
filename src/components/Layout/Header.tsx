@@ -53,7 +53,7 @@ const Header: React.FC<Props> = ({ className = "" }: Props) => {
   const { width = 0 } = useWindowDimensions()
 
   return (
-    <header className={`relative overflow-x-hidden lg:h-600 ${className}`}>
+    <header className={`relative overflow-x-hidden ${className}`}>
       <div className="justify-between mt-6 lg:container lg:flex">
         <h1 className="pt-8 mb-10 lg:mb-0">
           <NavLink href="/">
@@ -64,7 +64,7 @@ const Header: React.FC<Props> = ({ className = "" }: Props) => {
           </NavLink>
         </h1>
 
-        <Sticky enabled={width < 1024} innerZ="101">
+        <Sticky enabled={width < 768} innerZ="101">
           {router && router.pathname === "/" ? (
             <nav className="flex justify-between py-3 font-semibold bg-white lg:bg-transparent lg:text-lg lg:container lg:mb-0 lg:space-x-12 lg:justify-end lg:mt-10 lg:py-0">
               <Link
@@ -116,16 +116,39 @@ const Header: React.FC<Props> = ({ className = "" }: Props) => {
         </Sticky>
       </div>
 
-      <Section className="container pt-12 pb-20 lg:pt-32 lg:pb-24">
+      <Section className="container pt-12 pb-20 lg:flex lg:flex-row lg:justify-between lg:pt-32 lg:pb-24">
         <p className="text-xl leading-10 lg:text-3xl lg:max-w-3xl lg:ml-24">
           <strong>Produkt. Idee. Erfolg.</strong> Die Holz Design Moers GmbH bietet ihren Handelspartnern auch in
           Zukunft abverkaufsstarke Produkte, Konzepte und Ideen für eine erfolgreiche Zusammenarbeit.
         </p>
+        {router && router.pathname === "/" ? (
+          <Link to="purity" activeClass="active" spy={true} smooth={true} offset={-25} duration={700}>
+            <a>
+              <figure className="hidden -mt-16 text-center group lg:block">
+                <img
+                  className="w-56 transition-all duration-500 transform -rotate-10 group-hover:rotate-0"
+                  src="/certificates/hdm-oekosiegel-header.png"
+                  alt="HDM - Verantwortung für Mensch und Natur"
+                  title="Mehr über die den BIO ... logischen Laminatboden erfahren"
+                />
+              </figure>
+            </a>
+          </Link>
+        ) : (
+          <figure className="hidden -mt-16 text-center lg:block">
+            <img
+              className="w-56"
+              src="/certificates/hdm-oekosiegel-header.png"
+              alt="HDM - Verantwortung für Mensch und Natur"
+              title="Mehr über die den BIO ... logischen Laminatboden erfahren"
+            />
+          </figure>
+        )}
       </Section>
 
       {router && router.pathname === "/" && (
-        <Sticky enabled={width >= 1024} innerZ="101" activeClass="sticky-nav">
-          <nav className="justify-around hidden px-20 py-4 text-lg font-semibold lg:flex">
+        <Sticky enabled={width >= 768} innerZ="101" activeClass="sticky-nav">
+          <nav className="justify-around hidden h-24 px-20 py-4 text-lg font-semibold lg:flex">
             <Link
               to="crossflex"
               activeClass="active"
@@ -168,7 +191,7 @@ const Header: React.FC<Props> = ({ className = "" }: Props) => {
               duration={1000}
               className="px-4 py-2 my-2 hover:text-hdm"
             >
-              Massivholzt&uuml;re
+              Massivholzt&uuml;ren
             </Link>
             <Link
               to="accessories"
@@ -179,7 +202,7 @@ const Header: React.FC<Props> = ({ className = "" }: Props) => {
               duration={1100}
               className="px-4 py-2 my-2 hover:text-hdm"
             >
-              Regalb&ouml;den / M&ouml;belbauplatten
+              {width >= 768 ? "Regalböden / Möbelbauplatten" : "Böden"}
             </Link>
             <Link
               to="accessories"
@@ -190,7 +213,7 @@ const Header: React.FC<Props> = ({ className = "" }: Props) => {
               duration={1100}
               className="px-4 py-2 my-2 hover:text-hdm"
             >
-              DAZU Zubeh&ouml;r
+              DAZU<sup>&reg;</sup> Zubeh&ouml;r
             </Link>
           </nav>
         </Sticky>

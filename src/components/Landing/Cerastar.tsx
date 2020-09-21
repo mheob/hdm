@@ -37,7 +37,7 @@ const Cerastar: React.FC<Props> = ({ className = "" }: Props) => {
   return (
     <section
       id="cerastar"
-      className={`container relative lg:grid lg:grid-cols-2 lg:gap-16 mt-32 pt-20 pb-24 lg:-mt-24 ${className}`}
+      className={`container relative lg:grid lg:grid-cols-2 lg:gap-32 mt-32 pt-20 pb-24 lg:mt-24 ${className}`}
     >
       <BackgroundImage />
 
@@ -50,14 +50,14 @@ const Cerastar: React.FC<Props> = ({ className = "" }: Props) => {
           </p>
         </div>
 
-        <picture className="block mt-16 -mx-6 lg:-ml-32">
+        <picture className="block mt-16 -mx-6 lg:-ml-20 lg:-mr-8">
           <source srcSet="/images/hdm-cerastar.webp" type="image/webp" />
           <source srcSet="/images/hdm-cerastar.png" type="image/png" />
           <img src="/images/hdm-cerastar.png" alt="Cerastar - der neue Star unten den Bodenbelägen" />
         </picture>
       </header>
 
-      <div className="lg:mt-40">
+      <div className="lg:mt-32 lg:pr-16">
         <h3 className="mt-12 font-bold lg:text-lg">
           Cerastar heißt der neue Designbodenbelag mit keramischer Nanocoat Oberflächenversiegelung.
         </h3>

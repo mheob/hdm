@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { useRouter } from "next/router"
 import { animateScroll } from "react-scroll"
 import styled from "styled-components"
 
@@ -23,6 +24,8 @@ type Props = {
 }
 
 const Footer: React.FC<Props> = ({ className = "" }: Props) => {
+  const router = useRouter()
+
   return (
     <FooterStyled id="kontakt" className={`lg:mt-40 pb-10 ${className}`}>
       <section className="container lg:flex lg:justify-between lg:space-x-6">
@@ -52,11 +55,17 @@ const Footer: React.FC<Props> = ({ className = "" }: Props) => {
         </Address>
 
         <div className="mt-24 lg:mt-0">
-          <Link href="/">
-            <a>
+          {router && router.pathname === "/" ? (
+            <button onClick={() => animateScroll.scrollToTop({ duration: 800 })}>
               <img className="w-48" src="/ci/hdm-logo.svg" alt="Logo der HDM GmbH" />
-            </a>
-          </Link>
+            </button>
+          ) : (
+            <Link href="/">
+              <a>
+                <img className="w-48" src="/ci/hdm-logo.svg" alt="Logo der HDM GmbH" />
+              </a>
+            </Link>
+          )}
         </div>
       </section>
 

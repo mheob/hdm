@@ -41,10 +41,8 @@ const Accessories: React.FC<Props> = ({ className = "" }: Props) => {
       <BackgroundImage>
         <Grid className="container pt-20 lg:pb-20">
           <div className="lg:max-w-md">
-            <header className="lg:mt-16">
-              <div>
-                <h2 className="text-4xl font-bold lg:text-5xl">Möbelbauplatten</h2>
-              </div>
+            <header className="mt-16 lg:ml-32">
+              <h2 className="text-4xl font-bold leading-tight lg:text-5xl">Regalböden / Möbelbauplatten</h2>
             </header>
 
             <picture className="block mt-12 lg:-mx-24">
@@ -68,10 +66,11 @@ const Accessories: React.FC<Props> = ({ className = "" }: Props) => {
           </div>
 
           <div className="lg:max-w-md">
-            <header className="mt-16">
-              <div>
-                <h2 className="text-4xl font-bold lg:text-5xl">DAZU-Zubehör</h2>
-              </div>
+            <header className="mt-16 lg:ml-32">
+              <h2 className="text-4xl font-bold lg:text-5xl">
+                DAZU<sup className="font-normal">&reg;</sup>
+              </h2>
+              <p className="mt-4 text-xl leading-snug lg:text-2xl">Das Zubehörprogramm</p>
             </header>
 
             <picture className="block mt-12 lg:-mx-24">
@@ -83,7 +82,8 @@ const Accessories: React.FC<Props> = ({ className = "" }: Props) => {
             <div className="">
               <p className="mt-12 lg:text-lg">
                 Alles was zum Anbringen von Dekorpaneele, zur Bodenverlegung, zum Bau von Mobiliar oder dem dekorativen
-                Innenausbau notwendig ist, hat Holz Design Moers im DAZU®-Zubehörprogramm.
+                Innenausbau notwendig ist, hat Holz Design Moers im DAZU<sup>&reg;</sup>-Zubehörprogramm. Verlegung und
+                Montage einfach gemacht - mit dem DAZU<sup>&reg;</sup>-Zubehörprogramm.
               </p>
             </div>
           </div>

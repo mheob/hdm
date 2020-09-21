@@ -105,13 +105,13 @@ type Props = {
 
 const Purity: React.FC<Props> = ({ className = "" }: Props) => {
   return (
-    <section id="purity" className={`lg:relative overflow-x-hidden mt-12 lg:mt-32 pt-20 lg:pb-64 ${className}`}>
+    <section id="purity" className={`lg:relative overflow-x-hidden mt-12 lg:mt-32 pt-20 lg:pb-20 ${className}`}>
       <BackgroundImage />
       <header className="container mt-6">
         <div className="lg:ml-32">
           <h2 className="text-4xl font-bold lg:text-5xl">Purity</h2>
           <p className="mt-4 text-xl leading-snug lg:text-2xl">
-            Bio Selection <br /> Laminatboden
+            Laminatboden <br /> Bio Selection
           </p>
         </div>
       </header>
@@ -131,9 +131,11 @@ const Purity: React.FC<Props> = ({ className = "" }: Props) => {
         </div>
 
         <div className="container lg:mt-0 lg:px-0">
-          <p className="lg:text-lg">
+          <h4 className="text-xl font-bold">Bio ... Logisch!</h4>
+
+          <p className="mt-8 lg:text-lg">
             Natürlich, sauber, rein – Bei den hochwertigen Purity Laminatböden der Bio-Selection ist der Name Programm.
-            Rund 96% FSC-zertifiziertes Holz, die faktisch formaldehydfreie E0-Qualität und die Schadstofffreiheit
+            Rund 96&nbsp;% FSC-zertifiziertes Holz, die faktisch formaldehydfreie E0-Qualität und die Schadstofffreiheit
             dieser Böden sprechen für sich. Die Auszeichnung mit dem Blauen Engel bestätigt es.
           </p>
 
@@ -212,7 +214,7 @@ const Purity: React.FC<Props> = ({ className = "" }: Props) => {
           <div className="lg:ml-32">
             <h2 className="text-4xl font-bold lg:text-5xl">Purity</h2>
             <p className="mt-4 text-xl leading-snug lg:text-2xl">
-              Home Selection <br /> Laminatboden
+              Laminatboden <br /> Home Selection
             </p>
           </div>
         </header>
@@ -231,7 +233,7 @@ const Purity: React.FC<Props> = ({ className = "" }: Props) => {
               sich, belegt durch die Auszeichnung mit dem Blauen Engel. Die einfache und schnelle Verlegung ist neben
               den idealen Pflegeeigenschaften ein weiteres Argument.
             </p>
-            <h3 className="mt-8 font-bold ">BLOOM – Einfach natürlich</h3>
+            <h4 className="mt-8 text-xl font-bold">BLOOM – Einfach natürlich</h4>
           </div>
 
           <div className="container flex justify-between mt-12 lg:mt-16 lg:space-x-6">

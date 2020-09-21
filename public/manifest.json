@@ -1,0 +1,21 @@
+{
+  "name": "HDM – Holz Design Moers",
+  "short_name": "HDM – Holz Design Moers",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#0084B0",
+  "background_color": "#ffffff",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/ci/hdm192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/ci/hdm512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

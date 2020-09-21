@@ -13,15 +13,13 @@ exports[`Accessories Testings matches snapshot 1`] = `
         className="lg:max-w-md"
       >
         <header
-          className="lg:mt-16"
+          className="mt-16 lg:ml-32"
         >
-          <div>
-            <h2
-              className="text-4xl font-bold lg:text-5xl"
-            >
-              Möbelbauplatten
-            </h2>
-          </div>
+          <h2
+            className="text-4xl font-bold leading-tight lg:text-5xl"
+          >
+            Regalböden / Möbelbauplatten
+          </h2>
         </header>
         <picture
           className="block mt-12 lg:-mx-24"
@@ -58,15 +56,23 @@ exports[`Accessories Testings matches snapshot 1`] = `
         className="lg:max-w-md"
       >
         <header
-          className="mt-16"
+          className="mt-16 lg:ml-32"
         >
-          <div>
-            <h2
-              className="text-4xl font-bold lg:text-5xl"
+          <h2
+            className="text-4xl font-bold lg:text-5xl"
+          >
+            DAZU
+            <sup
+              className="font-normal"
             >
-              DAZU-Zubehör
-            </h2>
-          </div>
+              ®
+            </sup>
+          </h2>
+          <p
+            className="mt-4 text-xl leading-snug lg:text-2xl"
+          >
+            Das Zubehörprogramm
+          </p>
         </header>
         <picture
           className="block mt-12 lg:-mx-24"
@@ -90,7 +96,15 @@ exports[`Accessories Testings matches snapshot 1`] = `
           <p
             className="mt-12 lg:text-lg"
           >
-            Alles was zum Anbringen von Dekorpaneele, zur Bodenverlegung, zum Bau von Mobiliar oder dem dekorativen Innenausbau notwendig ist, hat Holz Design Moers im DAZU®-Zubehörprogramm.
+            Alles was zum Anbringen von Dekorpaneele, zur Bodenverlegung, zum Bau von Mobiliar oder dem dekorativen Innenausbau notwendig ist, hat Holz Design Moers im DAZU
+            <sup>
+              ®
+            </sup>
+            -Zubehörprogramm. Verlegung und Montage einfach gemacht - mit dem DAZU
+            <sup>
+              ®
+            </sup>
+            -Zubehörprogramm.
           </p>
         </div>
       </div>
