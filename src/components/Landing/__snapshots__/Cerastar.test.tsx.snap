@@ -2,7 +2,7 @@
 
 exports[`Cerastar Testings matches snapshot 1`] = `
 <section
-  className="container relative lg:grid lg:grid-cols-2 lg:gap-16 mt-32 pt-20 pb-24 lg:-mt-24 "
+  className="container relative lg:grid lg:grid-cols-2 lg:gap-32 mt-32 pt-20 pb-24 lg:mt-24 "
   id="cerastar"
 >
   <Cerastar__BackgroundImage />
@@ -24,7 +24,7 @@ exports[`Cerastar Testings matches snapshot 1`] = `
       </p>
     </div>
     <picture
-      className="block mt-16 -mx-6 lg:-ml-32"
+      className="block mt-16 -mx-6 lg:-ml-20 lg:-mr-8"
     >
       <source
         srcSet="/images/hdm-cerastar.webp"
@@ -41,7 +41,7 @@ exports[`Cerastar Testings matches snapshot 1`] = `
     </picture>
   </header>
   <div
-    className="lg:mt-40"
+    className="lg:mt-32 lg:pr-16"
   >
     <h3
       className="mt-12 font-bold lg:text-lg"

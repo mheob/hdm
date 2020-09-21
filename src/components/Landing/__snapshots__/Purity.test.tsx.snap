@@ -2,7 +2,7 @@
 
 exports[`Purity Testings matches snapshot 1`] = `
 <section
-  className="lg:relative overflow-x-hidden mt-12 lg:mt-32 pt-20 lg:pb-64 "
+  className="lg:relative overflow-x-hidden mt-12 lg:mt-32 pt-20 lg:pb-20 "
   id="purity"
 >
   <Purity__BackgroundImage />
@@ -55,10 +55,15 @@ exports[`Purity Testings matches snapshot 1`] = `
     <div
       className="container lg:mt-0 lg:px-0"
     >
-      <p
-        className="lg:text-lg"
+      <h4
+        className="text-xl font-bold"
       >
-        Natürlich, sauber, rein – Bei den hochwertigen Purity Laminatböden der Bio-Selection ist der Name Programm. Rund 96% FSC-zertifiziertes Holz, die faktisch formaldehydfreie E0-Qualität und die Schadstofffreiheit dieser Böden sprechen für sich. Die Auszeichnung mit dem Blauen Engel bestätigt es.
+        Bio ... Logisch!
+      </h4>
+      <p
+        className="mt-8 lg:text-lg"
+      >
+        Natürlich, sauber, rein – Bei den hochwertigen Purity Laminatböden der Bio-Selection ist der Name Programm. Rund 96 % FSC-zertifiziertes Holz, die faktisch formaldehydfreie E0-Qualität und die Schadstofffreiheit dieser Böden sprechen für sich. Die Auszeichnung mit dem Blauen Engel bestätigt es.
       </p>
       <p
         className="mt-8 text-lg"
@@ -202,11 +207,11 @@ exports[`Purity Testings matches snapshot 1`] = `
           <br />
            Die Schadstofffreiheit dieser Böden spricht für sich, belegt durch die Auszeichnung mit dem Blauen Engel. Die einfache und schnelle Verlegung ist neben den idealen Pflegeeigenschaften ein weiteres Argument.
         </p>
-        <h3
-          className="mt-8 font-bold "
+        <h4
+          className="mt-8 text-xl font-bold"
         >
           BLOOM – Einfach natürlich
-        </h3>
+        </h4>
       </div>
       <div
         className="container flex justify-between mt-12 lg:mt-16 lg:space-x-6"

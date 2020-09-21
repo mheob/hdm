@@ -168,7 +168,7 @@ const Header: React.FC<Props> = ({ className = "" }: Props) => {
               duration={1000}
               className="px-4 py-2 my-2 hover:text-hdm"
             >
-              Massivholzt&uuml;re
+              Massivholzt&uuml;ren
             </Link>
             <Link
               to="accessories"
@@ -190,7 +190,7 @@ const Header: React.FC<Props> = ({ className = "" }: Props) => {
               duration={1100}
               className="px-4 py-2 my-2 hover:text-hdm"
             >
-              DAZU Zubeh&ouml;r
+              DAZU<sup>&reg;</sup> Zubeh&ouml;r
             </Link>
           </nav>
         </Sticky>
