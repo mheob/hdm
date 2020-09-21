@@ -1,5 +1,5 @@
 module.exports = {
-  roots: ["<rootDir>"],
+  roots: ["<rootDir>/src"],
   moduleFileExtensions: ["js", "ts", "tsx", "json"],
   setupFiles: ["<rootDir>/test/setup.ts"],
   testPathIgnorePatterns: ["<rootDir>[/\\\\](build|docs|node_modules|.next)[/\\\\]"],
