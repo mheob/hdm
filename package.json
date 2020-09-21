@@ -108,6 +108,7 @@
     "jest-styled-components": "^7.0.3",
     "jest-watch-typeahead": "^0.6.1",
     "lint-staged": "^10.4.0",
+    "next-pwa": "^3.1.4",
     "node-sass": "^4.14.1",
     "postcss-import": "^12.0.1",
     "postcss-preset-env": "^6.7.0",
@@ -119,7 +120,6 @@
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-recommended": "^3.0.0",
     "stylelint-scss": "^3.18.0",
-    "tailwind.macro": "^1.0.0-alpha.10",
     "ts-jest": "^26.3.0",
     "ts-node": "^9.0.0",
     "typescript": "^4.0.2"
