@@ -19,8 +19,8 @@
     "dev": "next",
     "export": "rimraf src/.next src/out src/public && copyfiles public/**/* src && yarn build && next export src",
     "lint": "yarn lint:js && yarn lint:style",
-    "lint:js": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix --ignore-path .gitignore",
-    "lint:style": "stylelint **/*.{css,scss} --fix --ignore-path .gitignore",
+    "lint:js": "eslint 'src/*/**/*.{js,ts,tsx}' --quiet --fix --ignore-path .gitignore",
+    "lint:style": "stylelint 'src/**/*.{css,pcss,scss}' --fix --ignore-path .gitignore",
     "semantic-release": "semantic-release",
     "start": "next start",
     "test": "cross-env NODE_ENV=test jest",
@@ -38,8 +38,8 @@
   },
   "lint-staged": {
     "*.+(ts|tsx)": "cross-env NODE_ENV=test jest --passWithNoTests",
-    "*.{css,pcss,scss}": "echo \"stylelint --fix\"",
-    "*.{js,ts,jsx,tsx}": "echo \"eslint --fix\""
+    "*.{css,pcss,scss}": "stylelint 'src/**/*.{css,scss}' --fix --ignore-path .gitignore",
+    "*.{js,ts,jsx,tsx}": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix --ignore-path .gitignore"
   },
   "config": {
     "commitizen": {
