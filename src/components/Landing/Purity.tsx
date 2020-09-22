@@ -130,7 +130,7 @@ const Purity: React.FC<Props> = ({ className = "" }: Props) => {
           />
         </div>
 
-        <div className="container lg:mt-0 lg:px-0">
+        <div className="container lg:-mt-4 lg:px-0">
           <h4 className="text-xl font-bold">Bio ... Logisch!</h4>
 
           <p className="mt-8 lg:text-lg">
@@ -170,6 +170,10 @@ const Purity: React.FC<Props> = ({ className = "" }: Props) => {
                 Fugenlinien zeichnen das markante und individuelle Bild der verlegten Fläche.
               </p>
             </div>
+
+            <p className="mt-8 font-semibold">
+              Ein gutes Stück Natur: <br /> Laminatfußböden aus der Purity Bio Selection.
+            </p>
           </div>
         </div>
 

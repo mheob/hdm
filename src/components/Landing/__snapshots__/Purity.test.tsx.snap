@@ -53,7 +53,7 @@ exports[`Purity Testings matches snapshot 1`] = `
       />
     </div>
     <div
-      className="container lg:mt-0 lg:px-0"
+      className="container lg:-mt-4 lg:px-0"
     >
       <h4
         className="text-xl font-bold"
@@ -101,6 +101,13 @@ exports[`Purity Testings matches snapshot 1`] = `
             Ein Dielenformat von fast 25 mm Breite kennzeichnet diese Bigboards. Highlight ist die Oberflächenstruktur, die für außergewöhnliche Lichtbrechungen auf der Oberfläche sorgt. Kräftige Fugenlinien zeichnen das markante und individuelle Bild der verlegten Fläche.
           </p>
         </div>
+        <p
+          className="mt-8 font-semibold"
+        >
+          Ein gutes Stück Natur: 
+          <br />
+           Laminatfußböden aus der Purity Bio Selection.
+        </p>
       </div>
     </div>
     <div
