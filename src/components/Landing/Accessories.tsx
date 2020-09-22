@@ -47,7 +47,7 @@ const Accessories: React.FC<Props> = ({ className = "" }: Props) => {
 
             <picture className="block mt-12 lg:-mx-24">
               <source srcSet="/images/hdm-moebelbauplatten.webp" type="image/webp" />
-              <source srcSet="/images/hdm-moebelbauplatten.webp" type="image/jpeg" />
+              <source srcSet="/images/hdm-moebelbauplatten.jpg" type="image/jpeg" />
               <img
                 src="/images/hdm-moebelbauplatten.webp"
                 alt="Möbelbauplatten - modernen Regalböden und Möbelbauplatten"

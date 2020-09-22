@@ -29,7 +29,7 @@ exports[`Accessories Testings matches snapshot 1`] = `
             type="image/webp"
           />
           <source
-            srcSet="/images/hdm-moebelbauplatten.webp"
+            srcSet="/images/hdm-moebelbauplatten.jpg"
             type="image/jpeg"
           />
           <img
