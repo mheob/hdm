@@ -120,17 +120,17 @@ exports[`Purity Testings matches snapshot 1`] = `
       />
       <img
         alt="FSC - zertifiziertes Holz"
-        className="h-24"
+        className="h-20 lg:h-24"
         src="/certificates/hdm-fsc.png"
       />
       <img
         alt="ohne Formaldehyd"
-        className="h-24"
+        className="h-20 lg:h-24"
         src="/certificates/hdm-formaldehydfrei.png"
       />
       <img
         alt="E0 - DIN EN 717-1"
-        className="h-24"
+        className="h-20 lg:h-24"
         src="/certificates/hdm-e0.svg"
       />
     </div>
@@ -225,17 +225,17 @@ exports[`Purity Testings matches snapshot 1`] = `
       >
         <img
           alt="Blauer Engel 176"
-          className="h-24"
+          className="h-20 lg:h-24"
           src="/certificates/hdm-blauer-engel-176.png"
         />
         <img
           alt="FSC - zertifiziertes Holz"
-          className="h-24"
+          className="h-20 lg:h-24"
           src="/certificates/hdm-fsc.png"
         />
         <img
           alt="E1 - DIN EN 16156"
-          className="h-24"
+          className="h-20 lg:h-24"
           src="/certificates/hdm-e1.svg"
         />
       </div>

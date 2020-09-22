@@ -6,7 +6,7 @@ import styled from "styled-components"
 const FooterStyled = styled.footer`
   position: relative;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url(/ci/hdm-bg.svg);
     background-repeat: no-repeat;
     background-size: 100% auto;

@@ -14,9 +14,9 @@ const Shelves: React.FC<Props> = ({ className = "" }: Props) => {
           <div className="lg:w-1/3 lg:-mt-4 lg:mr-12">
             <picture className="block mt-12 lg:-mx-24">
               <source srcSet="/images/hdm-moebelbauplatten.webp" type="image/webp" />
-              <source srcSet="/images/hdm-moebelbauplatten.jpeg" type="image/jpeg" />
+              <source srcSet="/images/hdm-moebelbauplatten.jpg" type="image/jpeg" />
               <img
-                src="/images/hdm-moebelbauplatten.webp"
+                src="/images/hdm-moebelbauplatten.jpg"
                 alt="Möbelbauplatten - modernen Regalböden und Möbelbauplatten"
               />
             </picture>
@@ -34,7 +34,7 @@ const Shelves: React.FC<Props> = ({ className = "" }: Props) => {
               <source srcSet="/images/hdm-holzzuschnitt.webp" type="image/webp" />
               <source srcSet="/images/hdm-holzzuschnitt.png" type="image/png" />
               <img
-                src="/images/hdm-holzzuschnitt.webp"
+                src="/images/hdm-holzzuschnitt.png"
                 alt="Möbelbauplatten - modernen Regalböden und Möbelbauplatten"
               />
             </picture>

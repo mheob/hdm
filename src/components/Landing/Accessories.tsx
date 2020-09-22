@@ -1,29 +1,7 @@
 import styled from "styled-components"
 
-const Grid = styled.div`
-  display: grid;
-  grid-template-areas:
-    "grid-item-1"
-    "grid-item-2";
-  grid-template-columns: 1fr;
-
-  @media (min-width: 768px) {
-    grid-template-areas: "grid-item-1 grid-item-2";
-    grid-template-columns: 1fr 1fr;
-    column-gap: 8rem;
-  }
-
-  & > :nth-child(1) {
-    grid-area: grid-item-1;
-  }
-
-  & > :nth-child(2) {
-    grid-area: grid-item-2;
-  }
-`
-
 const BackgroundImage = styled.div`
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     background-image: linear-gradient(rgba(247, 250, 252, 0.95), rgba(247, 250, 252, 0.95)), url(/ci/hdm-bg.svg);
     background-repeat: no-repeat;
     background-position: left center;
@@ -53,7 +31,7 @@ const Accessories: React.FC<Props> = ({ className = "" }: Props) => {
                 <source srcSet="/images/hdm-dazu-zubehoer.webp" type="image/webp" />
                 <source srcSet="/images/hdm-dazu-zubehoer.jpg" type="image/jpeg" />
                 <img
-                  src="/images/hdm-dazu-zubehoer.webp"
+                  src="/images/hdm-dazu-zubehoer.jpg"
                   alt="Möbelbauplatten - modernen Regalböden und Möbelbauplatten"
                 />
               </picture>

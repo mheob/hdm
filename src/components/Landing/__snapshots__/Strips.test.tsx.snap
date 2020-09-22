@@ -31,7 +31,11 @@ exports[`Strips Testings matches snapshot 1`] = `
         <p
           className="mt-8 lg:text-lg"
         >
-          Die dekorativ ummantelten UMA®-Leisten, für den nahezu dekorgleichen Abschluss an Boden und Decke, gibt es in vier Formaten.
+          Die dekorativ ummantelten UMA
+          <sup>
+            ®
+          </sup>
+          -Leisten, für den nahezu dekorgleichen Abschluss an Boden und Decke, gibt es in vier Formaten.
         </p>
         <p
           className="mt-8 font-semibold lg:text-lg"
@@ -50,12 +54,12 @@ exports[`Strips Testings matches snapshot 1`] = `
             type="image/webp"
           />
           <source
-            srcSet="/images/hdm-leisten.jpeg"
+            srcSet="/images/hdm-leisten.jpg"
             type="image/jpeg"
           />
           <img
             alt="Möbelbauplatten - modernen Regalböden und Möbelbauplatten"
-            src="/images/hdm-leisten.webp"
+            src="/images/hdm-leisten.jpg"
           />
         </picture>
       </div>

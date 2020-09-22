@@ -8,7 +8,7 @@ const Grid = styled.div`
     "grid-item-3";
   grid-template-columns: 1fr;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     grid-template-areas:
       "grid-item-1 grid-item-2"
       "grid-item-3 grid-item-2";

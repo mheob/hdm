@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const BackgroundImage = styled.div`
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     position: absolute;
     top: 0;
     right: 0;
@@ -34,7 +34,7 @@ const GridBio = styled.div`
   grid-template-columns: 1fr;
   gap: 6rem;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     grid-template-areas:
       "grid-item-1 grid-item-2"
       "grid-item-3 grid-item-4";
@@ -68,7 +68,7 @@ const GridHome = styled.div`
   grid-template-columns: 1fr;
   column-gap: 6rem;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     grid-template-areas:
       "grid-item-2 grid-item-1"
       "grid-item-3 grid-item-1"
@@ -183,9 +183,9 @@ const Purity: React.FC<Props> = ({ className = "" }: Props) => {
             src="/certificates/hdm-blauer-engel-176.png"
             alt="Blauer Engel 176"
           />
-          <img className="h-24" src="/certificates/hdm-fsc.png" alt="FSC - zertifiziertes Holz" />
-          <img className="h-24" src="/certificates/hdm-formaldehydfrei.png" alt="ohne Formaldehyd" />
-          <img className="h-24" src="/certificates/hdm-e0.svg" alt="E0 - DIN EN 717-1" />
+          <img className="h-20 lg:h-24" src="/certificates/hdm-fsc.png" alt="FSC - zertifiziertes Holz" />
+          <img className="h-20 lg:h-24" src="/certificates/hdm-formaldehydfrei.png" alt="ohne Formaldehyd" />
+          <img className="h-20 lg:h-24" src="/certificates/hdm-e0.svg" alt="E0 - DIN EN 717-1" />
         </div>
 
         <div className="container text-center lg:text-left lg:-mt-6 lg:px-0">
@@ -241,9 +241,9 @@ const Purity: React.FC<Props> = ({ className = "" }: Props) => {
           </div>
 
           <div className="container flex justify-between mt-12 lg:mt-16 lg:space-x-6">
-            <img className="h-24" src="/certificates/hdm-blauer-engel-176.png" alt="Blauer Engel 176" />
-            <img className="h-24" src="/certificates/hdm-fsc.png" alt="FSC - zertifiziertes Holz" />
-            <img className="h-24" src="/certificates/hdm-e1.svg" alt="E1 - DIN EN 16156" />
+            <img className="h-20 lg:h-24" src="/certificates/hdm-blauer-engel-176.png" alt="Blauer Engel 176" />
+            <img className="h-20 lg:h-24" src="/certificates/hdm-fsc.png" alt="FSC - zertifiziertes Holz" />
+            <img className="h-20 lg:h-24" src="/certificates/hdm-e1.svg" alt="E1 - DIN EN 16156" />
           </div>
 
           <div className="container mt-16 text-center lg:text-left lg:mt-24">

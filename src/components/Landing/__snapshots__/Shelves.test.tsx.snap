@@ -31,12 +31,12 @@ exports[`Shelves Testings matches snapshot 1`] = `
             type="image/webp"
           />
           <source
-            srcSet="/images/hdm-moebelbauplatten.jpeg"
+            srcSet="/images/hdm-moebelbauplatten.jpg"
             type="image/jpeg"
           />
           <img
             alt="Möbelbauplatten - modernen Regalböden und Möbelbauplatten"
-            src="/images/hdm-moebelbauplatten.webp"
+            src="/images/hdm-moebelbauplatten.jpg"
           />
         </picture>
       </div>
@@ -66,7 +66,7 @@ exports[`Shelves Testings matches snapshot 1`] = `
           />
           <img
             alt="Möbelbauplatten - modernen Regalböden und Möbelbauplatten"
-            src="/images/hdm-holzzuschnitt.webp"
+            src="/images/hdm-holzzuschnitt.png"
           />
         </picture>
       </div>
