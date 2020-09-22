@@ -17,7 +17,7 @@ const Strips: React.FC<Props> = ({ className = "" }: Props) => {
               Kieferleisten geben den perfekten und natürlichen Abschluss.
             </p>
             <p className="mt-8 lg:text-lg">
-              Die dekorativ ummantelten UMA®-Leisten, für den nahezu dekorgleichen Abschluss von Bodenbelägen, gibt es
+              Die dekorativ ummantelten UMA®-Leisten, für den nahezu dekorgleichen Abschluss an Boden und Decke, gibt es
               in vier Formaten.
             </p>
             <p className="mt-8 font-semibold lg:text-lg">Leisten für jeden Zweck und jede Anwendung von HDM.</p>
