@@ -97,6 +97,7 @@ exports[`Footer Testings matches snapshot 1`] = `
     className="container my-10 text-right lg:text-center"
   >
     <button
+      id="back-to-top-button"
       onClick={[Function]}
     >
       <svg

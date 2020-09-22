@@ -66,7 +66,10 @@ const Header: React.FC<Props> = ({ className = "" }: Props) => {
 
         <Sticky enabled={width < 1024} innerZ="101">
           {router && router.pathname === "/" ? (
-            <nav className="flex justify-between py-3 font-semibold bg-white sm:justify-around lg:bg-transparent lg:text-lg lg:container lg:mb-0 lg:space-x-12 lg:justify-end lg:mt-10 lg:py-0">
+            <nav
+              id="landing-main-nav"
+              className="flex justify-between py-3 font-semibold bg-white sm:justify-around lg:bg-transparent lg:text-lg lg:container lg:mb-0 lg:space-x-12 lg:justify-end lg:mt-10 lg:py-0"
+            >
               <Link
                 to="produkte"
                 activeClass="active"
@@ -123,16 +126,14 @@ const Header: React.FC<Props> = ({ className = "" }: Props) => {
         </p>
         {router && router.pathname === "/" ? (
           <Link to="purity" activeClass="active" spy={true} smooth={true} offset={-25} duration={700}>
-            <a>
-              <figure className="hidden -mt-16 text-center group lg:block">
-                <img
-                  className="w-56 transition-all duration-500 transform -rotate-10 group-hover:rotate-0"
-                  src="/certificates/hdm-oekosiegel-header.png"
-                  alt="HDM - Verantwortung für Mensch und Natur"
-                  title="Mehr über die den BIO ... logischen Laminatboden erfahren"
-                />
-              </figure>
-            </a>
+            <figure id="landing-eco" className="hidden -mt-16 text-center group lg:block">
+              <img
+                className="w-56 transition-all duration-500 transform -rotate-10 group-hover:rotate-0"
+                src="/certificates/hdm-oekosiegel-header.png"
+                alt="HDM - Verantwortung für Mensch und Natur"
+                title="Mehr über die den BIO ... logischen Laminatboden erfahren"
+              />
+            </figure>
           </Link>
         ) : (
           <figure className="hidden -mt-16 text-center lg:block">
@@ -202,7 +203,7 @@ const Header: React.FC<Props> = ({ className = "" }: Props) => {
               duration={1100}
               className="px-4 py-2 my-2 hover:text-hdm"
             >
-              {width > 1280 ? "Regalböden / Möbelbauplatten" : "Böden"}
+              {width > 1364 ? "Regalböden / Möbelbauplatten" : "Möbelbau"}
             </Link>
             <Link
               to="strips"

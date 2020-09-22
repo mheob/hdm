@@ -10,7 +10,7 @@ export function useWindowDimensions() {
       setWindowDimensions(getWindowDimensions())
     }
 
-    if (process.browser) {
+    if (typeof window !== "undefined") {
       window.addEventListener("resize", handleResize)
       return () => window.removeEventListener("resize", handleResize)
     }

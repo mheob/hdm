@@ -4,6 +4,7 @@ module.exports = {
   setupFiles: ["<rootDir>/src/__test__/enzyme.ts"],
   testPathIgnorePatterns: ["<rootDir>[/\\\\](build|docs|node_modules|.next)[/\\\\]"],
   transformIgnorePatterns: ["[/\\\\]node_modules[/\\\\].+\\.(ts|tsx)$"],
+  coveragePathIgnorePatterns: ["/node_modules/", "<rootDir>/src/__test__/__hoc__/"],
   testEnvironment: "jsdom",
   testURL: "http://localhost",
   transform: {

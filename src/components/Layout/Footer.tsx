@@ -56,7 +56,7 @@ const Footer: React.FC<Props> = ({ className = "" }: Props) => {
 
         <div className="mt-24 lg:mt-0">
           {router && router.pathname === "/" ? (
-            <button onClick={() => animateScroll.scrollToTop({ duration: 800 })}>
+            <button id="logo" onClick={() => animateScroll.scrollToTop({ duration: 800 })}>
               <img className="w-48" src="/ci/hdm-logo.svg" alt="Logo der HDM GmbH" />
             </button>
           ) : (
@@ -82,7 +82,7 @@ const Footer: React.FC<Props> = ({ className = "" }: Props) => {
       </section>
 
       <div className="container my-10 text-right lg:text-center">
-        <button onClick={() => animateScroll.scrollToTop({ duration: 800 })}>
+        <button id="back-to-top-button" onClick={() => animateScroll.scrollToTop({ duration: 800 })}>
           <svg
             className="inline-block w-6 transform -rotate-90"
             xmlns="http://www.w3.org/2000/svg"

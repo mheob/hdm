@@ -1,16 +1,32 @@
-import { ShallowWrapper, shallow } from "enzyme"
+import { mount, shallow } from "enzyme"
 import toJSON from "enzyme-to-json"
 
 import Footer from "@/components/Layout/Footer"
 
-describe("Footer Testings", () => {
-  let wrapper: ShallowWrapper
+import { withTestRouter } from "@/__test__/__hoc__/withTestRouter"
 
-  beforeEach(() => {
-    wrapper = shallow(<Footer />)
+describe("Footer Testings", () => {
+  test("matches snapshot", () => {
+    const wrapper = shallow(<Footer />)
+    expect(toJSON(wrapper)).toMatchSnapshot()
   })
 
-  test("matches snapshot", () => {
-    expect(toJSON(wrapper)).toMatchSnapshot()
+  test("render one button component with the id #logo", () => {
+    const wrapper = mount(withTestRouter(<Footer />, { pathname: "/" }))
+    const button = wrapper.find("#logo")
+    button.simulate("click")
+    expect(button).toHaveLength(1)
+  })
+
+  test("don't render an button component with the id #logo", () => {
+    const wrapper = mount(withTestRouter(<Footer />, { pathname: "/abc" }))
+    expect(wrapper.find("#logo")).toHaveLength(0)
+  })
+
+  test("simulate a click on the button with he id #back-to-top-button", () => {
+    const wrapper = mount(withTestRouter(<Footer />, { pathname: "/" }))
+    const button = wrapper.find("#back-to-top-button")
+    button.simulate("click")
+    expect(button).toHaveLength(1)
   })
 })
