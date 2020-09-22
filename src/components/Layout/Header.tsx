@@ -194,7 +194,7 @@ const Header: React.FC<Props> = ({ className = "" }: Props) => {
               Massivholzt&uuml;ren
             </Link>
             <Link
-              to="accessories"
+              to="shelves"
               activeClass="active"
               spy={true}
               smooth={true}
@@ -205,12 +205,23 @@ const Header: React.FC<Props> = ({ className = "" }: Props) => {
               {width >= 768 ? "Regalböden / Möbelbauplatten" : "Böden"}
             </Link>
             <Link
-              to="accessories"
+              to="strips"
               activeClass="active"
               spy={true}
               smooth={true}
               offset={-20}
               duration={1100}
+              className="px-4 py-2 my-2 hover:text-hdm"
+            >
+              Leisten
+            </Link>
+            <Link
+              to="accessories"
+              activeClass="active"
+              spy={true}
+              smooth={true}
+              offset={-20}
+              duration={1200}
               className="px-4 py-2 my-2 hover:text-hdm"
             >
               DAZU<sup>&reg;</sup> Zubeh&ouml;r
