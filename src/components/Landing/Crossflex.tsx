@@ -92,7 +92,7 @@ const Crossflex: React.FC<Props> = ({ className = "" }: Props) => {
 
           <div>
             <h3 className="mt-8 font-bold">Crossflex Space - Optische Distanz von 10 mm</h3>
-            <p>Eine betont große Fuge verleiht die klassische Paneeloptik.</p>
+            <p>Die betont große Fuge gibt der typischen Paneeloptik Raum.</p>
           </div>
         </div>
       </div>
