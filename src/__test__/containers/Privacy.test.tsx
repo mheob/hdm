@@ -1,11 +1,11 @@
 import { shallow } from "enzyme"
 import toJSON from "enzyme-to-json"
 
-import Imprint from "./Imprint"
+import Privacy from "@/containers/Privacy"
 
-describe("Imprint Testings", () => {
+describe("Privacy Testings", () => {
   test("matches snapshot", () => {
-    const wrapper = shallow(<Imprint />)
+    const wrapper = shallow(<Privacy />)
     expect(toJSON(wrapper)).toMatchSnapshot()
   })
 })

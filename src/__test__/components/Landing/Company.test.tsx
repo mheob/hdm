@@ -1,13 +1,13 @@
 import { ShallowWrapper, shallow } from "enzyme"
 import toJSON from "enzyme-to-json"
 
-import IndexPage from "./index"
+import Company from "@/components/Landing/Company"
 
-describe("IndexPage Testings", () => {
+describe("Company Testings", () => {
   let wrapper: ShallowWrapper
 
   beforeEach(() => {
-    wrapper = shallow(<IndexPage />)
+    wrapper = shallow(<Company />)
   })
 
   test("matches snapshot", () => {

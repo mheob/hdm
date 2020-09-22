@@ -1,13 +1,13 @@
 import { ShallowWrapper, shallow } from "enzyme"
 import toJSON from "enzyme-to-json"
 
-import Footer from "./Footer"
+import IndexPage from "@/components/Layout/index"
 
-describe("Footer Testings", () => {
+describe("IndexPage Testings", () => {
   let wrapper: ShallowWrapper
 
   beforeEach(() => {
-    wrapper = shallow(<Footer />)
+    wrapper = shallow(<IndexPage />)
   })
 
   test("matches snapshot", () => {

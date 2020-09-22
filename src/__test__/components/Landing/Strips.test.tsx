@@ -1,13 +1,13 @@
 import { ShallowWrapper, shallow } from "enzyme"
 import toJSON from "enzyme-to-json"
 
-import Cerastar from "./Cerastar"
+import Strips from "@/components/Landing/Strips"
 
-describe("Cerastar Testings", () => {
+describe("Strips Testings", () => {
   let wrapper: ShallowWrapper
 
   beforeEach(() => {
-    wrapper = shallow(<Cerastar />)
+    wrapper = shallow(<Strips />)
   })
 
   test("matches snapshot", () => {

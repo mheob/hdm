@@ -1,7 +1,7 @@
 import { shallow, ShallowWrapper } from "enzyme"
 import toJSON from "enzyme-to-json"
 
-import IndexPage from "./index"
+import IndexPage from "@/containers/index"
 import Crossflex from "@/components/Landing/Crossflex"
 import Purity from "@/components/Landing/Purity"
 import Cerastar from "@/components/Landing/Cerastar"

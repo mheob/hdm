@@ -1,13 +1,13 @@
 import { ShallowWrapper, shallow } from "enzyme"
 import toJSON from "enzyme-to-json"
 
-import Shelves from "./Shelves"
+import Massivholztueren from "@/components/Landing/Massivholztueren"
 
-describe("Shelves Testings", () => {
+describe("Massivholztueren Testings", () => {
   let wrapper: ShallowWrapper
 
   beforeEach(() => {
-    wrapper = shallow(<Shelves />)
+    wrapper = shallow(<Massivholztueren />)
   })
 
   test("matches snapshot", () => {

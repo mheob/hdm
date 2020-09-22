@@ -1,13 +1,13 @@
 import { ShallowWrapper, shallow } from "enzyme"
 import toJSON from "enzyme-to-json"
 
-import Header from "./Header"
+import Accessories from "@/components/Landing/Accessories"
 
-describe("Header Testings", () => {
+describe("Accessories Testings", () => {
   let wrapper: ShallowWrapper
 
   beforeEach(() => {
-    wrapper = shallow(<Header />)
+    wrapper = shallow(<Accessories />)
   })
 
   test("matches snapshot", () => {
