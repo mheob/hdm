@@ -1,3 +1,12 @@
+# [2.0.0-next.5](https://github.com/100herz/hdm/compare/v2.0.0-next.4...v2.0.0-next.5) (2020-09-22)
+
+
+### Features
+
+* **purity:** add slogan text ([d9a9700](https://github.com/100herz/hdm/commit/d9a9700befc88db3b533f0db653beff9eb8c74d4))
+* **shelves:** add the layout for mobile and desktop ([c7e505b](https://github.com/100herz/hdm/commit/c7e505b5b4012941af7cdcd27965cfe6873c77c3)), closes [#7](https://github.com/100herz/hdm/issues/7)
+* **strips:** add the layout for mobile and desktop ([df2b5f4](https://github.com/100herz/hdm/commit/df2b5f40b6e7adf355426eb94b1923a5d18e0cf2)), closes [#8](https://github.com/100herz/hdm/issues/8)
+
 # [2.0.0-next.4](https://github.com/100herz/hdm/compare/v2.0.0-next.3...v2.0.0-next.4) (2020-09-21)
 
 
