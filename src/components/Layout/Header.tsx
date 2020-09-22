@@ -194,7 +194,7 @@ const Header: React.FC<Props> = ({ className = "" }: Props) => {
               Massivholzt&uuml;ren
             </Link>
             <Link
-              to="accessories"
+              to="shelves"
               activeClass="active"
               spy={true}
               smooth={true}

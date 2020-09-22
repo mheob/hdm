@@ -18,7 +18,7 @@ exports[`Strips Testings matches snapshot 1`] = `
       </h2>
     </header>
     <div
-      className="lg:justify-between lg:ml-32 lg:flex"
+      className="flex flex-col-reverse justify-between lg:ml-32 lg:flex-row"
     >
       <div
         className="lg:w-1/2"

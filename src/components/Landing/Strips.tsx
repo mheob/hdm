@@ -10,7 +10,7 @@ const Strips: React.FC<Props> = ({ className = "" }: Props) => {
           <h2 className="text-4xl font-bold leading-tight lg:text-5xl">Leisten</h2>
         </header>
 
-        <div className="lg:justify-between lg:ml-32 lg:flex">
+        <div className="flex flex-col-reverse justify-between lg:ml-32 lg:flex-row">
           <div className="lg:w-1/2">
             <p className="mt-12 lg:text-lg">
               Massivholzleisten bieten den letzten Schliff für die handwerkliche Perfektion. Astfreie Fichte- und
