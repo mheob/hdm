@@ -14,13 +14,23 @@ exports[`Company Testings matches snapshot 1`] = `
     </h2>
   </header>
   <div
-    className="relative mt-12 lg:mt-16 pb-16/9"
+    className="mt-12 lg:mt-16"
   >
-    <iframe
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"
-      className="absolute w-full h-full"
-      src="https://www.youtube-nocookie.com/embed/-7ki7fK1prA?rel=0"
-    />
+    <video
+      className="w-full outline-none"
+      controls={true}
+      onClick={[Function]}
+      poster="/videos/hdm-unternehmen.webp"
+    >
+      <source
+        src="/videos/hdm-unternehmen.webm"
+        type="video/webm"
+      />
+      <source
+        src="/videos/hdm-unternehmen.mp4"
+        type="video/mp4"
+      />
+    </video>
   </div>
   <div
     className="lg:bg-gray-100"

@@ -17,7 +17,9 @@
     "build": "next build src",
     "commit": "git-cz",
     "dev": "next",
-    "export": "rimraf src/.next src/out src/public && copyfiles public/{*,**/*} src && yarn build && next export src",
+    "preexport": "rimraf src/.next src/out src/public && copyfiles public/{*,**/*} src && yarn build",
+    "export": "cross-env BUILD_TYPE=live next export src",
+    "export:next": "cross-env BUILD_TYPE=next next export src",
     "lint": "yarn lint:js && yarn lint:style",
     "lint:js": "eslint 'src/*/**/*.{js,ts,tsx}' --quiet --fix --ignore-path .gitignore",
     "lint:style": "stylelint 'src/**/*.{css,pcss,scss}' --fix --ignore-path .gitignore",
@@ -39,7 +41,7 @@
   "lint-staged": {
     "*.+(ts|tsx)": "cross-env NODE_ENV=test jest --updateSnapshot --passWithNoTests",
     "*.{css,pcss,scss}": "stylelint 'src/**/*.{css,scss}' --fix --ignore-path .gitignore",
-    "*.{js,ts,jsx,tsx}": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix --ignore-path .gitignore"
+    "*.{js,ts,jsx,tsx}": "eslint 'src/*/**/*.{js,ts,tsx}' --quiet --fix --ignore-path .gitignore"
   },
   "config": {
     "commitizen": {
