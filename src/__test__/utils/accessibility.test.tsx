@@ -1,7 +1,6 @@
-import React from "react"
-import { mount } from "enzyme"
-
 import IndexPage from "@/components/Layout/index"
+import { mount } from "enzyme"
+import React from "react"
 
 describe("Accessibility Testings", () => {
   test("fire the initFocusRingOnlyOnTab function", () => {

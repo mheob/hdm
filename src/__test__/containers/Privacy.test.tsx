@@ -1,7 +1,6 @@
+import Privacy from "@/containers/Privacy"
 import { shallow } from "enzyme"
 import toJSON from "enzyme-to-json"
-
-import Privacy from "@/containers/Privacy"
 
 describe("Privacy Testings", () => {
   test("matches snapshot", () => {

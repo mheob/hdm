@@ -1,6 +1,5 @@
-import "jest"
-
 import { getWindowDimensions } from "@/utils/window"
+import "jest"
 
 describe("Window Utils Testings", () => {
   test("return a width of 999 and a height of 888", () => {

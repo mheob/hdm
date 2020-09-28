@@ -1,13 +1,12 @@
+import Accessories from "@/components/Landing/Accessories"
+import Cerastar from "@/components/Landing/Cerastar"
+import Company from "@/components/Landing/Company"
+import Crossflex from "@/components/Landing/Crossflex"
+import Massivholztueren from "@/components/Landing/Massivholztueren"
+import Purity from "@/components/Landing/Purity"
+import IndexPage from "@/containers/index"
 import { shallow, ShallowWrapper } from "enzyme"
 import toJSON from "enzyme-to-json"
-
-import IndexPage from "@/containers/index"
-import Crossflex from "@/components/Landing/Crossflex"
-import Purity from "@/components/Landing/Purity"
-import Cerastar from "@/components/Landing/Cerastar"
-import Massivholztueren from "@/components/Landing/Massivholztueren"
-import Accessories from "@/components/Landing/Accessories"
-import Company from "@/components/Landing/Company"
 
 describe("IndexPage Testings", () => {
   let wrapper: ShallowWrapper

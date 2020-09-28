@@ -1,9 +1,7 @@
+import Footer from "@/components/Layout/Footer"
+import { withTestRouter } from "@/__test__/__hoc__/withTestRouter"
 import { mount, shallow } from "enzyme"
 import toJSON from "enzyme-to-json"
-
-import Footer from "@/components/Layout/Footer"
-
-import { withTestRouter } from "@/__test__/__hoc__/withTestRouter"
 
 describe("Footer Testings", () => {
   test("matches snapshot", () => {

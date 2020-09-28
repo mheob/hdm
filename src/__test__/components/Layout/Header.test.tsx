@@ -1,9 +1,7 @@
+import Header from "@/components/Layout/Header"
+import { withTestRouter } from "@/__test__/__hoc__/withTestRouter"
 import { mount, shallow } from "enzyme"
 import toJSON from "enzyme-to-json"
-
-import Header from "@/components/Layout/Header"
-
-import { withTestRouter } from "@/__test__/__hoc__/withTestRouter"
 
 describe("Header Testings", () => {
   test("matches snapshot", () => {

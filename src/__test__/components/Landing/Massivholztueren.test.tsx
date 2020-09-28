@@ -1,7 +1,6 @@
-import { ShallowWrapper, shallow } from "enzyme"
-import toJSON from "enzyme-to-json"
-
 import Massivholztueren from "@/components/Landing/Massivholztueren"
+import { shallow, ShallowWrapper } from "enzyme"
+import toJSON from "enzyme-to-json"
 
 describe("Massivholztueren Testings", () => {
   let wrapper: ShallowWrapper

@@ -1,8 +1,7 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
-import { shallow, mount } from "enzyme"
-import toJSON from "enzyme-to-json"
-
 import Company from "@/components/Landing/Company"
+import { mount, shallow } from "enzyme"
+import toJSON from "enzyme-to-json"
 
 describe("Company Testings", () => {
   const stubElement = window.HTMLMediaElement.prototype
