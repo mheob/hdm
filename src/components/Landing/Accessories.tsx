@@ -15,10 +15,10 @@ type Props = {
 
 const Accessories: React.FC<Props> = ({ className = "" }: Props) => {
   return (
-    <section id="accessories" className={`lg:bg-gray-100 overflow-x-hidden lg:mt-24 ${className}`}>
+    <section id="accessories" className={`bg-gray-100 overflow-x-hidden lg:mt-24 ${className}`}>
       <BackgroundImage>
         <div className="container py-20">
-          <header className="mt-16 lg:ml-32">
+          <header className="lg:mt-16 lg:ml-32">
             <h2 className="text-4xl font-bold lg:text-5xl">
               DAZU<sup className="font-normal">&reg;</sup>
             </h2>
