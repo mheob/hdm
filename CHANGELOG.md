@@ -1,3 +1,22 @@
+# [2.0.0-next.6](https://github.com/100herz/hdm/compare/v2.0.0-next.5...v2.0.0-next.6) (2020-09-28)
+
+
+### Bug Fixes
+
+* **crossflex:** change text in the last paragraph ([3444cf8](https://github.com/100herz/hdm/commit/3444cf84b0f5c18399c405b6a118b65506fef6b9))
+* **strips:** give the text more sense ([8732567](https://github.com/100herz/hdm/commit/8732567f5c0f7cd22bfd2162a7ff33f4db7c596c))
+
+
+### Features
+
+* **shelves:** add more images and split in sub sections ([d3a81fc](https://github.com/100herz/hdm/commit/d3a81fc52dfbd4c67329160a5396d20972a42e23)), closes [#13](https://github.com/100herz/hdm/issues/13)
+* **strips:** add more images and split in sub sections ([e838533](https://github.com/100herz/hdm/commit/e838533e328221990cfaf20aa10e4b9d4b06651a)), closes [#13](https://github.com/100herz/hdm/issues/13)
+
+
+### Performance Improvements
+
+* **company:** load video from our server instead of youtube ([6aca101](https://github.com/100herz/hdm/commit/6aca101f639bf221f005409305d9dcd24c29e5de))
+
 # [2.0.0-next.5](https://github.com/100herz/hdm/compare/v2.0.0-next.4...v2.0.0-next.5) (2020-09-22)
 
 
