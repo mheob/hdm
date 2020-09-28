@@ -35,9 +35,6 @@ module.exports = {
       maxWidth: {
         1400: "1400px",
       },
-      padding: {
-        "16/9": "56.25%",
-      },
       rotate: {
         "-10": "-10deg",
         10: "10deg",

@@ -1,6 +1,5 @@
-import { useState, useEffect } from "react"
-
 import { getWindowDimensions } from "@/utils/window"
+import { useEffect, useState } from "react"
 
 export function useWindowDimensions() {
   const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions())
@@ -10,7 +9,7 @@ export function useWindowDimensions() {
       setWindowDimensions(getWindowDimensions())
     }
 
-    if (process.browser) {
+    if (typeof window !== "undefined") {
       window.addEventListener("resize", handleResize)
       return () => window.removeEventListener("resize", handleResize)
     }

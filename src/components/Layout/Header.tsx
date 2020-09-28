@@ -1,10 +1,9 @@
+import { useWindowDimensions } from "@/hooks/useWindowDimensions"
 import NavLink from "next/link"
 import { useRouter } from "next/router"
 import { Link } from "react-scroll"
 import Sticky from "react-stickynode"
 import styled from "styled-components"
-
-import { useWindowDimensions } from "@/hooks/useWindowDimensions"
 
 const Section = styled.section`
   position: relative;
@@ -33,7 +32,7 @@ const Section = styled.section`
     content: "";
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     position: static;
 
     &::after {
@@ -64,9 +63,12 @@ const Header: React.FC<Props> = ({ className = "" }: Props) => {
           </NavLink>
         </h1>
 
-        <Sticky enabled={width < 768} innerZ="101">
+        <Sticky enabled={width < 1024} innerZ="101">
           {router && router.pathname === "/" ? (
-            <nav className="flex justify-between py-3 font-semibold bg-white lg:bg-transparent lg:text-lg lg:container lg:mb-0 lg:space-x-12 lg:justify-end lg:mt-10 lg:py-0">
+            <nav
+              id="landing-main-nav"
+              className="flex justify-between py-3 font-semibold bg-white sm:justify-around lg:bg-transparent lg:text-lg lg:container lg:mb-0 lg:space-x-12 lg:justify-end lg:mt-10 lg:py-0"
+            >
               <Link
                 to="produkte"
                 activeClass="active"
@@ -123,16 +125,14 @@ const Header: React.FC<Props> = ({ className = "" }: Props) => {
         </p>
         {router && router.pathname === "/" ? (
           <Link to="purity" activeClass="active" spy={true} smooth={true} offset={-25} duration={700}>
-            <a>
-              <figure className="hidden -mt-16 text-center group lg:block">
-                <img
-                  className="w-56 transition-all duration-500 transform -rotate-10 group-hover:rotate-0"
-                  src="/certificates/hdm-oekosiegel-header.png"
-                  alt="HDM - Verantwortung für Mensch und Natur"
-                  title="Mehr über die den BIO ... logischen Laminatboden erfahren"
-                />
-              </figure>
-            </a>
+            <figure id="landing-eco" className="hidden -mt-16 text-center group lg:block">
+              <img
+                className="w-56 transition-all duration-500 transform -rotate-10 group-hover:rotate-0"
+                src="/certificates/hdm-oekosiegel-header.png"
+                alt="HDM - Verantwortung für Mensch und Natur"
+                title="Mehr über die den BIO ... logischen Laminatboden erfahren"
+              />
+            </figure>
           </Link>
         ) : (
           <figure className="hidden -mt-16 text-center lg:block">
@@ -147,7 +147,7 @@ const Header: React.FC<Props> = ({ className = "" }: Props) => {
       </Section>
 
       {router && router.pathname === "/" && (
-        <Sticky enabled={width >= 768} innerZ="101" activeClass="sticky-nav">
+        <Sticky enabled={width >= 1024} innerZ="101" activeClass="sticky-nav">
           <nav className="justify-around hidden h-24 px-20 py-4 text-lg font-semibold lg:flex">
             <Link
               to="crossflex"
@@ -202,7 +202,7 @@ const Header: React.FC<Props> = ({ className = "" }: Props) => {
               duration={1100}
               className="px-4 py-2 my-2 hover:text-hdm"
             >
-              {width >= 768 ? "Regalböden / Möbelbauplatten" : "Böden"}
+              Möbelbauteile
             </Link>
             <Link
               to="strips"
@@ -224,7 +224,13 @@ const Header: React.FC<Props> = ({ className = "" }: Props) => {
               duration={1200}
               className="px-4 py-2 my-2 hover:text-hdm"
             >
-              DAZU<sup>&reg;</sup> Zubeh&ouml;r
+              {width >= 1280 ? (
+                <span>
+                  DAZU<sup>&reg;</sup> Zubehör
+                </span>
+              ) : (
+                "Zubehör"
+              )}
             </Link>
           </nav>
         </Sticky>

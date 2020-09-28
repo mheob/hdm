@@ -1,10 +1,8 @@
-import { ReactNode, useEffect } from "react"
-import Head from "next/head"
-
-import Header from "@/components/Layout/Header"
 import Footer from "@/components/Layout/Footer"
-
+import Header from "@/components/Layout/Header"
 import { initFocusRingOnlyOnTab } from "@/utils/accessibility"
+import Head from "next/head"
+import { ReactNode, useEffect } from "react"
 
 type Props = {
   children?: ReactNode

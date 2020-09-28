@@ -1,12 +1,12 @@
-import Layout from "@/components/Layout"
-import Crossflex from "@/components/Landing/Crossflex"
-import Purity from "@/components/Landing/Purity"
+import Accessories from "@/components/Landing/Accessories"
 import Cerastar from "@/components/Landing/Cerastar"
+import Company from "@/components/Landing/Company"
+import Crossflex from "@/components/Landing/Crossflex"
 import Massivholztueren from "@/components/Landing/Massivholztueren"
+import Purity from "@/components/Landing/Purity"
 import Shelves from "@/components/Landing/Shelves"
 import Strips from "@/components/Landing/Strips"
-import Accessories from "@/components/Landing/Accessories"
-import Company from "@/components/Landing/Company"
+import Layout from "@/components/Layout"
 
 const index: React.FC = () => {
   return (

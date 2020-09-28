@@ -22,7 +22,7 @@ const BackgroundImage = styled.div`
     content: "";
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     &::before {
       top: 5rem;
     }

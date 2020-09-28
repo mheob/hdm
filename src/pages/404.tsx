@@ -1,7 +1,6 @@
-import { useRouter } from "next/router"
-import Link from "next/link"
-
 import Layout from "@/components/Layout"
+import Link from "next/link"
+import { useRouter } from "next/router"
 
 const Error404: React.FC = () => {
   const router = useRouter()

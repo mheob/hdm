@@ -8,7 +8,7 @@ export function initFocusRingOnlyOnTab() {
    * @param keyDownEvent The event fired when a key is pressed
    */
   function handleFirstTab(keyDownEvent: KeyboardEvent) {
-    if (keyDownEvent.keyCode === 9) {
+    if (keyDownEvent.key === "Tab") {
       document.body.classList.add("user-is-tabbing")
 
       window.removeEventListener("keydown", handleFirstTab)
@@ -28,4 +28,6 @@ export function initFocusRingOnlyOnTab() {
   }
 
   window.addEventListener("keydown", handleFirstTab)
+
+  return true
 }

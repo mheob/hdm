@@ -1,29 +1,7 @@
 import styled from "styled-components"
 
-const Grid = styled.div`
-  display: grid;
-  grid-template-areas:
-    "grid-item-1"
-    "grid-item-2";
-  grid-template-columns: 1fr;
-
-  @media (min-width: 768px) {
-    grid-template-areas: "grid-item-1 grid-item-2";
-    grid-template-columns: 1fr 1fr;
-    column-gap: 8rem;
-  }
-
-  & > :nth-child(1) {
-    grid-area: grid-item-1;
-  }
-
-  & > :nth-child(2) {
-    grid-area: grid-item-2;
-  }
-`
-
 const BackgroundImage = styled.div`
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     background-image: linear-gradient(rgba(247, 250, 252, 0.95), rgba(247, 250, 252, 0.95)), url(/ci/hdm-bg.svg);
     background-repeat: no-repeat;
     background-position: left center;
@@ -37,10 +15,10 @@ type Props = {
 
 const Accessories: React.FC<Props> = ({ className = "" }: Props) => {
   return (
-    <section id="accessories" className={`lg:bg-gray-100 overflow-x-hidden lg:mt-24 ${className}`}>
+    <section id="accessories" className={`bg-gray-100 overflow-x-hidden lg:mt-24 ${className}`}>
       <BackgroundImage>
         <div className="container py-20">
-          <header className="mt-16 lg:ml-32">
+          <header className="lg:mt-16 lg:ml-32">
             <h2 className="text-4xl font-bold lg:text-5xl">
               DAZU<sup className="font-normal">&reg;</sup>
             </h2>
@@ -53,7 +31,7 @@ const Accessories: React.FC<Props> = ({ className = "" }: Props) => {
                 <source srcSet="/images/hdm-dazu-zubehoer.webp" type="image/webp" />
                 <source srcSet="/images/hdm-dazu-zubehoer.jpg" type="image/jpeg" />
                 <img
-                  src="/images/hdm-dazu-zubehoer.webp"
+                  src="/images/hdm-dazu-zubehoer.jpg"
                   alt="Möbelbauplatten - modernen Regalböden und Möbelbauplatten"
                 />
               </picture>

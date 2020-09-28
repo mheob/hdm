@@ -1,0 +1,120 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Shelves Testings matches snapshot 1`] = `
+<section
+  className="lg:relative overflow-x-hidden mt-12 lg:mt-32 lg:pt-20 lg:pb-20 "
+  id="shelves"
+>
+  <Shelves__BackgroundImage />
+  <header
+    className="container mt-6"
+  >
+    <div
+      className="lg:ml-32"
+    >
+      <h2
+        className="text-4xl font-bold leading-snug lg:text-5xl"
+      >
+        Regalböden / Möbelbauplatten
+      </h2>
+    </div>
+  </header>
+  <Shelves__GridLeft
+    className="lg:container"
+  >
+    <div
+      className="relative mt-10 ml-6 lg:mt-16 lg:-ml-6"
+    >
+      <picture>
+        <source
+          srcSet="/images/hdm-moebelbauplatten.webp"
+          type="image/webp"
+        />
+        <source
+          srcSet="/images/hdm-moebelbauplatten.png"
+          type="image/png"
+        />
+        <img
+          alt="Purity - Natürlich, sauber, rein"
+          src="/images/hdm-moebelbauplatten.png"
+        />
+      </picture>
+    </div>
+    <div
+      className="container lg:mt-16 lg:px-0"
+    >
+      <p
+        className="lg:mt-8 lg:text-lg"
+      >
+        Mit modernen Regalböden und Möbelbauplatten, in vielen Abmessungen und dem richtigen Zubehör, lässt sich einfach und schnell frischer Wind in alle Räume bringen. Mit Möbelbauplatten lassen sich von der Kommode über den Raumteiler bis zur kompletten Schrankwand viele Möbel zur Inneneinrichtung bauen.
+      </p>
+      <p
+        className="mt-8 text-lg"
+      >
+        Die offenen, anpassungsfähigen Regalsysteme bringen Stauraum und ermöglichen eine optimale Raumnutzung oder sehen einfach nur schick aus.
+      </p>
+      <p
+        className="mt-8 text-lg"
+      >
+        Möbelbauplatten und Regalböden bietet Holz Design Moers mit schönen Dekoren, in 19 mm Stärke und zahlreichen Abmessungen. Die Möbelbauplatten werden in Ausführung mit gerader oder runder Kante angeboten und sind an zwei Sichtkanten umleimt.
+      </p>
+      <p
+        className="mt-8 text-lg"
+      >
+        Auch die Regalböden gibt es mit gerader oder runder Kante, zwei- oder vierseitig umleimt. Mit modernen Regalböden in vielen Abmessungen und dem richtigen Zubehör lässt sich einfach und schnell frischer Wind in alle Räume bringen.
+      </p>
+    </div>
+  </Shelves__GridLeft>
+  <div
+    className="mt-20 lg:mt-40"
+  >
+    <header
+      className="container mt-6"
+    >
+      <div
+        className="lg:ml-32"
+      >
+        <h2
+          className="text-4xl font-bold lg:text-5xl"
+        >
+          Zuschnitte
+        </h2>
+      </div>
+    </header>
+    <Shelves__GridRight
+      className="lg:container lg:mb-12"
+    >
+      <picture
+        className="mt-10 ml-6 lg:-mt-16"
+      >
+        <source
+          srcSet="/images/hdm-zuschnitt.webp"
+          type="image/webp"
+        />
+        <source
+          srcSet="/images/hdm-zuschnitt.png"
+          type="image/png"
+        />
+        <img
+          alt="Zuschnitte - bei HDM alles aus einer Hand"
+          src="/images/hdm-zuschnitt.png"
+        />
+      </picture>
+      <div
+        className="container mt-24 lg:grid lg:mt-20"
+      >
+        <p
+          className="lg:text-lg"
+        >
+          Ob Loch- oder MDF-Platte, Sperrholz, ob OSB- oder Multiplex, Siebdruck- oder Dämmplatten oder mit attraktiven Dekoren beschichtete Spanplatten... das Holzzuschnitt-Programm von Holz Design Moers bietet alle Möglichkeiten.
+        </p>
+        <p
+          className="mt-8 text-lg"
+        >
+          Persönlicher Geschmack ist einzigartig. Mit der Zuschnittware von Holz Design Moers lässt sich ein Kulissenwechsel für jeden Raum im Handumdrehen maßgenau realisieren. Leben Sie Ihre Kreativität aus.
+        </p>
+      </div>
+    </Shelves__GridRight>
+  </div>
+</section>
+`;

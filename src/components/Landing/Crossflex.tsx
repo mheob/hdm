@@ -8,7 +8,7 @@ const Header = styled.header`
     "grid-item-3";
   grid-template-columns: 1fr;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     grid-template-areas:
       "grid-item-1 grid-item-3"
       "grid-item-2 grid-item-2";
@@ -92,7 +92,7 @@ const Crossflex: React.FC<Props> = ({ className = "" }: Props) => {
 
           <div>
             <h3 className="mt-8 font-bold">Crossflex Space - Optische Distanz von 10 mm</h3>
-            <p>Eine betont große Fuge verleiht die klassische Paneeloptik.</p>
+            <p>Die betont große Fuge gibt der typischen Paneeloptik Raum.</p>
           </div>
         </div>
       </div>
