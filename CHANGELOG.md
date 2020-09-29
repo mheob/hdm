@@ -1,3 +1,16 @@
+# [2.0.0-next.7](https://github.com/100herz/hdm/compare/v2.0.0-next.6...v2.0.0-next.7) (2020-09-29)
+
+
+### Bug Fixes
+
+* **shelves:** change typo as called from HSM ([812450a](https://github.com/100herz/hdm/commit/812450a974188bb1ca2c1a3ba06a490461e157ce))
+* **strips:** change typo as called from HSM ([72920a0](https://github.com/100herz/hdm/commit/72920a0930e4a21174ac3b598a6ab43a60b3a83a))
+
+
+### Features
+
+* **pdf:** include a pdf viewer ([409384f](https://github.com/100herz/hdm/commit/409384f5ef27161e2098ee3d880cdec8a8fcde17)), closes [#15](https://github.com/100herz/hdm/issues/15)
+
 # [2.0.0-next.6](https://github.com/100herz/hdm/compare/v2.0.0-next.5...v2.0.0-next.6) (2020-09-28)
 
 
