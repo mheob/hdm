@@ -224,13 +224,7 @@ const Header: React.FC<Props> = ({ className = "" }: Props) => {
               duration={1200}
               className="px-4 py-2 my-2 hover:text-hdm"
             >
-              {width >= 1280 ? (
-                <span>
-                  DAZU<sup>&reg;</sup> Zubehör
-                </span>
-              ) : (
-                "Zubehör"
-              )}
+              {!process.browser ? "DAZU-Zubehör" : width < 1280 ? "Zubehör" : "DAZU-Zubehör"}
             </Link>
           </nav>
         </Sticky>
