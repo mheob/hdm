@@ -30,7 +30,7 @@ const Strips: React.FC<Props> = ({ className = "" }: Props) => {
             <img className="mt-16 lg:w-3/4" src="/images/hdm-fussleisten.jpg" alt="UMA - Fußleisten von HDM" />
           </div>
 
-          <div className="lg:w-1/3 lg:-mt-32 lg:mr-12">
+          <div className="lg:w-1/3 lg:-mt-40 lg:mr-12">
             <picture className="block mt-12 lg:-mx-24">
               <source srcSet="/images/hdm-leisten.webp" type="image/webp" />
               <source srcSet="/images/hdm-leisten.jpg" type="image/jpeg" />
@@ -56,9 +56,9 @@ const Strips: React.FC<Props> = ({ className = "" }: Props) => {
 
           <div className="mt-12 lg:-mt-16 lg:w-2/3 lg:max-w-md">
             <p className="lg:text-lg lg:-ml-20">
-              Massivholzleisten bieten den letzten Schliff für die handwerkliche Perfektion. Astfreie Fichte- und
-              Kieferleisten - natur oder weiß lackiert - geben den perfekten Abschluss im Raum oder auch beim Bau von
-              Holzmöbeln.
+              Massivholzleisten bieten den letzten Schliff für die handwerkliche Perfektion. Astfreie Fichte-, Kiefer-
+              und Buchenleisten - natur oder weiß lackiert - geben den perfekten Abschluss im Raum oder auch beim Bau
+              von Holzmöbeln.
             </p>
 
             <p className="mt-12 lg:-ml-20 lg:text-lg">
@@ -153,6 +153,30 @@ const Strips: React.FC<Props> = ({ className = "" }: Props) => {
                   <path d="M5 13l4 4L19 7" />
                 </svg>{" "}
                 Rund- und Halbrundstäbe
+              </li>
+              <li>
+                <svg
+                  className="inline w-8 h-8 text-hdm"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5 13l4 4L19 7" />
+                </svg>{" "}
+                Schnitt- und Prägeleisten
+              </li>
+              <li>
+                <svg
+                  className="inline w-8 h-8 text-hdm"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5 13l4 4L19 7" />
+                </svg>{" "}
+                <em>und noch mehr …</em>
               </li>
             </ul>
           </div>

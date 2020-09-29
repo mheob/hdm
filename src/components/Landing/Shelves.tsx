@@ -125,13 +125,13 @@ const Shelves: React.FC<Props> = ({ className = "" }: Props) => {
           </p>
 
           <p className="mt-8 text-lg">
-            Möbelbauplatten und Regalböden bietet Holz Design Moers mit schönen Dekoren, in 19 mm Stärke und zahlreichen
-            Abmessungen. Die Möbelbauplatten werden in Ausführung mit gerader oder runder Kante angeboten und sind an
-            zwei Sichtkanten umleimt.
+            Möbelbauplatten und Regalböden bietet Holz Design Moers mit schönen Dekoren, in 16, 19 und 22 mm Stärke und
+            zahlreichen Abmessungen. Die Möbelbauplatten werden in Ausführung mit gerader oder runder Kante angeboten
+            und sind an zwei Sichtkanten umleimt.
           </p>
 
           <p className="mt-8 text-lg">
-            Auch die Regalböden gibt es mit gerader oder runder Kante, zwei- oder vierseitig umleimt. Mit modernen
+            Auch die Regalböden gibt es mit gerader oder runder Kante, drei- oder vierseitig umleimt. Mit modernen
             Regalböden in vielen Abmessungen und dem richtigen Zubehör lässt sich einfach und schnell frischer Wind in
             alle Räume bringen.
           </p>
