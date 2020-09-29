@@ -1,6 +1,6 @@
 {
   "name": "hdm",
-  "version": "1.0.0",
+  "version": "2.0.0-next.7",
   "private": true,
   "description": "A short overview of the company in their products.",
   "homepage": "https://github.com/100herz/hdm#readme",
@@ -14,11 +14,21 @@
   "license": "ISC",
   "author": "100HERZ GmbH",
   "scripts": {
+    "build": "next build src",
     "commit": "git-cz",
-    "lint": "echo \"yarn lint:js && yarn lint:style\"",
-    "lint:js": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix --ignore-path .gitignore",
-    "lint:style": "stylelint **/*.{css,pcss,scss} --fix --ignore-path .gitignore",
-    "semantic-release": "semantic-release"
+    "dev": "next",
+    "preexport": "rimraf src/.next src/out src/public && copyfiles public/{*,**/*} src && yarn build",
+    "export": "cross-env BUILD_TYPE=live next export src",
+    "export:next": "cross-env BUILD_TYPE=next next export src",
+    "lint": "yarn lint:js && yarn lint:style",
+    "lint:js": "eslint 'src/*/**/*.{js,ts,tsx}' --quiet --fix --ignore-path .gitignore",
+    "lint:style": "stylelint 'src/**/*.{css,pcss,scss}' --fix --ignore-path .gitignore",
+    "semantic-release": "semantic-release",
+    "start": "next start",
+    "test": "cross-env NODE_ENV=test jest",
+    "test:cov": "cross-env NODE_ENV=test jest --coverage",
+    "test:watch": "cross-env NODE_ENV=test jest --watch --updateSnapshot",
+    "type-check": "tsc"
   },
   "husky": {
     "hooks": {
@@ -29,19 +39,22 @@
     "extends": "@commitlint/config-conventional"
   },
   "lint-staged": {
-    "*.+(ts|tsx)": "cd packages/frontend && cross-env NODE_ENV=test jest",
-    "*.{css,pcss,scss}": "echo \"stylelint --fix\"",
-    "*.{js,ts,jsx,tsx}": "echo \"eslint --fix\""
+    "*.+(ts|tsx)": "cross-env NODE_ENV=test jest --updateSnapshot --passWithNoTests",
+    "*.{css,pcss,scss}": "stylelint 'src/**/*.{css,scss}' --fix --ignore-path .gitignore",
+    "*.{js,ts,jsx,tsx}": "eslint 'src/*/**/*.{js,ts,tsx}' --quiet --fix --ignore-path .gitignore"
   },
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
     }
   },
+  "babel": {
+    "extends": "./config/babel.config.json"
+  },
   "browserslist": [
-    "last 4 version",
-    "> 2%",
-    "not dead"
+    ">0.2%",
+    "not dead",
+    "not op_mini all"
   ],
   "prettier": "./config/.prettierrc.json",
   "eslintConfig": {
@@ -51,21 +64,73 @@
   "stylelint": {
     "extends": "./config/.stylelintrc.json"
   },
+  "dependencies": {
+    "@emotion/core": "^10.0.35",
+    "next": "^9.5.3",
+    "nprogress": "^0.2.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-pdf": "^5.0.0",
+    "react-portal-overlay": "^1.0.1",
+    "react-scroll": "^1.8.1",
+    "react-stickynode": "^3.0.3",
+    "styled-components": "^5.2.0",
+    "tailwindcss": "^1.8.10"
+  },
   "devDependencies": {
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/git": "^9.0.0",
+    "@testing-library/react": "^11.0.4",
+    "@types/enzyme": "^3.10.7",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
+    "@types/jest": "^26.0.14",
+    "@types/node": "^14.11.2",
+    "@types/nprogress": "^0.2.0",
+    "@types/react": "^16.9.49",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-pdf": "^4.0.6",
+    "@types/react-scroll": "^1.8.0",
+    "@types/react-stickynode": "^3.0.0",
+    "@types/styled-components": "^5.1.3",
+    "@typescript-eslint/eslint-plugin": "^4.3.0",
+    "@typescript-eslint/parser": "^4.3.0",
+    "autoprefixer": "9.8.6",
+    "babel-jest": "^26.3.0",
+    "babel-plugin-module-resolver": "^4.0.0",
     "commitizen": "^4.2.1",
-    "eslint": "^7.9.0",
+    "copyfiles": "^2.3.0",
+    "cross-env": "^7.0.2",
+    "cz-conventional-changelog": "^3.3.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "enzyme-to-json": "^3.6.1",
+    "eslint": "^7.10.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.2",
     "husky": "^4.3.0",
-    "lint-staged": "^10.3.0",
-    "prettier": "^2.1.1",
+    "jest": "^26.4.2",
+    "jest-styled-components": "^7.0.3",
+    "jest-watch-typeahead": "^0.6.1",
+    "lint-staged": "^10.4.0",
+    "next-pwa": "^3.1.4",
+    "node-sass": "^4.14.1",
+    "postcss": "^8.1.1",
+    "postcss-import": "^12.0.1",
+    "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.1.2",
     "prettier-eslint-cli": "^5.0.0",
-    "semantic-release": "^17.1.1",
-    "stylelint": "^13.7.1",
+    "rimraf": "^3.0.2",
+    "semantic-release": "^17.1.2",
+    "stylelint": "^13.7.2",
     "stylelint-config-rational-order": "^0.1.2",
-    "stylelint-config-recommended": "^3.0.0"
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-scss": "^3.18.0",
+    "ts-jest": "^26.4.1",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3"
   },
   "publishConfig": {
     "access": "restricted"

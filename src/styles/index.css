@@ -1,0 +1,48 @@
+@tailwind base;
+
+/* Write your own custom base styles here */
+button:focus,
+select:focus {
+  outline: none;
+}
+
+body.user-is-tabbing *:focus {
+  outline: 2px solid royalblue !important;
+  outline: 5px auto -webkit-focus-ring-color !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  @apply leading-8;
+}
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Write you own custom component styles here */
+a {
+  @apply cursor-pointer;
+}
+
+a:hover {
+  @apply transition duration-300;
+}
+
+a.active {
+  @apply border-b-4 border-hdm;
+}
+
+.sticky-nav nav {
+  @apply duration-300 bg-white shadow;
+}
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */

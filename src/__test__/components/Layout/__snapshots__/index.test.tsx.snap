@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IndexPage Testings matches snapshot 1`] = `
+<div
+  className="antialiased"
+>
+  <Head>
+    <title>
+      This is the default title
+    </title>
+    <meta
+      charSet="utf-8"
+    />
+    <meta
+      content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover"
+      name="viewport"
+    />
+    <meta
+      content="noindex, nofollow"
+      name="robots"
+    />
+    <meta
+      content="HDM – Holz Design Moers"
+      name="application-name"
+    />
+    <meta
+      content="yes"
+      name="apple-mobile-web-app-capable"
+    />
+    <meta
+      content="default"
+      name="apple-mobile-web-app-status-bar-style"
+    />
+    <meta
+      content="HDM – Holz Design Moers"
+      name="apple-mobile-web-app-title"
+    />
+    <meta
+      content="Die Holz Design Moers GmbH bietet ihren Handelspartnern auch in Zukunft abverkaufsstarke Produkte, Konzepte und Ideen für eine erfolgreiche Zusammenarbeit."
+      name="description"
+    />
+    <meta
+      content="telephone=no"
+      name="format-detection"
+    />
+    <meta
+      content="yes"
+      name="mobile-web-app-capable"
+    />
+    <meta
+      content="#0084B0"
+      name="theme-color"
+    />
+    <link
+      href="/ci/hdm192.png"
+      rel="apple-touch-icon"
+      sizes="180x180"
+    />
+    <link
+      href="/manifest.json"
+      rel="manifest"
+    />
+    <link
+      href="/ci/favicon.svg"
+      rel="shortcut icon"
+      sizes="any"
+      type="image/svg+xml"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </Head>
+  <Header />
+  <main />
+  <Footer />
+</div>
+`;
