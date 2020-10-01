@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/100herz/hdm/compare/v2.0.0...v2.0.1) (2020-10-01)
+
+
+### Bug Fixes
+
+* **purity:** correct the unit of width from 'mm' to 'cm' ([06e2d30](https://github.com/100herz/hdm/commit/06e2d30621cce1da384b98f4c59395bde21b0f19)), closes [#18](https://github.com/100herz/hdm/issues/18)
+
 # [2.0.0](https://github.com/100herz/hdm/compare/v1.0.0...v2.0.0) (2020-09-29)
 
 
