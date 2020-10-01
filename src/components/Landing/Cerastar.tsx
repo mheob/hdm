@@ -1,5 +1,5 @@
-import dynamic from "next/dynamic"
-import styled from "styled-components"
+import dynamic from 'next/dynamic'
+import styled from 'styled-components'
 
 const BackgroundImage = styled.div`
   position: absolute;
@@ -20,7 +20,7 @@ const BackgroundImage = styled.div`
     height: 409px;
     background: url(/images/hdm-cerastar-muster.png) no-repeat;
     opacity: 0.7;
-    content: "";
+    content: '';
   }
 
   @media (min-width: 1024px) {
@@ -34,8 +34,8 @@ type Props = {
   className?: string
 }
 
-const Cerastar: React.FC<Props> = ({ className = "" }: Props) => {
-  const Pdf = dynamic(() => import("@/components/Utils/Pdf"), { ssr: false })
+const Cerastar: React.FC<Props> = ({ className = '' }: Props) => {
+  const Pdf = dynamic(() => import('@/components/Utils/Pdf'), { ssr: false })
 
   return (
     <section
@@ -74,7 +74,7 @@ const Cerastar: React.FC<Props> = ({ className = "" }: Props) => {
           Glanz.
         </p>
         <p className="mt-8 lg:text-lg">
-          Weitere Informationen finden Sie unter{" "}
+          Weitere Informationen finden Sie unter{' '}
           <a className="underline text-hdm hover:text-hdm-dark" href="https://cerastar.eu">
             cerastar.eu
           </a>

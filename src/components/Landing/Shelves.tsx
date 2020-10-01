@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
 const BackgroundImage = styled.div`
   @media (min-width: 1024px) {
@@ -19,7 +19,7 @@ const BackgroundImage = styled.div`
       height: 90%;
       background: url(/ci/hdm-bg.svg) no-repeat;
       opacity: 0.05;
-      content: "";
+      content: '';
     }
   }
 `
@@ -27,13 +27,13 @@ const BackgroundImage = styled.div`
 const GridLeft = styled.div`
   display: grid;
   grid-template-areas:
-    "grid-item-1"
-    "grid-item-2";
+    'grid-item-1'
+    'grid-item-2';
   grid-template-columns: 1fr;
   gap: 6rem;
 
   @media (min-width: 1024px) {
-    grid-template-areas: "grid-item-1 grid-item-2";
+    grid-template-areas: 'grid-item-1 grid-item-2';
     grid-template-columns: 1.1fr 0.9fr;
   }
 
@@ -57,18 +57,18 @@ const GridLeft = styled.div`
 const GridRight = styled.div`
   display: grid;
   grid-template-areas:
-    "grid-item-1"
-    "grid-item-2"
-    "grid-item-3"
-    "grid-item-4";
+    'grid-item-1'
+    'grid-item-2'
+    'grid-item-3'
+    'grid-item-4';
   grid-template-columns: 1fr;
   column-gap: 6rem;
 
   @media (min-width: 1024px) {
     grid-template-areas:
-      "grid-item-2 grid-item-1"
-      "grid-item-3 grid-item-1"
-      "grid-item-4 grid-item-1";
+      'grid-item-2 grid-item-1'
+      'grid-item-3 grid-item-1'
+      'grid-item-4 grid-item-1';
     grid-template-columns: 0.9fr 1.1fr;
   }
 
@@ -93,7 +93,7 @@ type Props = {
   className?: string
 }
 
-const Shelves: React.FC<Props> = ({ className = "" }: Props) => {
+const Shelves: React.FC<Props> = ({ className = '' }: Props) => {
   return (
     <section id="shelves" className={`lg:relative overflow-x-hidden mt-12 lg:mt-32 lg:pt-20 lg:pb-20 ${className}`}>
       <BackgroundImage />

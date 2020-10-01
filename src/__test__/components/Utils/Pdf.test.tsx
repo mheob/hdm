@@ -1,12 +1,12 @@
-import Pdf from "@/components/Utils/Pdf"
-import { shallow, ShallowWrapper } from "enzyme"
-import toJSON from "enzyme-to-json"
+import Pdf from '@/components/Utils/Pdf'
+import { shallow, ShallowWrapper } from 'enzyme'
+import toJSON from 'enzyme-to-json'
 
-jest.mock("react-pdf/dist/esm/entry.webpack", () => {
+jest.mock('react-pdf/dist/esm/entry.webpack', () => {
   return {
     pdfjs: {
       GlobalWorkerOptions: {
-        workerSrc: "abc",
+        workerSrc: 'abc',
       },
     },
     Outline: null,
@@ -19,14 +19,14 @@ jest.mock("react-pdf/dist/esm/entry.webpack", () => {
   }
 })
 
-describe("Pdf Testings", () => {
+describe('Pdf Testings', () => {
   let wrapper: ShallowWrapper
 
   beforeEach(() => {
     wrapper = shallow(<Pdf filename="" title="" />)
   })
 
-  test("matches snapshot", () => {
+  test('matches snapshot', () => {
     expect(toJSON(wrapper)).toMatchSnapshot()
   })
 

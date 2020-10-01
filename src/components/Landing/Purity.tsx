@@ -1,5 +1,5 @@
-import dynamic from "next/dynamic"
-import styled from "styled-components"
+import dynamic from 'next/dynamic'
+import styled from 'styled-components'
 
 const BackgroundImage = styled.div`
   @media (min-width: 1024px) {
@@ -20,7 +20,7 @@ const BackgroundImage = styled.div`
       height: 90%;
       background: url(/ci/hdm-bg.svg) no-repeat;
       opacity: 0.05;
-      content: "";
+      content: '';
     }
   }
 `
@@ -28,17 +28,17 @@ const BackgroundImage = styled.div`
 const GridBio = styled.div`
   display: grid;
   grid-template-areas:
-    "grid-item-1"
-    "grid-item-2"
-    "grid-item-3"
-    "grid-item-4";
+    'grid-item-1'
+    'grid-item-2'
+    'grid-item-3'
+    'grid-item-4';
   grid-template-columns: 1fr;
   gap: 6rem;
 
   @media (min-width: 1024px) {
     grid-template-areas:
-      "grid-item-1 grid-item-2"
-      "grid-item-3 grid-item-4";
+      'grid-item-1 grid-item-2'
+      'grid-item-3 grid-item-4';
     grid-template-columns: 1.1fr 0.9fr;
   }
 
@@ -62,18 +62,18 @@ const GridBio = styled.div`
 const GridHome = styled.div`
   display: grid;
   grid-template-areas:
-    "grid-item-1"
-    "grid-item-2"
-    "grid-item-3"
-    "grid-item-4";
+    'grid-item-1'
+    'grid-item-2'
+    'grid-item-3'
+    'grid-item-4';
   grid-template-columns: 1fr;
   column-gap: 6rem;
 
   @media (min-width: 1024px) {
     grid-template-areas:
-      "grid-item-2 grid-item-1"
-      "grid-item-3 grid-item-1"
-      "grid-item-4 grid-item-1";
+      'grid-item-2 grid-item-1'
+      'grid-item-3 grid-item-1'
+      'grid-item-4 grid-item-1';
     grid-template-columns: 0.9fr 1.1fr;
   }
 
@@ -104,8 +104,8 @@ type Props = {
   className?: string
 }
 
-const Purity: React.FC<Props> = ({ className = "" }: Props) => {
-  const Pdf = dynamic(() => import("@/components/Utils/Pdf"), { ssr: false })
+const Purity: React.FC<Props> = ({ className = '' }: Props) => {
+  const Pdf = dynamic(() => import('@/components/Utils/Pdf'), { ssr: false })
 
   return (
     <section id="purity" className={`lg:relative overflow-x-hidden mt-12 lg:mt-32 pt-20 lg:pb-20 ${className}`}>
@@ -168,7 +168,7 @@ const Purity: React.FC<Props> = ({ className = "" }: Props) => {
             <div>
               <h3 className="mt-8 font-bold">Kollektion Stream - Alles andere als Mainstream</h3>
               <p>
-                Ein Dielenformat von fast 25 mm Breite kennzeichnet diese Bigboards. Highlight ist die
+                Ein Dielenformat von fast 25 cm Breite kennzeichnet diese Bigboards. Highlight ist die
                 Oberflächenstruktur, die für außergewöhnliche Lichtbrechungen auf der Oberfläche sorgt. Kräftige
                 Fugenlinien zeichnen das markante und individuelle Bild der verlegten Fläche.
               </p>

@@ -1,3 +1,3 @@
-import IndexPage from "@/containers/index"
+import IndexPage from '@/containers/index'
 
 export default IndexPage

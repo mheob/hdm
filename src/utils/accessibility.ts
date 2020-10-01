@@ -8,11 +8,11 @@ export function initFocusRingOnlyOnTab() {
    * @param keyDownEvent The event fired when a key is pressed
    */
   function handleFirstTab(keyDownEvent: KeyboardEvent) {
-    if (keyDownEvent.key === "Tab") {
-      document.body.classList.add("user-is-tabbing")
+    if (keyDownEvent.key === 'Tab') {
+      document.body.classList.add('user-is-tabbing')
 
-      window.removeEventListener("keydown", handleFirstTab)
-      window.addEventListener("mousedown", handleMouseDownOnce)
+      window.removeEventListener('keydown', handleFirstTab)
+      window.addEventListener('mousedown', handleMouseDownOnce)
     }
   }
 
@@ -21,13 +21,13 @@ export function initFocusRingOnlyOnTab() {
    * input.
    */
   function handleMouseDownOnce() {
-    document.body.classList.remove("user-is-tabbing")
+    document.body.classList.remove('user-is-tabbing')
 
-    window.removeEventListener("mousedown", handleMouseDownOnce)
-    window.addEventListener("keydown", handleFirstTab)
+    window.removeEventListener('mousedown', handleMouseDownOnce)
+    window.addEventListener('keydown', handleFirstTab)
   }
 
-  window.addEventListener("keydown", handleFirstTab)
+  window.addEventListener('keydown', handleFirstTab)
 
   return true
 }

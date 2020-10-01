@@ -2,7 +2,7 @@ type Props = {
   className?: string
 }
 
-const Strips: React.FC<Props> = ({ className = "" }: Props) => {
+const Strips: React.FC<Props> = ({ className = '' }: Props) => {
   return (
     <section id="strips" className={`overflow-x-hidden py-20 lg:mt-24 ${className}`}>
       <div className="container">
@@ -79,7 +79,7 @@ const Strips: React.FC<Props> = ({ className = "" }: Props) => {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path d="M5 13l4 4L19 7" />
-                </svg>{" "}
+                </svg>{' '}
                 Recheck- und Quadratleisten
               </li>
               <li>
@@ -91,7 +91,7 @@ const Strips: React.FC<Props> = ({ className = "" }: Props) => {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path d="M5 13l4 4L19 7" />
-                </svg>{" "}
+                </svg>{' '}
                 Dreikantleisten
               </li>
               <li>
@@ -103,7 +103,7 @@ const Strips: React.FC<Props> = ({ className = "" }: Props) => {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path d="M5 13l4 4L19 7" />
-                </svg>{" "}
+                </svg>{' '}
                 Winkelleisten
               </li>
               <li>
@@ -115,7 +115,7 @@ const Strips: React.FC<Props> = ({ className = "" }: Props) => {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path d="M5 13l4 4L19 7" />
-                </svg>{" "}
+                </svg>{' '}
                 Hohlkehlleisten
               </li>
               <li>
@@ -127,7 +127,7 @@ const Strips: React.FC<Props> = ({ className = "" }: Props) => {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path d="M5 13l4 4L19 7" />
-                </svg>{" "}
+                </svg>{' '}
                 Abdeck- und Tapetenleisten
               </li>
               <li>
@@ -139,7 +139,7 @@ const Strips: React.FC<Props> = ({ className = "" }: Props) => {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path d="M5 13l4 4L19 7" />
-                </svg>{" "}
+                </svg>{' '}
                 Viertelstäbe
               </li>
               <li>
@@ -151,7 +151,7 @@ const Strips: React.FC<Props> = ({ className = "" }: Props) => {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path d="M5 13l4 4L19 7" />
-                </svg>{" "}
+                </svg>{' '}
                 Rund- und Halbrundstäbe
               </li>
               <li>
@@ -163,7 +163,7 @@ const Strips: React.FC<Props> = ({ className = "" }: Props) => {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path d="M5 13l4 4L19 7" />
-                </svg>{" "}
+                </svg>{' '}
                 Schnitt- und Prägeleisten
               </li>
               <li>
@@ -175,7 +175,7 @@ const Strips: React.FC<Props> = ({ className = "" }: Props) => {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path d="M5 13l4 4L19 7" />
-                </svg>{" "}
+                </svg>{' '}
                 <em>und noch mehr …</em>
               </li>
             </ul>

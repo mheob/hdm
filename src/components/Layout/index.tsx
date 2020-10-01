@@ -1,8 +1,8 @@
-import Footer from "@/components/Layout/Footer"
-import Header from "@/components/Layout/Header"
-import { initFocusRingOnlyOnTab } from "@/utils/accessibility"
-import Head from "next/head"
-import { ReactNode, useEffect } from "react"
+import Footer from '@/components/Layout/Footer'
+import Header from '@/components/Layout/Header'
+import { initFocusRingOnlyOnTab } from '@/utils/accessibility'
+import Head from 'next/head'
+import { ReactNode, useEffect } from 'react'
 
 type Props = {
   children?: ReactNode
@@ -13,9 +13,9 @@ type Props = {
 
 const Layout: React.FC<Props> = ({
   children,
-  title = "This is the default title",
-  description = "Die Holz Design Moers GmbH bietet ihren Handelspartnern auch in Zukunft abverkaufsstarke Produkte, Konzepte und Ideen für eine erfolgreiche Zusammenarbeit.",
-  appName = "HDM – Holz Design Moers",
+  title = 'This is the default title',
+  description = 'Die Holz Design Moers GmbH bietet ihren Handelspartnern auch in Zukunft abverkaufsstarke Produkte, Konzepte und Ideen für eine erfolgreiche Zusammenarbeit.',
+  appName = 'HDM – Holz Design Moers',
 }: Props) => {
   useEffect(() => {
     initFocusRingOnlyOnTab()
@@ -31,7 +31,7 @@ const Layout: React.FC<Props> = ({
           content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover"
         />
 
-        <meta name="robots" content="noindex, nofollow" />
+        {/* <meta name="robots" content="noindex, nofollow" /> */}
 
         <meta name="application-name" content={appName} />
         <meta name="apple-mobile-web-app-capable" content="yes" />

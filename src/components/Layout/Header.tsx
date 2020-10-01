@@ -1,9 +1,9 @@
-import { useWindowDimensions } from "@/hooks/useWindowDimensions"
-import NavLink from "next/link"
-import { useRouter } from "next/router"
-import { Link } from "react-scroll"
-import Sticky from "react-stickynode"
-import styled from "styled-components"
+import { useWindowDimensions } from '@/hooks/useWindowDimensions'
+import NavLink from 'next/link'
+import { useRouter } from 'next/router'
+import { Link } from 'react-scroll'
+import Sticky from 'react-stickynode'
+import styled from 'styled-components'
 
 const Section = styled.section`
   position: relative;
@@ -16,7 +16,7 @@ const Section = styled.section`
     left: 0;
     z-index: -2;
     background-color: #f7fafc;
-    content: "";
+    content: '';
   }
 
   &::after {
@@ -29,7 +29,7 @@ const Section = styled.section`
     background-image: url(/ci/hdm-bg.svg);
     background-repeat: no-repeat;
     opacity: 0.05;
-    content: "";
+    content: '';
   }
 
   @media (min-width: 1024px) {
@@ -47,7 +47,7 @@ type Props = {
   className?: string
 }
 
-const Header: React.FC<Props> = ({ className = "" }: Props) => {
+const Header: React.FC<Props> = ({ className = '' }: Props) => {
   const router = useRouter()
   const { width = 0 } = useWindowDimensions()
 
@@ -64,7 +64,7 @@ const Header: React.FC<Props> = ({ className = "" }: Props) => {
         </h1>
 
         <Sticky enabled={width < 1024} innerZ="101">
-          {router && router.pathname === "/" ? (
+          {router && router.pathname === '/' ? (
             <nav
               id="landing-main-nav"
               className="flex justify-between py-3 font-semibold bg-white sm:justify-around lg:bg-transparent lg:text-lg lg:container lg:mb-0 lg:space-x-12 lg:justify-end lg:mt-10 lg:py-0"
@@ -123,7 +123,7 @@ const Header: React.FC<Props> = ({ className = "" }: Props) => {
           <strong>Produkt. Idee. Erfolg.</strong> Die Holz Design Moers GmbH bietet ihren Handelspartnern auch in
           Zukunft abverkaufsstarke Produkte, Konzepte und Ideen für eine erfolgreiche Zusammenarbeit.
         </p>
-        {router && router.pathname === "/" ? (
+        {router && router.pathname === '/' ? (
           <Link to="purity" activeClass="active" spy={true} smooth={true} offset={-25} duration={700}>
             <figure id="landing-eco" className="hidden -mt-16 text-center group lg:block">
               <img
@@ -146,7 +146,7 @@ const Header: React.FC<Props> = ({ className = "" }: Props) => {
         )}
       </Section>
 
-      {router && router.pathname === "/" && (
+      {router && router.pathname === '/' && (
         <Sticky enabled={width >= 1024} innerZ="101" activeClass="sticky-nav">
           <nav className="justify-around hidden h-24 px-20 py-4 text-lg font-semibold lg:flex">
             <Link
@@ -224,7 +224,7 @@ const Header: React.FC<Props> = ({ className = "" }: Props) => {
               duration={1200}
               className="px-4 py-2 my-2 hover:text-hdm"
             >
-              {!process.browser ? "DAZU-Zubehör" : width < 1280 ? "Zubehör" : "DAZU-Zubehör"}
+              {!process.browser ? 'DAZU-Zubehör' : width < 1280 ? 'Zubehör' : 'DAZU-Zubehör'}
             </Link>
           </nav>
         </Sticky>
