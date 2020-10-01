@@ -168,7 +168,7 @@ const Purity: React.FC<Props> = ({ className = "" }: Props) => {
             <div>
               <h3 className="mt-8 font-bold">Kollektion Stream - Alles andere als Mainstream</h3>
               <p>
-                Ein Dielenformat von fast 25 mm Breite kennzeichnet diese Bigboards. Highlight ist die
+                Ein Dielenformat von fast 25 cm Breite kennzeichnet diese Bigboards. Highlight ist die
                 Oberflächenstruktur, die für außergewöhnliche Lichtbrechungen auf der Oberfläche sorgt. Kräftige
                 Fugenlinien zeichnen das markante und individuelle Bild der verlegten Fläche.
               </p>

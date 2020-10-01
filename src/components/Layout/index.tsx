@@ -31,7 +31,7 @@ const Layout: React.FC<Props> = ({
           content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover"
         />
 
-        <meta name="robots" content="noindex, nofollow" />
+        {/* <meta name="robots" content="noindex, nofollow" /> */}
 
         <meta name="application-name" content={appName} />
         <meta name="apple-mobile-web-app-capable" content="yes" />
