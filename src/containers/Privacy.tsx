@@ -1,4 +1,4 @@
-import Layout from "@/components/Layout"
+import Layout from '@/components/Layout'
 
 const Privacy: React.FC = () => {
   return (
@@ -252,11 +252,11 @@ const Privacy: React.FC = () => {
           dabei nicht statt.
         </p>
         <p className="mt-8">
-          Weitere Informationen zu Google Web Fonts finden Sie unter{" "}
+          Weitere Informationen zu Google Web Fonts finden Sie unter{' '}
           <a href="https://developers.google.com/fonts/faq" target="_blank" rel="noopener noreferrer">
             https://developers.google.com/fonts/faq
           </a>
-          und in der Datenschutzerkl&auml;rung von Google:{" "}
+          und in der Datenschutzerkl&auml;rung von Google:{' '}
           <a href="https://policies.google.com/privacy?hl=de" target="_blank" rel="noopener noreferrer">
             https://policies.google.com/privacy?hl=de
           </a>

@@ -20,6 +20,7 @@
     "preexport": "rimraf src/.next src/out src/public && copyfiles public/{*,**/*} src && yarn build",
     "export": "next export src",
     "lint": "yarn lint:js && yarn lint:style",
+    "lint:fix": "yarn lint:js --fix && yarn lint:style --fix",
     "lint:js": "eslint 'src/*/**/*.{js,ts,tsx}' --quiet --fix --ignore-path .gitignore",
     "lint:style": "stylelint 'src/**/*.{css,pcss,scss}' --fix --ignore-path .gitignore",
     "semantic-release": "semantic-release",

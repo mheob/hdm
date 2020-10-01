@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
 const BackgroundImage = styled.div`
   @media (min-width: 1024px) {
@@ -13,7 +13,7 @@ type Props = {
   className?: string
 }
 
-const Accessories: React.FC<Props> = ({ className = "" }: Props) => {
+const Accessories: React.FC<Props> = ({ className = '' }: Props) => {
   return (
     <section id="accessories" className={`bg-gray-100 overflow-x-hidden lg:mt-24 ${className}`}>
       <BackgroundImage>

@@ -16,10 +16,6 @@ exports[`IndexPage Testings matches snapshot 1`] = `
       name="viewport"
     />
     <meta
-      content="noindex, nofollow"
-      name="robots"
-    />
-    <meta
       content="HDM – Holz Design Moers"
       name="application-name"
     />

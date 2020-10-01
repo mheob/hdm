@@ -1,9 +1,9 @@
-import { useWindowDimensions } from "@/hooks/useWindowDimensions"
-import { downloadFile } from "@/utils/files"
-import { css } from "@emotion/core"
-import { useState } from "react"
-import { Document, Page } from "react-pdf/dist/esm/entry.webpack"
-import { Overlay } from "react-portal-overlay"
+import { useWindowDimensions } from '@/hooks/useWindowDimensions'
+import { downloadFile } from '@/utils/files'
+import { css } from '@emotion/core'
+import { useState } from 'react'
+import { Document, Page } from 'react-pdf/dist/esm/entry.webpack'
+import { Overlay } from 'react-portal-overlay'
 
 const pdfIcon = (
   <svg className="inline-block w-5 h-5 mr-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.588 17.47">
@@ -21,7 +21,7 @@ type Props = {
   filename: string
 }
 
-const Pdf: React.FC<Props> = ({ className = "", title, filename }: Props) => {
+const Pdf: React.FC<Props> = ({ className = '', title, filename }: Props) => {
   const [isOpen, setIsOpen] = useState(false)
   const [numPages, setNumPages] = useState(null)
   const [pageNumber, setPageNumber] = useState(1)
@@ -76,7 +76,7 @@ const Pdf: React.FC<Props> = ({ className = "", title, filename }: Props) => {
               `}
             >
               <button
-                className={`p-4 ml-32 rounded-full bg-hdm hover:bg-hdm-dark prev ${pageNumber <= 1 ? "invisible" : ""}`}
+                className={`p-4 ml-32 rounded-full bg-hdm hover:bg-hdm-dark prev ${pageNumber <= 1 ? 'invisible' : ''}`}
                 disabled={pageNumber <= 1}
                 onClick={goToPreviousPage}
               >
@@ -97,7 +97,7 @@ const Pdf: React.FC<Props> = ({ className = "", title, filename }: Props) => {
 
               <button
                 className={`p-4 mr-32 rounded-full bg-hdm hover:bg-hdm-dark next ${
-                  pageNumber >= numPages ? "invisible" : ""
+                  pageNumber >= numPages ? 'invisible' : ''
                 }`}
                 disabled={pageNumber >= numPages}
                 onClick={goToNextPage}

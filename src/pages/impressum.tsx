@@ -1,3 +1,3 @@
-import Imprint from "@/containers/Imprint"
+import Imprint from '@/containers/Imprint'
 
 export default Imprint

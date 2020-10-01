@@ -1,14 +1,14 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
 const Grid = styled.div`
   display: grid;
   grid-template-areas:
-    "grid-item-1"
-    "grid-item-2";
+    'grid-item-1'
+    'grid-item-2';
   grid-template-columns: 1fr;
 
   @media (min-width: 1024px) {
-    grid-template-areas: "grid-item-1 grid-item-2";
+    grid-template-areas: 'grid-item-1 grid-item-2';
     grid-template-columns: 1fr 1fr;
     column-gap: 4rem;
   }
@@ -26,7 +26,7 @@ type Props = {
   className?: string
 }
 
-const Company: React.FC<Props> = ({ className = "" }: Props) => {
+const Company: React.FC<Props> = ({ className = '' }: Props) => {
   const handleVideoClick = (event: React.MouseEvent<HTMLVideoElement, MouseEvent>) => {
     event.preventDefault()
     const element = event.currentTarget

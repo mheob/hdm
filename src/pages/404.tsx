@@ -1,12 +1,12 @@
-import Layout from "@/components/Layout"
-import Link from "next/link"
-import { useRouter } from "next/router"
+import Layout from '@/components/Layout'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 const Error404: React.FC = () => {
   const router = useRouter()
   const mail = () => {
-    const address = "a.boehm@hsv-neuwied.de"
-    const error = "404 - Page not found"
+    const address = 'a.boehm@hsv-neuwied.de'
+    const error = '404 - Page not found'
     return encodeURI(`mailto:${address}?subject=Error on "${router.pathname}": ${error}`)
   }
 
@@ -19,17 +19,17 @@ const Error404: React.FC = () => {
           Das tut uns leid!
         </h1>
         <p className="mt-10 text-2xl">
-          Gehe zu der{" "}
+          Gehe zu der{' '}
           <Link href="/">
             <a className="text-hsv-base hover:text-hsv-light active:text-hsv-light">Startseite</a>
           </Link>
           , um unser weiteres Angebot zu sehen!
         </p>
         <p className="mt-10 text-2xl">
-          Informiere unseren{" "}
+          Informiere unseren{' '}
           <a className="text-hsv-base hover:text-hsv-light active:text-hsv-light" href={mail()}>
             Administrator
-          </a>{" "}
+          </a>{' '}
           &uuml;ber das Problem, <br />
           sollte diese Seite wiederholt angezeigt werden.
         </p>

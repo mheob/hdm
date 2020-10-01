@@ -1,13 +1,13 @@
-import { NextRouter } from "next/router"
-import { RouterContext } from "next/dist/next-server/lib/router-context"
+import { NextRouter } from 'next/router'
+import { RouterContext } from 'next/dist/next-server/lib/router-context'
 
 export function withTestRouter(tree: React.ReactElement, router: Partial<NextRouter> = {}) {
   const {
-    basePath = "",
-    route = "",
-    pathname = "",
+    basePath = '',
+    route = '',
+    pathname = '',
     query = {},
-    asPath = "",
+    asPath = '',
     push = async () => true,
     replace = async () => true,
     reload = () => null,

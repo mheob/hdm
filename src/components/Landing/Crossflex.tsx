@@ -1,18 +1,18 @@
-import dynamic from "next/dynamic"
-import styled from "styled-components"
+import dynamic from 'next/dynamic'
+import styled from 'styled-components'
 
 const Header = styled.header`
   display: grid;
   grid-template-areas:
-    "grid-item-1"
-    "grid-item-2"
-    "grid-item-3";
+    'grid-item-1'
+    'grid-item-2'
+    'grid-item-3';
   grid-template-columns: 1fr;
 
   @media (min-width: 1024px) {
     grid-template-areas:
-      "grid-item-1 grid-item-3"
-      "grid-item-2 grid-item-2";
+      'grid-item-1 grid-item-3'
+      'grid-item-2 grid-item-2';
     grid-template-columns: 1fr 1fr;
   }
 
@@ -33,8 +33,8 @@ type Props = {
   className?: string
 }
 
-const Crossflex: React.FC<Props> = ({ className = "" }: Props) => {
-  const Pdf = dynamic(() => import("@/components/Utils/Pdf"), { ssr: false })
+const Crossflex: React.FC<Props> = ({ className = '' }: Props) => {
+  const Pdf = dynamic(() => import('@/components/Utils/Pdf'), { ssr: false })
 
   return (
     <section id="crossflex" className={className}>

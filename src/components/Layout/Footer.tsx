@@ -1,7 +1,7 @@
-import Link from "next/link"
-import { useRouter } from "next/router"
-import { animateScroll } from "react-scroll"
-import styled from "styled-components"
+import Link from 'next/link'
+import { useRouter } from 'next/router'
+import { animateScroll } from 'react-scroll'
+import styled from 'styled-components'
 
 const FooterStyled = styled.footer`
   position: relative;
@@ -23,7 +23,7 @@ type Props = {
   className?: string
 }
 
-const Footer: React.FC<Props> = ({ className = "" }: Props) => {
+const Footer: React.FC<Props> = ({ className = '' }: Props) => {
   const router = useRouter()
 
   return (
@@ -42,20 +42,20 @@ const Footer: React.FC<Props> = ({ className = "" }: Props) => {
         </Address>
 
         <Address className="mt-6 lg:mt-0">
-          Telefon:{" "}
+          Telefon:{' '}
           <a className="underline hover:text-hdm-dark" href="tel:+4928411401101">
             +49 2841 1401 101
-          </a>{" "}
+          </a>{' '}
           <br />
           Telefax: +49 2841 1401 180 <br />
-          E-Mail:{" "}
+          E-Mail:{' '}
           <a className="underline hover:text-hdm-dark" href="mailto:info@hdm.gmbh">
             info@hdm.gmbh
           </a>
         </Address>
 
         <div className="mt-24 lg:mt-0">
-          {router && router.pathname === "/" ? (
+          {router && router.pathname === '/' ? (
             <button id="logo" onClick={() => animateScroll.scrollToTop({ duration: 800 })}>
               <img className="w-48" src="/ci/hdm-logo.svg" alt="Logo der HDM GmbH" />
             </button>
