@@ -1,0 +1,14 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: '/'
+    schedule:
+      interval: daily
+      time: '23:25'
+      timezone: Europe/Berlin
+    open-pull-requests-limit: 10
+    target-branch: develop
+    reviewers:
+      - mheob
+    assignees:
+      - mheob
