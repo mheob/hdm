@@ -95,7 +95,7 @@
     "@types/react-scroll": "^1.8.0",
     "@types/react-stickynode": "^3.0.0",
     "@types/styled-components": "^5.1.4",
-    "@typescript-eslint/eslint-plugin": "^4.4.0",
+    "@typescript-eslint/eslint-plugin": "^4.4.1",
     "@typescript-eslint/parser": "^4.4.0",
     "autoprefixer": "9.8.6",
     "babel-jest": "^26.5.2",
