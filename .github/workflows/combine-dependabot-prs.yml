@@ -76,7 +76,7 @@ jobs:
             }
 
             core.setOutput('base-branch', base_branch);
-            core.setOutput('prs-string', prs.join('\n'));
+            core.setOutput('prs-string', prs.join('\ncloses '));
 
             combined = branches.join(' ')
             console.log('Combined: ' + combined);
