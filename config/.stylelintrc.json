@@ -13,14 +13,7 @@
           "apply",
           "variants",
           "responsive",
-          "screen",
-          "each",
-          "mixin",
-          "include",
-          "if",
-          "else",
-          "function",
-          "return"
+          "screen"
         ]
       }
     ]
