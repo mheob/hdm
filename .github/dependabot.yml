@@ -3,11 +3,12 @@ updates:
   - package-ecosystem: npm
     directory: '/'
     schedule:
-      interval: daily
-      time: '23:25'
+      interval: weekly
+      day: saturday
+      time: '00:25'
       timezone: Europe/Berlin
-    open-pull-requests-limit: 10
-    target-branch: develop
+    open-pull-requests-limit: 5
+    target-branch: updates/deps
     reviewers:
       - mheob
     assignees:
