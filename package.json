@@ -70,7 +70,7 @@
     "next": "^9.5.5",
     "nprogress": "^0.2.0",
     "react": "^16.14.0",
-    "react-dom": "^16.13.1",
+    "react-dom": "^16.14.0",
     "react-pdf": "^5.0.0",
     "react-portal-overlay": "^1.0.1",
     "react-scroll": "^1.8.1",
