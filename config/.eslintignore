@@ -1,0 +1,6 @@
+**/node_modules/**
+**/coverage/**
+**/public/sw.js
+**/public/workbox-*.js
+**/out/**
+**/@types/**

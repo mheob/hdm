@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IndexPage Testings matches snapshot 1`] = `
+<Layout
+  title="Downloads * HDM – Holz Design Moers"
+>
+  <h2
+    className="container mt-12 text-4xl font-bold lg:mt-32 lg:px-32 lg:text-5xl"
+  >
+    Downloads
+  </h2>
+  <Downloads
+    files={
+      Array [
+        Object {
+          "displayName": "FSC Zertifikat 2020 - DE",
+          "id": "1",
+          "path": "downloads/fsc-pefc/hdm-fsc-zertifikat-2020-de.pdf",
+        },
+        Object {
+          "displayName": "FSC Certificate 2020 - EN",
+          "id": "2",
+          "path": "downloads/fsc-pefc/hdm-fsc-certificate-2020-en.pdf",
+        },
+        Object {
+          "displayName": "PEFC Zertifikat 2020 - DE",
+          "id": "3",
+          "path": "downloads/fsc-pefc/hdm-pefc-zertifikat-2020-de.pdf",
+        },
+        Object {
+          "displayName": "PEFC Certificate 2020 - EN",
+          "id": "4",
+          "path": "downloads/fsc-pefc/hdm-pefc-certificate-2020-en.pdf",
+        },
+      ]
+    }
+    title="FSC / PEFC"
+  />
+  <Downloads
+    files={
+      Array [
+        Object {
+          "displayName": "DOP-PB202001 - DE",
+          "id": "1",
+          "path": "downloads/ce-dop/hdm-dop-pb202001-de.pdf",
+        },
+        Object {
+          "displayName": "DOP-PB202001 - EN",
+          "id": "2",
+          "path": "downloads/ce-dop/hdm-dop-pb202001-en.pdf",
+        },
+        Object {
+          "displayName": "DOP-PG202002 - DE",
+          "id": "3",
+          "path": "downloads/ce-dop/hdm-dop-pg202002-de.pdf",
+        },
+        Object {
+          "displayName": "DOP-PG202002 - EN",
+          "id": "4",
+          "path": "downloads/ce-dop/hdm-dop-pg202002-en.pdf",
+        },
+        Object {
+          "displayName": "DOP-PS202003 - DE",
+          "id": "5",
+          "path": "downloads/ce-dop/hdm-dop-ps202003-de.pdf",
+        },
+        Object {
+          "displayName": "DOP-PS202003 - EN",
+          "id": "6",
+          "path": "downloads/ce-dop/hdm-dop-ps202003-en.pdf",
+        },
+        Object {
+          "displayName": "DOP-PP202004 - DE",
+          "id": "7",
+          "path": "downloads/ce-dop/hdm-dop-pp202004-de.pdf",
+        },
+        Object {
+          "displayName": "DOP-PP202004 - EN",
+          "id": "8",
+          "path": "downloads/ce-dop/hdm-dop-pp202004-en.pdf",
+        },
+      ]
+    }
+    title="CE-DOP Leistungsbeschreibungen"
+  />
+</Layout>
+`;

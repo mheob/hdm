@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IndexPage Testings matches snapshot 1`] = `
+<Layout
+  title="HDM – Holz Design Moers"
+>
+  <div
+    id="produkte"
+  >
+    <Crossflex />
+    <Purity />
+    <Cerastar />
+    <Massivholztueren />
+    <Shelves />
+    <Strips />
+    <Accessories />
+  </div>
+  <div
+    id="unternehmen"
+  >
+    <Company />
+  </div>
+</Layout>
+`;

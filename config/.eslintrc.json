@@ -19,6 +19,7 @@
     "prettier/@typescript-eslint",
     "plugin:prettier/recommended"
   ],
+  "plugins": ["emotion"],
   "rules": {
     "space-before-function-paren": [
       "error",

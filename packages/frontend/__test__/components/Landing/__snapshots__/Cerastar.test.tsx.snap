@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cerastar Testings matches snapshot 1`] = `
+<section
+  className="container relative lg:grid lg:grid-cols-2 lg:gap-32 mt-32 pt-20 pb-24 lg:mt-24 "
+  id="cerastar"
+>
+  <BackgroundImage />
+  <header>
+    <div
+      className="lg:ml-32"
+    >
+      <h2
+        className="text-4xl font-bold lg:text-5xl"
+      >
+        Cerastar
+      </h2>
+      <p
+        className="mt-4 text-xl leading-snug lg:text-2xl"
+      >
+        Der neue Star unter 
+        <br />
+        den Bodenbelägen
+      </p>
+    </div>
+    <picture
+      className="block mt-16 -mx-6 lg:-ml-20 lg:-mr-8"
+    >
+      <source
+        srcSet="/images/hdm-cerastar.webp"
+        type="image/webp"
+      />
+      <source
+        srcSet="/images/hdm-cerastar.png"
+        type="image/png"
+      />
+      <img
+        alt="Cerastar - der neue Star unten den Bodenbelägen"
+        src="/images/hdm-cerastar.png"
+      />
+    </picture>
+  </header>
+  <div
+    className="lg:mt-32 lg:pr-16"
+  >
+    <h3
+      className="mt-12 font-bold lg:text-lg"
+    >
+      Cerastar heißt der neue Designbodenbelag mit keramischer Nanocoat Oberflächenversiegelung.
+    </h3>
+    <p
+      className="mt-8 lg:text-lg"
+    >
+      1,2 Mio. feinste Keramikpartikel pro Quadratzentimeter machen die Oberfläche von Cerastar – gegenüber Oberflächen vergleichbarer Bodenbeläge – bis zu dreimal kratzfester und strapazierfähiger.
+    </p>
+    <p
+      className="mt-8 lg:text-lg"
+    >
+      So entsteht eine äußerst abriebfeste Schutzschicht, die deutlich resistenter gegen Mikrokratzer ist. Zugleich verleiht die hochtransparente Versiegelung den Dekoren eine einzigartige brillante Farbtiefe und eleganten Glanz.
+    </p>
+    <p
+      className="mt-8 lg:text-lg"
+    >
+      Weitere Informationen finden Sie unter
+       
+      <a
+        className="underline text-hdm hover:text-hdm-dark"
+        href="https://cerastar.eu"
+      >
+        cerastar.eu
+      </a>
+      .
+    </p>
+    <div
+      className="mt-16 text-center lg:text-left lg:mt-24"
+    >
+      <ForwardRef(LoadableComponent)
+        filename="/documents/hdm-cerastar.pdf"
+        title="Cerastar Katalog"
+      />
+    </div>
+  </div>
+</section>
+`;
