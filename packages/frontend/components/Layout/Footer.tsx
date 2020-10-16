@@ -51,12 +51,15 @@ export default function Footer({ className = '' }: React.HTMLAttributes<HTMLElem
 
       <section className="container mt-6 text-lg leading-10 lg:flex lg:justify-center">
         <p>&copy; 2020 Holz Design Moers GmbH</p>
-        <nav className="mt-2 leading-8 lg:mt-0">
+        <nav className="flex flex-col mt-2 leading-8 lg:mt-0 lg:flex-row">
+          <Link href="/downloads">
+            <a className="underline lg:ml-8 hover:text-hdm-dark">Downloads</a>
+          </Link>
           <Link href="/impressum">
-            <a className="underline hover:text-hdm-dark lg:ml-8">Impressum</a>
+            <a className="underline lg:ml-8 hover:text-hdm-dark">Impressum</a>
           </Link>
           <Link href="/datenschutz">
-            <a className="ml-8 underline hover:text-hdm-dark">Datenschutz</a>
+            <a className="underline lg:ml-8 hover:text-hdm-dark">Datenschutz</a>
           </Link>
         </nav>
       </section>

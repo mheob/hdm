@@ -25,6 +25,7 @@
     "build": "yarn workspaces run next build",
     "commit": "git-cz",
     "dev": "yarn workspaces run next",
+    "export": "yarn workspaces run export",
     "lint": "yarn lint:js && yarn lint:style",
     "lint:js": "yarn workspaces run eslint '**/*.{js,ts,tsx}' --quiet --fix --ignore-path '../../config/.eslintignore'",
     "lint:style": "yarn workspaces run stylelint '**/*.css' --fix --ignore-path '../../config/.stylelintignore'",

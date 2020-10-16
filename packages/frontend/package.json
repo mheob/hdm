@@ -16,7 +16,7 @@
   "scripts": {
     "build": "next build",
     "dev": "next",
-    "preexport": "next build",
+    "preexport": "rimraf .next out && next build",
     "export": "next export",
     "semantic-release": "semantic-release",
     "start": "next start",
@@ -81,6 +81,7 @@
     "postcss": "^8.1.1",
     "postcss-import": "^12.0.1",
     "postcss-preset-env": "^6.7.0",
+    "rimraf": "^3.0.2",
     "semantic-release": "^17.2.1",
     "ts-jest": "^26.4.1",
     "ts-node": "^9.0.0",

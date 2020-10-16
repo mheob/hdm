@@ -12,11 +12,7 @@ module.exports = {
   purge: {
     // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
     enabled: process.env.NODE_ENV === 'production',
-    content: [
-      'src/components/**/*.{js,ts,jsx,tsx}',
-      'src/containers/**/*.{js,ts,jsx,tsx}',
-      'src/pages/**/*.{js,ts,jsx,tsx}',
-    ],
+    content: ['components/**/*.{js,ts,jsx,tsx}', 'containers/**/*.{js,ts,jsx,tsx}', 'pages/**/*.{js,ts,jsx,tsx}'],
   },
   theme: {
     fontFamily: {

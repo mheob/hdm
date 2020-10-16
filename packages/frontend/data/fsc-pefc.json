@@ -1,0 +1,22 @@
+[
+  {
+    "id": "1",
+    "displayName": "FSC Zertifikat 2020 - DE",
+    "path": "downloads/fsc-pefc/hdm-fsc-zertifikat-2020-de.pdf"
+  },
+  {
+    "id": "2",
+    "displayName": "FSC Certificate 2020 - EN",
+    "path": "downloads/fsc-pefc/hdm-fsc-certificate-2020-en.pdf"
+  },
+  {
+    "id": "3",
+    "displayName": "PEFC Zertifikat 2020 - DE",
+    "path": "downloads/fsc-pefc/hdm-pefc-zertifikat-2020-de.pdf"
+  },
+  {
+    "id": "4",
+    "displayName": "PEFC Certificate 2020 - EN",
+    "path": "downloads/fsc-pefc/hdm-pefc-certificate-2020-en.pdf"
+  }
+]

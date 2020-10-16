@@ -1,16 +1,5 @@
 @tailwind base;
 
-/* Write your own custom base styles here */
-button:focus,
-select:focus {
-  outline: none;
-}
-
-body.user-is-tabbing *:focus {
-  outline: 2px solid royalblue !important;
-  outline: 5px auto -webkit-focus-ring-color !important;
-}
-
 h1,
 h2,
 h3,
@@ -25,16 +14,29 @@ li {
 /* Stop purging. */
 
 /* Write you own custom component styles here */
-a {
+a,
+button {
   @apply cursor-pointer;
 }
 
-a:hover {
-  @apply transition duration-300;
+a:hover,
+button:hover {
+  @apply transition duration-500 ease-in-out;
 }
 
 a.active {
   @apply border-b-4 border-hdm;
+}
+
+/* Write your own custom base styles here */
+button:focus,
+select:focus {
+  outline: none;
+}
+
+body.user-is-tabbing *:focus {
+  outline: 2px solid royalblue !important;
+  outline: 5px auto -webkit-focus-ring-color !important;
 }
 
 .sticky-nav nav {

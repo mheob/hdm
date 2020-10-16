@@ -12,7 +12,7 @@ describe('IndexPage Testings', () => {
   let wrapper: ShallowWrapper
 
   beforeEach(() => {
-    wrapper = shallow(<Crossflex />)
+    wrapper = shallow(<IndexPage />)
   })
 
   test('matches snapshot', () => {
@@ -20,32 +20,26 @@ describe('IndexPage Testings', () => {
   })
 
   test('render one Crossflex component', () => {
-    const wrapper = shallow(<IndexPage />)
     expect(wrapper.find(Crossflex)).toHaveLength(1)
   })
 
   test('render one Purity component', () => {
-    const wrapper = shallow(<IndexPage />)
     expect(wrapper.find(Purity)).toHaveLength(1)
   })
 
   test('render one Cerastar component', () => {
-    const wrapper = shallow(<IndexPage />)
     expect(wrapper.find(Cerastar)).toHaveLength(1)
   })
 
   test('render one Massivholztueren component', () => {
-    const wrapper = shallow(<IndexPage />)
     expect(wrapper.find(Massivholztueren)).toHaveLength(1)
   })
 
   test('render one Accessories component', () => {
-    const wrapper = shallow(<IndexPage />)
     expect(wrapper.find(Accessories)).toHaveLength(1)
   })
 
   test('render one Company component', () => {
-    const wrapper = shallow(<IndexPage />)
     expect(wrapper.find(Company)).toHaveLength(1)
   })
 })

@@ -70,13 +70,22 @@ exports[`Footer Testings matches snapshot 1`] = `
       © 2020 Holz Design Moers GmbH
     </p>
     <nav
-      className="mt-2 leading-8 lg:mt-0"
+      className="flex flex-col mt-2 leading-8 lg:mt-0 lg:flex-row"
     >
+      <Link
+        href="/downloads"
+      >
+        <a
+          className="underline lg:ml-8 hover:text-hdm-dark"
+        >
+          Downloads
+        </a>
+      </Link>
       <Link
         href="/impressum"
       >
         <a
-          className="underline hover:text-hdm-dark lg:ml-8"
+          className="underline lg:ml-8 hover:text-hdm-dark"
         >
           Impressum
         </a>
@@ -85,7 +94,7 @@ exports[`Footer Testings matches snapshot 1`] = `
         href="/datenschutz"
       >
         <a
-          className="ml-8 underline hover:text-hdm-dark"
+          className="underline lg:ml-8 hover:text-hdm-dark"
         >
           Datenschutz
         </a>

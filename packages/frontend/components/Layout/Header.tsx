@@ -33,7 +33,7 @@ export default function Header({ className = '' }: React.HTMLAttributes<HTMLElem
                 spy={true}
                 smooth={true}
                 offset={-120}
-                duration={600}
+                duration={1000}
                 className="px-4 py-2 my-2 hover:text-hdm"
               >
                 Produkte
@@ -54,7 +54,7 @@ export default function Header({ className = '' }: React.HTMLAttributes<HTMLElem
                 activeClass="active"
                 spy={true}
                 smooth={true}
-                duration={1200}
+                duration={1000}
                 className="px-4 py-2 my-2 hover:text-hdm"
               >
                 Kontakt
@@ -113,7 +113,7 @@ export default function Header({ className = '' }: React.HTMLAttributes<HTMLElem
               spy={true}
               smooth={true}
               offset={-120}
-              duration={600}
+              duration={1000}
               className="px-4 py-2 my-2 hover:text-hdm"
             >
               Dekorpaneele
@@ -124,7 +124,7 @@ export default function Header({ className = '' }: React.HTMLAttributes<HTMLElem
               spy={true}
               smooth={true}
               offset={-25}
-              duration={700}
+              duration={1000}
               className="px-4 py-2 my-2 hover:text-hdm"
             >
               Laminatb&ouml;den
@@ -135,7 +135,7 @@ export default function Header({ className = '' }: React.HTMLAttributes<HTMLElem
               spy={true}
               smooth={true}
               offset={-40}
-              duration={900}
+              duration={1000}
               className="px-4 py-2 my-2 hover:text-hdm"
             >
               Designb&ouml;den
@@ -157,7 +157,7 @@ export default function Header({ className = '' }: React.HTMLAttributes<HTMLElem
               spy={true}
               smooth={true}
               offset={-20}
-              duration={1100}
+              duration={1000}
               className="px-4 py-2 my-2 hover:text-hdm"
             >
               Möbelbauteile
@@ -168,7 +168,7 @@ export default function Header({ className = '' }: React.HTMLAttributes<HTMLElem
               spy={true}
               smooth={true}
               offset={-20}
-              duration={1100}
+              duration={1000}
               className="px-4 py-2 my-2 hover:text-hdm"
             >
               Leisten
@@ -179,7 +179,7 @@ export default function Header({ className = '' }: React.HTMLAttributes<HTMLElem
               spy={true}
               smooth={true}
               offset={-20}
-              duration={1200}
+              duration={1000}
               className="px-4 py-2 my-2 hover:text-hdm"
             >
               {!process.browser ? 'DAZU-Zubehör' : width < 1280 ? 'Zubehör' : 'DAZU-Zubehör'}

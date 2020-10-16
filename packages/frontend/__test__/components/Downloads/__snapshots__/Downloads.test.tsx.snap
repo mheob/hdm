@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IndexPage Testings matches snapshot 1`] = `
+<SectionStyled
+  className="container lg:px-32 "
+  id="kontakt"
+>
+  <h3
+    className="mt-24 text-2xl font-bold lg:text-3xl"
+  >
+    FSC / PEFC
+  </h3>
+  <div
+    className="mt-8 download-list"
+  >
+    <div
+      className="lg:text-lg download-list__item"
+      key="1"
+    >
+      <ForwardRef(LoadableComponent)
+        buttonStyleLight={true}
+        buttonWidthFull={true}
+        filename="DUMMY PATH"
+        title="DUMMY NAME"
+      />
+    </div>
+  </div>
+</SectionStyled>
+`;

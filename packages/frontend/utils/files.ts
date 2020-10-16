@@ -5,6 +5,9 @@
  */
 export function downloadFile(fileName: string) {
   const tempWindow = window.open(fileName)
+
+  if (!tempWindow) return
+
   tempWindow.document.execCommand('SaveAs')
   tempWindow.close()
 

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "displayName": "DOP-PB202001 - DE",
+    "path": "downloads/ce-dop/hdm-dop-pb202001-de.pdf"
+  },
+  {
+    "id": "2",
+    "displayName": "DOP-PB202001 - EN",
+    "path": "downloads/ce-dop/hdm-dop-pb202001-en.pdf"
+  },
+  {
+    "id": "3",
+    "displayName": "DOP-PG202002 - DE",
+    "path": "downloads/ce-dop/hdm-dop-pg202002-de.pdf"
+  },
+  {
+    "id": "4",
+    "displayName": "DOP-PG202002 - EN",
+    "path": "downloads/ce-dop/hdm-dop-pg202002-en.pdf"
+  },
+  {
+    "id": "5",
+    "displayName": "DOP-PS202003 - DE",
+    "path": "downloads/ce-dop/hdm-dop-ps202003-de.pdf"
+  },
+  {
+    "id": "6",
+    "displayName": "DOP-PS202003 - EN",
+    "path": "downloads/ce-dop/hdm-dop-ps202003-en.pdf"
+  },
+  {
+    "id": "7",
+    "displayName": "DOP-PP202004 - DE",
+    "path": "downloads/ce-dop/hdm-dop-pp202004-de.pdf"
+  },
+  {
+    "id": "8",
+    "displayName": "DOP-PP202004 - EN",
+    "path": "downloads/ce-dop/hdm-dop-pp202004-en.pdf"
+  }
+]
