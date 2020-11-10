@@ -276,7 +276,7 @@ const Badge = styled.img`
 
 const playIcon = (
   <svg
-    className="inline-block w-5 h-5 mr-3 fill-current"
+    className="inline-block w-4 h-4 pb-1 mr-3 fill-current"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 477.886 477.886"
   >
