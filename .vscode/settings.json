@@ -1,6 +1,7 @@
 {
   "editor.codeActionsOnSave": {
-    "source.fixAll": true
+    "source.fixAll": true,
+    "source.organizeImports": true
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnPaste": true,
@@ -16,6 +17,11 @@
 
   // Extensions
   // ----------
+
+  // Jest
+  "jest.rootPath": "packages/frontend/",
+  "jest.showCoverageOnLoad": true,
+  "jest.enableSnapshotUpdateMessages": false,
 
   // Stylelint
   "css.validate": false,

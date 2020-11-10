@@ -1,10 +1,9 @@
+import Modal from '@/components/UI/Modal'
 import { useWindowDimensions } from '@/hooks/useWindowDimensions'
 import { downloadFile } from '@/utils/files'
-import { css } from '@emotion/core'
 import { PDFDocumentProxy } from 'pdfjs-dist'
-import { useState } from 'react'
+import React, { useState } from 'react'
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack'
-import { Overlay } from 'react-portal-overlay'
 
 interface PdfProps extends React.HTMLAttributes<HTMLElement> {
   title: string
@@ -63,24 +62,7 @@ export default function Pdf({
           </button>
 
           {process.browser && (
-            <Overlay
-              className={`modal ${className}`}
-              open={isOpen}
-              onClose={() => setIsOpen(false)}
-              closeOnClick
-              css={css`
-                position: fix;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
-                z-index: 1001;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                background: rgba(0, 105, 153, 0.5);
-              `}
-            >
+            <Modal className={`${className}`} isOpen={isOpen} onClose={() => setIsOpen(false)}>
               <button
                 className={`p-4 ml-32 rounded-full bg-hdm hover:bg-hdm-dark prev ${pageNumber <= 1 ? 'invisible' : ''}`}
                 disabled={pageNumber <= 1}
@@ -139,7 +121,7 @@ export default function Pdf({
                 </svg>
                 {title} downloaden
               </button>
-            </Overlay>
+            </Modal>
           )}
         </>
       )}
