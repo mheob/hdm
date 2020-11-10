@@ -1,8 +1,27 @@
+import Modal from '@/components/UI/Modal'
+import { css } from '@emotion/core'
 import styled from '@emotion/styled'
 import dynamic from 'next/dynamic'
+import { useState } from 'react'
 
 export default function Purity({ className = '' }: React.HTMLAttributes<HTMLElement>) {
   const Pdf = dynamic(() => import('@/components/Utils/Pdf'), { ssr: false })
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
+  const handleModalOpen = () => {
+    setIsModalOpen(true)
+  }
+
+  const handleModalClose = () => {
+    setIsModalOpen(false)
+  }
+
+  const handleVideoClick = (event: React.MouseEvent<HTMLVideoElement, MouseEvent>) => {
+    event.preventDefault()
+    const element = event.currentTarget
+    if (element.paused) element.play()
+    else element.pause()
+  }
 
   return (
     <section id="purity" className={`lg:relative overflow-x-hidden mt-12 lg:mt-32 pt-20 lg:pb-20 ${className}`}>
@@ -126,8 +145,29 @@ export default function Purity({ className = '' }: React.HTMLAttributes<HTMLElem
             <img className="h-20 lg:h-24" src="/certificates/hdm-e1.svg" alt="E1 - DIN EN 16156" />
           </div>
 
-          <div className="container mt-16 text-center lg:text-left lg:mt-24 fourth">
+          <div className="container flex flex-col mt-16 text-center sm:flex-row lg:text-left lg:mt-24 fourth">
             <Pdf title="Purity Home Selection" filename="/documents/hdm-purity-home-selection.pdf" />
+            <button
+              className="inline-block w-auto px-6 py-3 mt-4 text-sm text-white rounded-full sm:mt-0 sm:ml-10 bg-hdm hover:bg-hdm-dark"
+              onClick={handleModalOpen}
+            >
+              {playIcon} Video ansehen
+            </button>
+            <Modal isOpen={isModalOpen} onClose={handleModalClose}>
+              <div
+                className="flex items-center justify-center m-auto"
+                css={css`
+                  @media (min-width: 768px) {
+                    max-width: 60%;
+                  }
+                `}
+              >
+                <video className="outline-none" controls autoPlay onClick={handleVideoClick}>
+                  <source src="/videos/hdm-purity.webm" type="video/webm" />
+                  <source src="/videos/hdm-purity.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </Modal>
           </div>
         </GridHome>
       </div>
@@ -233,3 +273,13 @@ const Badge = styled.img`
   bottom: 5rem;
   left: 5rem;
 `
+
+const playIcon = (
+  <svg
+    className="inline-block w-5 h-5 mr-3 fill-current"
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 477.886 477.886"
+  >
+    <path d="M476.091 231.332a17.068 17.068 0 00-7.662-7.662L24.695 1.804C16.264-2.41 6.013 1.01 1.8 9.442A17.068 17.068 0 000 17.079v443.733c-.004 9.426 7.633 17.07 17.059 17.075a17.068 17.068 0 007.637-1.8L468.429 254.22c8.436-4.205 11.866-14.452 7.662-22.888z" />
+  </svg>
+)

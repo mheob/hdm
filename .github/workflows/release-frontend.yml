@@ -45,20 +45,20 @@ jobs:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: yarn lint
 
-      - name: Run jest
-        env:
-          CI: true
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: yarn run test:cov
+      # - name: Run jest
+      #   env:
+      #     CI: true
+      #     NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   run: yarn run test:cov
 
-      - name: Generate Coverage Comment on pull requests
-        if: github.event_name == 'pull_request'
-        uses: mattallty/jest-github-action@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          test-command: 'yarn test:cov'
-          working-directory: 'packages/frontend'
+      # - name: Generate Coverage Comment on pull requests
+      #   if: github.event_name == 'pull_request'
+      #   uses: mattallty/jest-github-action@v1
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   with:
+      #     test-command: 'yarn test:cov'
+      #     working-directory: 'packages/frontend'
 
       - name: Release Frontend
         env:
