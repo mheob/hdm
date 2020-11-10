@@ -1,3 +1,10 @@
+# [2.2.0-next.1](https://github.com/100herz/hdm/compare/v2.1.0...v2.2.0-next.1) (2020-11-10)
+
+
+### Features
+
+* **purity:** add the video ([#72](https://github.com/100herz/hdm/issues/72)) ([625533f](https://github.com/100herz/hdm/commit/625533f2b8401841fdcc5c4d88a96e64ab86ce04)), closes [#65](https://github.com/100herz/hdm/issues/65) [#62](https://github.com/100herz/hdm/issues/62) [#63](https://github.com/100herz/hdm/issues/63) [#64](https://github.com/100herz/hdm/issues/64)
+
 # [2.1.0](https://github.com/100herz/hdm/compare/v2.0.1...v2.1.0) (2020-10-16)
 
 
