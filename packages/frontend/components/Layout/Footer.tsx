@@ -1,7 +1,7 @@
-import styled from '@emotion/styled'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { animateScroll } from 'react-scroll'
+import styled from '@emotion/styled'
 
 export default function Footer({ className = '' }: React.HTMLAttributes<HTMLElement>) {
   const router = useRouter()

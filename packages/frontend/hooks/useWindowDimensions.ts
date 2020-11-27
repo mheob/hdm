@@ -1,5 +1,6 @@
-import { getWindowDimensions } from '@/utils/window'
 import { useEffect, useState } from 'react'
+
+import { getWindowDimensions } from '@/utils/window'
 
 export function useWindowDimensions() {
   const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions())

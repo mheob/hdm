@@ -1,8 +1,8 @@
 import Downloads from '@/components/Downloads/Downloads'
 import Layout from '@/components/Layout'
+import { IFiles } from '@/models/files'
 import certificatesCeDop from '@/data/ce-dop.json'
 import certificatesFscPefc from '@/data/fsc-pefc.json'
-import { IFiles } from '@/models/files'
 
 export default function DownloadContainer() {
   return (

@@ -1,8 +1,9 @@
+import { useState } from 'react'
+import dynamic from 'next/dynamic'
+import styled from '@emotion/styled'
+
 import Modal from '@/components/UI/Modal'
 import { css } from '@emotion/core'
-import styled from '@emotion/styled'
-import dynamic from 'next/dynamic'
-import { useState } from 'react'
 
 export default function Purity({ className = '' }: React.HTMLAttributes<HTMLElement>) {
   const Pdf = dynamic(() => import('@/components/Utils/Pdf'), { ssr: false })

@@ -1,6 +1,6 @@
-import { css } from '@emotion/core'
 import { useEffect, useState } from 'react'
 import { Overlay } from 'react-portal-overlay'
+import { css } from '@emotion/react'
 
 interface ModalProps extends React.HTMLAttributes<HTMLElement> {
   isOpen: boolean
