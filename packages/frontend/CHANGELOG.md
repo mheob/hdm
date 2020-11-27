@@ -1,3 +1,10 @@
+## [2.2.1](https://github.com/100herz/hdm/compare/v2.2.0...v2.2.1) (2020-11-27)
+
+
+### Bug Fixes
+
+* **strips:** typo should `Schnitz-` instead of `Schnitt-` ([03b4c39](https://github.com/100herz/hdm/commit/03b4c39b9ef61a3d21206beb78ea579d566f1516)), closes [#80](https://github.com/100herz/hdm/issues/80)
+
 # [2.2.0](https://github.com/100herz/hdm/compare/v2.1.0...v2.2.0) (2020-11-10)
 
 
