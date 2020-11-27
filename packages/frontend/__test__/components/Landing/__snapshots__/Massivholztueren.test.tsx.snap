@@ -25,7 +25,7 @@ exports[`Massivholztueren Testings matches snapshot 1`] = `
       </p>
     </header>
     <picture
-      className="block mt-16 -mx-6 lg:ml-0 lg:-mr-32 lg:mt-0 second"
+      className="block mt-16 emotion-0 lg:ml-0 lg:-mr-32 lg:mt-0 second"
     >
       <source
         srcSet="/images/hdm-massivholztueren.webp"

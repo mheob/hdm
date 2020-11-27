@@ -1,6 +1,7 @@
-import { IFiles } from '@/models/files'
-import styled from '@emotion/styled'
 import dynamic from 'next/dynamic'
+import styled from '@emotion/styled'
+
+import { IFiles } from '@/models/files'
 
 interface DownloadsProps extends React.HTMLAttributes<HTMLElement> {
   files: IFiles[]

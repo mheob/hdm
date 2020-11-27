@@ -84,7 +84,7 @@ exports[`Header Testings matches snapshot 1`] = `
        Die Holz Design Moers GmbH bietet ihren Handelspartnern auch in Zukunft abverkaufsstarke Produkte, Konzepte und Ideen für eine erfolgreiche Zusammenarbeit.
     </p>
     <figure
-      className="hidden -mt-16 text-center lg:block"
+      className="hidden emotion-0 text-center lg:block"
     >
       <img
         alt="HDM - Verantwortung für Mensch und Natur"

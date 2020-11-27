@@ -24,7 +24,7 @@ exports[`Cerastar Testings matches snapshot 1`] = `
       </p>
     </div>
     <picture
-      className="block mt-16 -mx-6 lg:-ml-20 lg:-mr-8"
+      className="block mt-16 emotion-0 lg:-ml-20 lg:-mr-8"
     >
       <source
         srcSet="/images/hdm-cerastar.webp"

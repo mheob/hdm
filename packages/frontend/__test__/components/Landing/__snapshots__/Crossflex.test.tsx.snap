@@ -27,7 +27,7 @@ exports[`Crossflex Testings matches snapshot 1`] = `
       </p>
     </div>
     <picture
-      className="mt-4 -ml-6 -mr-6 lg:mt-16 second"
+      className="mt-4 emotion-0 emotion-1 lg:mt-16 second"
     >
       <source
         srcSet="/images/hdm-crossflex.webp"

@@ -109,7 +109,7 @@ exports[`Footer Testings matches snapshot 1`] = `
       onClick={[Function]}
     >
       <svg
-        className="inline-block w-6 transform -rotate-90"
+        className="inline-block w-6 transform emotion-0"
         viewBox="0 0 24.242 45"
         xmlns="http://www.w3.org/2000/svg"
       >

@@ -4,8 +4,8 @@ A short overview of the company in their products.
 
 ## Action states
 
-![Lint and Test](https://github.com/100herz/hdm/workflows/Lint%20and%20Test/badge.svg)
-![Release](https://github.com/100herz/hdm/workflows/Release/badge.svg)
+[![Test CI](https://img.shields.io/github/workflow/status/100herz/hdm/Test%20CI?label=Test%20CI&logo=github&style=flat-square)](https://github.com/100herz/hdm)
+[![Release Frontend CI](https://img.shields.io/github/workflow/status/100herz/hdm/Release%20Frontend%20CI?label=Release%20Frontend%20CI&logo=github&style=flat-square)](https://github.com/100herz/hdm)
 
 ## Packages
 

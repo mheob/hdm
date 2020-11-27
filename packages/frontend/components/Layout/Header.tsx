@@ -1,9 +1,10 @@
-import { useWindowDimensions } from '@/hooks/useWindowDimensions'
-import styled from '@emotion/styled'
 import NavLink from 'next/link'
 import { useRouter } from 'next/router'
 import { Link } from 'react-scroll'
 import Sticky from 'react-stickynode'
+import styled from '@emotion/styled'
+
+import { useWindowDimensions } from '@/hooks/useWindowDimensions'
 
 export default function Header({ className = '' }: React.HTMLAttributes<HTMLElement>) {
   const router = useRouter()

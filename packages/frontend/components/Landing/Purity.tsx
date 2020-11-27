@@ -1,8 +1,8 @@
-import Modal from '@/components/UI/Modal'
-import { css } from '@emotion/core'
-import styled from '@emotion/styled'
-import dynamic from 'next/dynamic'
 import { useState } from 'react'
+import dynamic from 'next/dynamic'
+import styled from '@emotion/styled'
+
+import Modal from '@/components/UI/Modal'
 
 export default function Purity({ className = '' }: React.HTMLAttributes<HTMLElement>) {
   const Pdf = dynamic(() => import('@/components/Utils/Pdf'), { ssr: false })
@@ -148,25 +148,18 @@ export default function Purity({ className = '' }: React.HTMLAttributes<HTMLElem
           <div className="container flex flex-col mt-16 text-center sm:flex-row lg:text-left lg:mt-24 fourth">
             <Pdf title="Purity Home Selection" filename="/documents/hdm-purity-home-selection.pdf" />
             <button
-              className="inline-block w-auto px-6 py-3 mt-4 text-sm text-white rounded-full sm:mt-0 sm:ml-10 bg-hdm hover:bg-hdm-dark"
+              className="inline-block px-6 py-3 mt-4 text-sm text-white rounded-full sm:mt-0 sm:ml-10 bg-hdm hover:bg-hdm-dark"
               onClick={handleModalOpen}
             >
               {playIcon} Video ansehen
             </button>
             <Modal isOpen={isModalOpen} onClose={handleModalClose}>
-              <div
-                className="flex items-center justify-center m-auto"
-                css={css`
-                  @media (min-width: 768px) {
-                    max-width: 60%;
-                  }
-                `}
-              >
+              <VideoContainer className="flex items-center justify-center m-auto">
                 <video className="outline-none" controls autoPlay onClick={handleVideoClick}>
                   <source src="/videos/hdm-purity.webm" type="video/webm" />
                   <source src="/videos/hdm-purity.mp4" type="video/mp4" />
                 </video>
-              </div>
+              </VideoContainer>
             </Modal>
           </div>
         </GridHome>
@@ -265,6 +258,7 @@ const GridHome = styled.div`
 
   & > .fourth {
     grid-area: grid-item-4;
+    align-self: flex-end;
   }
 `
 
@@ -272,6 +266,12 @@ const Badge = styled.img`
   position: absolute;
   bottom: 5rem;
   left: 5rem;
+`
+
+const VideoContainer = styled.div`
+  @media (min-width: 768px) {
+    max-width: 60%;
+  }
 `
 
 const playIcon = (
