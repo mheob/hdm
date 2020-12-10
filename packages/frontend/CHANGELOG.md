@@ -1,3 +1,11 @@
+# [2.3.0](https://github.com/100herz/hdm/compare/v2.2.1...v2.3.0) (2020-12-10)
+
+
+### Features
+
+* **crossflex:** add new video to the section ([#85](https://github.com/100herz/hdm/issues/85)) ([8fd904d](https://github.com/100herz/hdm/commit/8fd904db0d93c0db8fabfc8ffe6589273a68f8ad)), closes [#83](https://github.com/100herz/hdm/issues/83)
+* **purity:** add the button to the video also to the bio section ([#86](https://github.com/100herz/hdm/issues/86)) ([c884f63](https://github.com/100herz/hdm/commit/c884f637da8a942ff83c3864bf8a91ca7a28204d)), closes [#84](https://github.com/100herz/hdm/issues/84)
+
 ## [2.2.1](https://github.com/100herz/hdm/compare/v2.2.0...v2.2.1) (2020-11-27)
 
 
