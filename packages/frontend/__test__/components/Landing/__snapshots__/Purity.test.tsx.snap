@@ -135,11 +135,24 @@ exports[`Purity Testings matches snapshot 1`] = `
       />
     </div>
     <div
-      className="container text-center lg:text-left lg:-mt-6 lg:px-0 fourth"
+      className="container flex flex-col self-end text-center sm:flex-row lg:text-left lg:-mt-6 lg:px-0 fourth"
     >
       <ForwardRef(LoadableComponent)
         filename="/documents/hdm-purity-bio-selection.pdf"
         title="Purity Bio Selection"
+      />
+      <button
+        className="inline-block px-6 py-3 mt-4 text-sm text-white rounded-full sm:mt-0 sm:ml-10 bg-hdm hover:bg-hdm-dark"
+        onClick={[Function]}
+      >
+        <PlayIcon />
+         Video ansehen
+      </button>
+      <ModalVideo
+        isOpen={false}
+        onClose={[Function]}
+        onVideoClick={[Function]}
+        videoName="hdm-purity"
       />
     </div>
   </GridBio>
@@ -236,7 +249,6 @@ exports[`Purity Testings matches snapshot 1`] = `
           <PlayIcon />
            Video ansehen
         </button>
-         
         <ModalVideo
           isOpen={false}
           onClose={[Function]}

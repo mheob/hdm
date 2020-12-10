@@ -94,8 +94,20 @@ export default function Purity({ className = '' }: React.HTMLAttributes<HTMLElem
           <img className="h-20 lg:h-24" src="/certificates/hdm-e0.svg" alt="E0 - DIN EN 717-1" />
         </div>
 
-        <div className="container text-center lg:text-left lg:-mt-6 lg:px-0 fourth">
+        <div className="container flex flex-col self-end text-center sm:flex-row lg:text-left lg:-mt-6 lg:px-0 fourth">
           <Pdf title="Purity Bio Selection" filename="/documents/hdm-purity-bio-selection.pdf" />
+          <button
+            className="inline-block px-6 py-3 mt-4 text-sm text-white rounded-full sm:mt-0 sm:ml-10 bg-hdm hover:bg-hdm-dark"
+            onClick={handleModalOpen}
+          >
+            <PlayIcon /> Video ansehen
+          </button>
+          <ModalVideo
+            videoName="hdm-purity"
+            isOpen={isModalOpen}
+            onClose={handleModalClose}
+            onVideoClick={handleVideoClick}
+          />
         </div>
       </GridBio>
 
@@ -139,7 +151,7 @@ export default function Purity({ className = '' }: React.HTMLAttributes<HTMLElem
               onClick={handleModalOpen}
             >
               <PlayIcon /> Video ansehen
-            </button>{' '}
+            </button>
             <ModalVideo
               videoName="hdm-purity"
               isOpen={isModalOpen}
