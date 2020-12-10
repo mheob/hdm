@@ -233,41 +233,16 @@ exports[`Purity Testings matches snapshot 1`] = `
           className="inline-block px-6 py-3 mt-4 text-sm text-white rounded-full sm:mt-0 sm:ml-10 bg-hdm hover:bg-hdm-dark"
           onClick={[Function]}
         >
-          <svg
-            className="inline-block w-4 h-4 pb-1 mr-3 fill-current"
-            viewBox="0 0 477.886 477.886"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M476.091 231.332a17.068 17.068 0 00-7.662-7.662L24.695 1.804C16.264-2.41 6.013 1.01 1.8 9.442A17.068 17.068 0 000 17.079v443.733c-.004 9.426 7.633 17.07 17.059 17.075a17.068 17.068 0 007.637-1.8L468.429 254.22c8.436-4.205 11.866-14.452 7.662-22.888z"
-            />
-          </svg>
+          <PlayIcon />
            Video ansehen
         </button>
-        <Modal
+         
+        <ModalVideo
           isOpen={false}
           onClose={[Function]}
-        >
-          <VideoContainer
-            className="flex items-center justify-center m-auto"
-          >
-            <video
-              autoPlay={true}
-              className="outline-none"
-              controls={true}
-              onClick={[Function]}
-            >
-              <source
-                src="/videos/hdm-purity.webm"
-                type="video/webm"
-              />
-              <source
-                src="/videos/hdm-purity.mp4"
-                type="video/mp4"
-              />
-            </video>
-          </VideoContainer>
-        </Modal>
+          onVideoClick={[Function]}
+          videoName="hdm-purity"
+        />
       </div>
     </GridHome>
   </div>

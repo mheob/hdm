@@ -12,7 +12,7 @@ interface ModalProps extends React.HTMLAttributes<HTMLElement> {
   isOpen: boolean
   closeOnClick?: boolean
   animationConfiguration?: { duration: number; easing: string }
-  onClose?(): void
+  onClose?: () => void
 }
 
 export default function Modal({
