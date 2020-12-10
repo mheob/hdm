@@ -3,7 +3,7 @@ import { PDFDocumentProxy } from 'pdfjs-dist'
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack'
 
 import Modal from '@/components/UI/Modal'
-import { useWindowDimensions } from '@/hooks/useWindowDimensions'
+import { useWindowDimensions } from '@/hooks/use-window-dimensions'
 import { downloadFile } from '@/utils/files'
 
 interface PdfProps extends React.HTMLAttributes<HTMLElement> {

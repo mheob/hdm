@@ -4,7 +4,7 @@ import { Link } from 'react-scroll'
 import Sticky from 'react-stickynode'
 import styled from '@emotion/styled'
 
-import { useWindowDimensions } from '@/hooks/useWindowDimensions'
+import { useWindowDimensions } from '@/hooks/use-window-dimensions'
 
 export default function Header({ className = '' }: React.HTMLAttributes<HTMLElement>) {
   const router = useRouter()

@@ -1,8 +1,14 @@
 import dynamic from 'next/dynamic'
 import styled from '@emotion/styled'
 
+import PlayIcon from '@/components/UI/Icons/PlayIcon'
+import ModalVideo from '@/components/UI/ModalVideo'
+import { useVideo } from '@/hooks/use-video'
+
 export default function Crossflex({ ...rest }: React.HTMLAttributes<HTMLElement>) {
   const Pdf = dynamic(() => import('@/components/Utils/Pdf'), { ssr: false })
+
+  const [isModalOpen, handleModalOpen, handleModalClose, handleVideoClick] = useVideo()
 
   return (
     <section {...rest} id="crossflex">
@@ -68,8 +74,20 @@ export default function Crossflex({ ...rest }: React.HTMLAttributes<HTMLElement>
         </div>
       </div>
 
-      <div className="container mt-12 text-center lg:mt-24">
+      <div className="container flex flex-col justify-center mt-12 text-center sm:flex-row lg:text-left lg:mt-24">
         <Pdf title="Crossflex Katalog" filename="/documents/hdm-crossflex.pdf" />
+        <button
+          className="inline-block px-6 py-3 mt-4 text-sm text-white rounded-full sm:mt-0 sm:ml-10 bg-hdm hover:bg-hdm-dark"
+          onClick={handleModalOpen}
+        >
+          <PlayIcon /> Video ansehen
+        </button>
+        <ModalVideo
+          videoName="hdm-crossflex"
+          isOpen={isModalOpen}
+          onClose={handleModalClose}
+          onVideoClick={handleVideoClick}
+        />
       </div>
     </section>
   )

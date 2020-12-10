@@ -127,11 +127,24 @@ exports[`Crossflex Testings matches snapshot 1`] = `
     </div>
   </div>
   <div
-    className="container mt-12 text-center lg:mt-24"
+    className="container flex flex-col justify-center mt-12 text-center sm:flex-row lg:text-left lg:mt-24"
   >
     <ForwardRef(LoadableComponent)
       filename="/documents/hdm-crossflex.pdf"
       title="Crossflex Katalog"
+    />
+    <button
+      className="inline-block px-6 py-3 mt-4 text-sm text-white rounded-full sm:mt-0 sm:ml-10 bg-hdm hover:bg-hdm-dark"
+      onClick={[Function]}
+    >
+      <PlayIcon />
+       Video ansehen
+    </button>
+    <ModalVideo
+      isOpen={false}
+      onClose={[Function]}
+      onVideoClick={[Function]}
+      videoName="hdm-crossflex"
     />
   </div>
 </section>

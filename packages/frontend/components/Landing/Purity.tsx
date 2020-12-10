@@ -1,27 +1,14 @@
-import { useState } from 'react'
 import dynamic from 'next/dynamic'
 import styled from '@emotion/styled'
 
-import Modal from '@/components/UI/Modal'
+import PlayIcon from '@/components/UI/Icons/PlayIcon'
+import ModalVideo from '@/components/UI/ModalVideo'
+import { useVideo } from '@/hooks/use-video'
 
 export default function Purity({ className = '' }: React.HTMLAttributes<HTMLElement>) {
   const Pdf = dynamic(() => import('@/components/Utils/Pdf'), { ssr: false })
-  const [isModalOpen, setIsModalOpen] = useState(false)
 
-  const handleModalOpen = () => {
-    setIsModalOpen(true)
-  }
-
-  const handleModalClose = () => {
-    setIsModalOpen(false)
-  }
-
-  const handleVideoClick = (event: React.MouseEvent<HTMLVideoElement, MouseEvent>) => {
-    event.preventDefault()
-    const element = event.currentTarget
-    if (element.paused) element.play()
-    else element.pause()
-  }
+  const [isModalOpen, handleModalOpen, handleModalClose, handleVideoClick] = useVideo()
 
   return (
     <section id="purity" className={`lg:relative overflow-x-hidden mt-12 lg:mt-32 pt-20 lg:pb-20 ${className}`}>
@@ -107,8 +94,20 @@ export default function Purity({ className = '' }: React.HTMLAttributes<HTMLElem
           <img className="h-20 lg:h-24" src="/certificates/hdm-e0.svg" alt="E0 - DIN EN 717-1" />
         </div>
 
-        <div className="container text-center lg:text-left lg:-mt-6 lg:px-0 fourth">
+        <div className="container flex flex-col self-end text-center sm:flex-row lg:text-left lg:-mt-6 lg:px-0 fourth">
           <Pdf title="Purity Bio Selection" filename="/documents/hdm-purity-bio-selection.pdf" />
+          <button
+            className="inline-block px-6 py-3 mt-4 text-sm text-white rounded-full sm:mt-0 sm:ml-10 bg-hdm hover:bg-hdm-dark"
+            onClick={handleModalOpen}
+          >
+            <PlayIcon /> Video ansehen
+          </button>
+          <ModalVideo
+            videoName="hdm-purity"
+            isOpen={isModalOpen}
+            onClose={handleModalClose}
+            onVideoClick={handleVideoClick}
+          />
         </div>
       </GridBio>
 
@@ -151,16 +150,14 @@ export default function Purity({ className = '' }: React.HTMLAttributes<HTMLElem
               className="inline-block px-6 py-3 mt-4 text-sm text-white rounded-full sm:mt-0 sm:ml-10 bg-hdm hover:bg-hdm-dark"
               onClick={handleModalOpen}
             >
-              {playIcon} Video ansehen
+              <PlayIcon /> Video ansehen
             </button>
-            <Modal isOpen={isModalOpen} onClose={handleModalClose}>
-              <VideoContainer className="flex items-center justify-center m-auto">
-                <video className="outline-none" controls autoPlay onClick={handleVideoClick}>
-                  <source src="/videos/hdm-purity.webm" type="video/webm" />
-                  <source src="/videos/hdm-purity.mp4" type="video/mp4" />
-                </video>
-              </VideoContainer>
-            </Modal>
+            <ModalVideo
+              videoName="hdm-purity"
+              isOpen={isModalOpen}
+              onClose={handleModalClose}
+              onVideoClick={handleVideoClick}
+            />
           </div>
         </GridHome>
       </div>
@@ -267,19 +264,3 @@ const Badge = styled.img`
   bottom: 5rem;
   left: 5rem;
 `
-
-const VideoContainer = styled.div`
-  @media (min-width: 768px) {
-    max-width: 60%;
-  }
-`
-
-const playIcon = (
-  <svg
-    className="inline-block w-4 h-4 pb-1 mr-3 fill-current"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 477.886 477.886"
-  >
-    <path d="M476.091 231.332a17.068 17.068 0 00-7.662-7.662L24.695 1.804C16.264-2.41 6.013 1.01 1.8 9.442A17.068 17.068 0 000 17.079v443.733c-.004 9.426 7.633 17.07 17.059 17.075a17.068 17.068 0 007.637-1.8L468.429 254.22c8.436-4.205 11.866-14.452 7.662-22.888z" />
-  </svg>
-)
