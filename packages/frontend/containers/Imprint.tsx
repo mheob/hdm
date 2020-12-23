@@ -9,7 +9,7 @@ export default function Imprint() {
         <h2 className="mt-16 text-2xl">Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
         <p className="mt-8">
           Holz Design Moers GmbH <br />
-          Am Schürmannshütt 2 <br />
+          Am Schürmannshütt 23 <br />
           47441 Moers (Germany)
         </p>
         <p className="mt-8">
