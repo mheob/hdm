@@ -1,3 +1,10 @@
+## [2.3.1](https://github.com/100herz/hdm/compare/v2.3.0...v2.3.1) (2020-12-23)
+
+
+### Bug Fixes
+
+* **impress:** change the house number to the correct value ([849bf5e](https://github.com/100herz/hdm/commit/849bf5e950dd8df215ced393af8a5b2a77e2e0cc))
+
 # [2.3.0](https://github.com/100herz/hdm/compare/v2.2.1...v2.3.0) (2020-12-10)
 
 
