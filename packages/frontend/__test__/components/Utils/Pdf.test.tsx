@@ -10,12 +10,12 @@ jest.mock('react-pdf/dist/esm/entry.webpack', () => {
       },
     },
     Outline: null,
-    /* eslint-disable react/display-name */
+    /* eslint-disable react/display-name, react/prop-types */
     Page: () => <div>page</div>,
     Document: ({ onLoadSuccess = (pdf = { numPages: 4 }) => pdf.numPages }) => {
       return <div>{onLoadSuccess({ numPages: 4 })}</div>
     },
-    /* eslint-enable react/display-name */
+    /* eslint-enable react/display-name, react/prop-types */
   }
 })
 
