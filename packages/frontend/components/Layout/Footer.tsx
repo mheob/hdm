@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { animateScroll } from 'react-scroll'
 import styled from '@emotion/styled'
@@ -36,13 +37,19 @@ export default function Footer({ className = '' }: React.HTMLAttributes<HTMLElem
 
         <div className="mt-24 lg:mt-0">
           {router && router.pathname === '/' ? (
-            <button id="logo" onClick={() => animateScroll.scrollToTop({ duration: 800 })}>
-              <img className="w-48" src="/ci/hdm-logo.svg" alt="Logo der HDM GmbH" />
+            <button
+              className="w-48"
+              id="logo"
+              onClick={() => animateScroll.scrollToTop({ duration: 800 })}
+              type="button"
+              aria-label="HDM Logo"
+            >
+              <Image src="/ci/hdm-logo.svg" alt="Logo der HDM GmbH" width={192} height={49} />
             </button>
           ) : (
             <Link href="/">
-              <a>
-                <img className="w-48" src="/ci/hdm-logo.svg" alt="Logo der HDM GmbH" />
+              <a className="w-48">
+                <Image src="/ci/hdm-logo.svg" alt="Logo der HDM GmbH" width={192} height={49} />
               </a>
             </Link>
           )}
@@ -65,7 +72,12 @@ export default function Footer({ className = '' }: React.HTMLAttributes<HTMLElem
       </section>
 
       <div className="container my-10 text-right lg:text-center">
-        <button id="back-to-top-button" onClick={() => animateScroll.scrollToTop({ duration: 800 })}>
+        <button
+          type="button"
+          id="back-to-top-button"
+          onClick={() => animateScroll.scrollToTop({ duration: 800 })}
+          aria-label="Go to top"
+        >
           <svg
             className="inline-block w-6 transform -rotate-90"
             xmlns="http://www.w3.org/2000/svg"

@@ -1,4 +1,5 @@
 import dynamic from 'next/dynamic'
+import Image from 'next/image'
 import styled from '@emotion/styled'
 
 export default function Cerastar({ className = '' }: React.HTMLAttributes<HTMLElement>) {
@@ -20,11 +21,14 @@ export default function Cerastar({ className = '' }: React.HTMLAttributes<HTMLEl
           </p>
         </div>
 
-        <picture className="block mt-16 -mx-6 lg:-ml-20 lg:-mr-8">
-          <source srcSet="/images/hdm-cerastar.webp" type="image/webp" />
-          <source srcSet="/images/hdm-cerastar.png" type="image/png" />
-          <img src="/images/hdm-cerastar.png" alt="Cerastar - der neue Star unten den Bodenbelägen" />
-        </picture>
+        <div className="mt-16 -mx-6 lg:-ml-20 lg:-mr-8">
+          <Image
+            src="/images/hdm-cerastar.png"
+            alt="Cerastar - der neue Star unten den Bodenbelägen"
+            width={768}
+            height={714}
+          />
+        </div>
       </header>
 
       <div className="lg:mt-32 lg:pr-16">

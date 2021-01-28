@@ -1,4 +1,5 @@
 import NavLink from 'next/link'
+import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { Link } from 'react-scroll'
 import Sticky from 'react-stickynode'
@@ -15,9 +16,8 @@ export default function Header({ className = '' }: React.HTMLAttributes<HTMLElem
       <div className="justify-between mt-6 lg:container lg:flex">
         <h1 className="pt-8 mb-10 lg:mb-0">
           <NavLink href="/">
-            <a>
-              <img className="w-56 mx-auto" src="/ci/hdm-logo.svg" alt="Logo der HDM GmbH" />
-              <span className="sr-only">HDM - Holz Design Moers GmbH</span>
+            <a className="block w-56 mx-auto" aria-label="HDM - Holz Design Moers GmbH">
+              <Image src="/ci/hdm-logo.svg" alt="Logo der HDM GmbH" width={224} height={57} />
             </a>
           </NavLink>
         </h1>
@@ -84,22 +84,25 @@ export default function Header({ className = '' }: React.HTMLAttributes<HTMLElem
         </p>
         {router && router.pathname === '/' ? (
           <Link to="purity" activeClass="active" spy={true} smooth={true} offset={-25} duration={700}>
-            <figure id="landing-eco" className="hidden -mt-16 text-center group lg:block">
-              <img
-                className="w-56 transition-all duration-500 transform -rotate-10 group-hover:rotate-0"
+            <figure id="landing-eco" className="hidden w-56 -mt-16 text-center group lg:block">
+              <Image
+                className="transition-all duration-500 transform -rotate-10 group-hover:rotate-0"
                 src="/certificates/hdm-oekosiegel-header.png"
                 alt="HDM - Verantwortung für Mensch und Natur"
                 title="Mehr über die den BIO ... logischen Laminatboden erfahren"
+                width={300}
+                height={300}
               />
             </figure>
           </Link>
         ) : (
-          <figure className="hidden -mt-16 text-center lg:block">
-            <img
-              className="w-56"
+          <figure className="hidden w-56 -mt-16 text-center lg:block">
+            <Image
               src="/certificates/hdm-oekosiegel-header.png"
               alt="HDM - Verantwortung für Mensch und Natur"
               title="Mehr über die den BIO ... logischen Laminatboden erfahren"
+              width={300}
+              height={300}
             />
           </figure>
         )}

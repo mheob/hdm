@@ -1,4 +1,5 @@
 import dynamic from 'next/dynamic'
+import Image from 'next/image'
 import styled from '@emotion/styled'
 
 import PlayIcon from '@/components/UI/Icons/PlayIcon'
@@ -20,11 +21,14 @@ export default function Crossflex({ ...rest }: React.HTMLAttributes<HTMLElement>
           </p>
         </div>
 
-        <picture className="mt-4 -ml-6 -mr-6 lg:mt-16 second">
-          <source srcSet="/images/hdm-crossflex.webp" type="image/webp" />
-          <source srcSet="/images/hdm-crossflex.jpg" type="image/jpeg" />
-          <img src="/images/hdm-crossflex.jpg" alt="Crossflex - Dekorpaneele für Wand und Decke" />
-        </picture>
+        <div className="mt-4 -ml-6 -mr-6 lg:mt-16 second">
+          <Image
+            src="/images/hdm-crossflex.jpg"
+            alt="Crossflex - Dekorpaneele für Wand und Decke"
+            width={1400}
+            height={788}
+          />
+        </div>
 
         <p className="mt-8 lg:mt-0 lg:-ml-24 lg:mr-8 lg:text-lg third">
           Mit hochglänzenden bis hin zu supermatten Oberflächen, unterschiedlichen Fugenbreiten und einer Vielfalt an

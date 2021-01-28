@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import styled from '@emotion/styled'
 
 export default function Shelves({ className = '' }: React.HTMLAttributes<HTMLElement>) {
@@ -12,11 +13,12 @@ export default function Shelves({ className = '' }: React.HTMLAttributes<HTMLEle
 
       <GridLeft className="lg:container">
         <div className="relative mt-10 ml-6 lg:mt-16 lg:-ml-6 first">
-          <picture>
-            <source srcSet="/images/hdm-moebelbauplatten.webp" type="image/webp" />
-            <source srcSet="/images/hdm-moebelbauplatten.png" type="image/png" />
-            <img src="/images/hdm-moebelbauplatten.png" alt="Purity - Natürlich, sauber, rein" />
-          </picture>
+          <Image
+            src="/images/hdm-moebelbauplatten.png"
+            alt="Purity - Natürlich, sauber, rein"
+            width={668}
+            height={779}
+          />
         </div>
 
         <div className="container lg:mt-16 lg:px-0 second">
@@ -53,11 +55,14 @@ export default function Shelves({ className = '' }: React.HTMLAttributes<HTMLEle
         </header>
 
         <GridRight className="lg:container lg:mb-12">
-          <picture className="mt-10 ml-6 lg:-mt-16 first">
-            <source srcSet="/images/hdm-zuschnitt.webp" type="image/webp" />
-            <source srcSet="/images/hdm-zuschnitt.png" type="image/png" />
-            <img src="/images/hdm-zuschnitt.png" alt="Zuschnitte - bei HDM alles aus einer Hand" />
-          </picture>
+          <div className="mt-10 ml-6 lg:-mt-16 first">
+            <Image
+              src="/images/hdm-zuschnitt.png"
+              alt="Zuschnitte - bei HDM alles aus einer Hand"
+              width={714}
+              height={779}
+            />
+          </div>
 
           <div className="container mt-24 lg:grid lg:mt-20 second">
             <p className="lg:text-lg">

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import styled from '@emotion/styled'
 
 export default function Accessories({ className = '' }: React.HTMLAttributes<HTMLElement>) {
@@ -14,14 +15,14 @@ export default function Accessories({ className = '' }: React.HTMLAttributes<HTM
 
           <div className="lg:justify-between lg:ml-32 lg:flex lg:mt-8">
             <div className="lg:w-1/3 lg:-mt-4 lg:mr-12">
-              <picture className="block mt-12 lg:-mx-24">
-                <source srcSet="/images/hdm-dazu-zubehoer.webp" type="image/webp" />
-                <source srcSet="/images/hdm-dazu-zubehoer.jpg" type="image/jpeg" />
-                <img
+              <div className="mt-12 lg:-mx-24">
+                <Image
                   src="/images/hdm-dazu-zubehoer.jpg"
                   alt="Möbelbauplatten - modernen Regalböden und Möbelbauplatten"
+                  width={768}
+                  height={432}
                 />
-              </picture>
+              </div>
             </div>
 
             <div className="lg:w-1/2">
