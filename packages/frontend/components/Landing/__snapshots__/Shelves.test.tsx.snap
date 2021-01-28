@@ -1,0 +1,215 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Shelves component matches snapshot 1`] = `
+@media (min-width: 1024px) {
+  .emotion-0 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -2;
+    background-color: #f7fafc;
+  }
+
+  .emotion-0::before {
+    position: absolute;
+    top: 5%;
+    right: -50%;
+    z-index: -1;
+    width: calc(2.9333 * 90%);
+    height: 90%;
+    background: url(/ci/hdm-bg.svg) no-repeat;
+    opacity: 0.05;
+    content: '';
+  }
+}
+
+.emotion-2 {
+  display: grid;
+  grid-template-areas: 'grid-item-1' 'grid-item-2';
+  grid-template-columns: 1fr;
+  gap: 6rem;
+}
+
+@media (min-width: 1024px) {
+  .emotion-2 {
+    grid-template-areas: 'grid-item-1 grid-item-2';
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+}
+
+.emotion-2>.first {
+  grid-area: grid-item-1;
+}
+
+.emotion-2>.second {
+  grid-area: grid-item-2;
+}
+
+.emotion-4 {
+  display: grid;
+  grid-template-areas: 'grid-item-1' 'grid-item-2';
+  grid-template-columns: 1fr;
+  -webkit-column-gap: 6rem;
+  column-gap: 6rem;
+}
+
+@media (min-width: 1024px) {
+  .emotion-4 {
+    grid-template-areas: 'grid-item-2 grid-item-1';
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+}
+
+.emotion-4>.first {
+  grid-area: grid-item-1;
+}
+
+.emotion-4>.second {
+  grid-area: grid-item-2;
+}
+
+.emotion-4>.third {
+  grid-area: grid-item-3;
+}
+
+.emotion-4>.fourth {
+  grid-area: grid-item-4;
+}
+
+<section
+  class="lg:relative overflow-x-hidden mt-12 lg:mt-32 lg:pt-20 lg:pb-20 "
+  id="shelves"
+>
+  <div
+    class="emotion-0 emotion-1"
+  />
+  <header
+    class="container mt-6"
+  >
+    <div
+      class="lg:ml-32"
+    >
+      <h2
+        class="text-4xl font-bold leading-snug lg:text-5xl"
+      >
+        Regalböden / Möbelbauplatten
+      </h2>
+    </div>
+  </header>
+  <div
+    class="lg:container emotion-2 emotion-3"
+  >
+    <div
+      class="relative mt-10 ml-6 lg:mt-16 lg:-ml-6 first"
+    >
+      <div
+        style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+      >
+        <div
+          style="box-sizing: border-box; display: block; max-width: 100%;"
+        >
+          <img
+            alt=""
+            aria-hidden="true"
+            role="presentation"
+            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjY4IiBoZWlnaHQ9Ijc3OSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+            style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+          />
+        </div>
+        <img
+          alt="Purity - Natürlich, sauber, rein"
+          decoding="async"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+        />
+      </div>
+    </div>
+    <div
+      class="container lg:mt-16 lg:px-0 second"
+    >
+      <p
+        class="lg:mt-8 lg:text-lg"
+      >
+        Mit modernen Regalböden und Möbelbauplatten, in vielen Abmessungen und dem richtigen Zubehör, lässt sich einfach und schnell frischer Wind in alle Räume bringen. Mit Möbelbauplatten lassen sich von der Kommode über den Raumteiler bis zur kompletten Schrankwand viele Möbel zur Inneneinrichtung bauen.
+      </p>
+      <p
+        class="mt-8 text-lg"
+      >
+        Die offenen, anpassungsfähigen Regalsysteme bringen Stauraum und ermöglichen eine optimale Raumnutzung oder sehen einfach nur schick aus.
+      </p>
+      <p
+        class="mt-8 text-lg"
+      >
+        Möbelbauplatten und Regalböden bietet Holz Design Moers mit schönen Dekoren, in 16, 19 und 22 mm Stärke und zahlreichen Abmessungen. Die Möbelbauplatten werden in Ausführung mit gerader oder runder Kante angeboten und sind an zwei Sichtkanten umleimt.
+      </p>
+      <p
+        class="mt-8 text-lg"
+      >
+        Auch die Regalböden gibt es mit gerader oder runder Kante, drei- oder vierseitig umleimt. Mit modernen Regalböden in vielen Abmessungen und dem richtigen Zubehör lässt sich einfach und schnell frischer Wind in alle Räume bringen.
+      </p>
+    </div>
+  </div>
+  <div
+    class="mt-20 lg:mt-40"
+  >
+    <header
+      class="container mt-6"
+    >
+      <div
+        class="lg:ml-32"
+      >
+        <h2
+          class="text-4xl font-bold lg:text-5xl"
+        >
+          Zuschnitte
+        </h2>
+      </div>
+    </header>
+    <div
+      class="lg:container lg:mb-12 emotion-4 emotion-5"
+    >
+      <div
+        class="mt-10 ml-6 lg:-mt-16 first"
+      >
+        <div
+          style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+        >
+          <div
+            style="box-sizing: border-box; display: block; max-width: 100%;"
+          >
+            <img
+              alt=""
+              aria-hidden="true"
+              role="presentation"
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzE0IiBoZWlnaHQ9Ijc3OSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+              style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+            />
+          </div>
+          <img
+            alt="Zuschnitte - bei HDM alles aus einer Hand"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+          />
+        </div>
+      </div>
+      <div
+        class="container mt-24 lg:grid lg:mt-20 second"
+      >
+        <p
+          class="lg:text-lg"
+        >
+          Ob Loch- oder MDF-Platte, Sperrholz, ob OSB- oder Multiplex, Siebdruck- oder Dämmplatten oder mit attraktiven Dekoren beschichtete Spanplatten... das Holzzuschnitt-Programm von Holz Design Moers bietet alle Möglichkeiten.
+        </p>
+        <p
+          class="mt-8 text-lg"
+        >
+          Persönlicher Geschmack ist einzigartig. Mit der Zuschnittware von Holz Design Moers lässt sich ein Kulissenwechsel für jeden Raum im Handumdrehen maßgenau realisieren. Leben Sie Ihre Kreativität aus.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+`;

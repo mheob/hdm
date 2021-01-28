@@ -11,7 +11,7 @@ interface ModalVideoProps extends React.HTMLAttributes<HTMLElement> {
 
 export default function ModalVideo({ videoName, isOpen, onClose, onVideoClick, className = '' }: ModalVideoProps) {
   return (
-    <Modal isOpen={isOpen} onClose={onClose}>
+    <Modal isOpen={isOpen} onClose={onClose} data-testid="modalVideo">
       <VideoContainer className={`${className} flex items-center justify-center m-auto`}>
         <video className="outline-none" controls autoPlay onClick={onVideoClick}>
           <source src={`/videos/${videoName}.webm`} type="video/webm" />

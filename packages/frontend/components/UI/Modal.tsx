@@ -79,6 +79,7 @@ export default function Modal({
             }
           `}
           onClick={handleModalClose}
+          data-testid="modal"
           {...rest}
         >
           {children}
