@@ -12,7 +12,7 @@ export default function Downloads({ files, title, className = '' }: DownloadsPro
   const Pdf = dynamic(() => import('@/components/Utils/Pdf'), { ssr: false })
 
   return (
-    <SectionStyled id="kontakt" className={`container lg:px-32 ${className}`}>
+    <SectionStyled className={`container lg:px-32 ${className}`}>
       <h3 className="mt-24 text-2xl font-bold lg:text-3xl">{title}</h3>
 
       <div className="mt-8 download-list">

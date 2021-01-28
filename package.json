@@ -47,8 +47,7 @@
   "lint-staged": {
     "**/*.css": "yarn lint:style",
     "**/*.{js,ts,jsx,tsx}": [
-      "yarn lint:js",
-      "yarn test:cov --passWithNoTests"
+      "yarn lint:js"
     ]
   },
   "config": {

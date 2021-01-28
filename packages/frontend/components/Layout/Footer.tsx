@@ -42,13 +42,13 @@ export default function Footer({ className = '' }: React.HTMLAttributes<HTMLElem
               id="logo"
               onClick={() => animateScroll.scrollToTop({ duration: 800 })}
               type="button"
-              aria-label="HDM Logo"
+              aria-label="Zum Seitenanfang springen"
             >
               <Image src="/ci/hdm-logo.svg" alt="Logo der HDM GmbH" width={192} height={49} />
             </button>
           ) : (
             <Link href="/">
-              <a className="w-48">
+              <a className="w-48" aria-label="Zum Seitenanfang springen">
                 <Image src="/ci/hdm-logo.svg" alt="Logo der HDM GmbH" width={192} height={49} />
               </a>
             </Link>

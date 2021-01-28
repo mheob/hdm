@@ -25,8 +25,8 @@ export default function Header({ className = '' }: React.HTMLAttributes<HTMLElem
         <Sticky enabled={width < 1024} innerZ="101">
           {router && router.pathname === '/' ? (
             <nav
-              id="landing-main-nav"
               className="flex justify-between py-3 font-semibold bg-white sm:justify-around lg:bg-transparent lg:text-lg lg:container lg:mb-0 lg:space-x-12 lg:justify-end lg:mt-10 lg:py-0"
+              aria-label="Hauptnavigation auf der Startseite und in der mobilen Ansicht."
             >
               <Link
                 to="produkte"
@@ -62,7 +62,10 @@ export default function Header({ className = '' }: React.HTMLAttributes<HTMLElem
               </Link>
             </nav>
           ) : (
-            <nav className="flex justify-between py-3 font-semibold bg-white lg:bg-transparent lg:text-lg lg:container lg:mb-0 lg:space-x-12 lg:justify-end lg:mt-10 lg:py-0">
+            <nav
+              className="flex justify-between py-3 font-semibold bg-white lg:bg-transparent lg:text-lg lg:container lg:mb-0 lg:space-x-12 lg:justify-end lg:mt-10 lg:py-0"
+              aria-label="Hauptnavigation nicht auf der Startseite aber in der mobilen Ansicht."
+            >
               <NavLink href="/#produkte">
                 <a className="px-4 py-2 my-2 hover:text-hdm">Produkte</a>
               </NavLink>
@@ -110,7 +113,10 @@ export default function Header({ className = '' }: React.HTMLAttributes<HTMLElem
 
       {router && router.pathname === '/' && (
         <Sticky enabled={width >= 1024} innerZ="101" activeClass="sticky-nav">
-          <nav className="justify-around hidden h-24 px-20 py-4 text-lg font-semibold lg:flex">
+          <nav
+            className="justify-around hidden h-24 px-20 py-4 text-lg font-semibold lg:flex"
+            aria-label="Produktnavigation in der Desktopansicht."
+          >
             <Link
               to="crossflex"
               activeClass="active"

@@ -41,7 +41,7 @@ export default function Purity({ className = '' }: React.HTMLAttributes<HTMLElem
           </Badge>
         </div>
         <div className="container lg:-mt-4 lg:px-0 second">
-          <h4 className="text-xl font-bold">Bio ... Logisch!</h4>
+          <h3 className="text-xl font-bold">Bio ... Logisch!</h3>
 
           <p className="mt-8 lg:text-lg">
             Natürlich, sauber, rein – Bei den hochwertigen Purity Laminatböden der Bio-Selection ist der Name Programm.
@@ -136,7 +136,7 @@ export default function Purity({ className = '' }: React.HTMLAttributes<HTMLElem
               sich, belegt durch die Auszeichnung mit dem Blauen Engel. Die einfache und schnelle Verlegung ist neben
               den idealen Pflegeeigenschaften ein weiteres Argument.
             </p>
-            <h4 className="mt-8 text-xl font-bold">BLOOM – Einfach natürlich</h4>
+            <h3 className="mt-8 text-xl font-bold">BLOOM – Einfach natürlich</h3>
           </div>
 
           <div className="container flex justify-between h-24 mt-12 lg:mt-16 lg:space-x-6 third">
