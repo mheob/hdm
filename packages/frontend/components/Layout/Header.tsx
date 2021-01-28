@@ -14,7 +14,7 @@ export default function Header({ className = '' }: React.HTMLAttributes<HTMLElem
   return (
     <header className={`relative overflow-x-hidden ${className}`}>
       <div className="justify-between mt-6 lg:container lg:flex">
-        <h1 className="pt-8 mb-10 lg:mb-0">
+        <h1 className="pt-8 mb-10 lg:mb-0" data-testid="main-logo">
           <NavLink href="/">
             <a className="block w-56 mx-auto" aria-label="HDM - Holz Design Moers GmbH">
               <Image src="/ci/hdm-logo.svg" alt="Logo der HDM GmbH" width={224} height={57} />

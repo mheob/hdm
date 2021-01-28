@@ -11,7 +11,7 @@ import Company from '@/components/Landing/Company'
 export default function index() {
   return (
     <Layout title="HDM &ndash; Holz Design Moers">
-      <div id="produkte">
+      <div id="produkte" data-testid="produkte">
         <Crossflex />
         <Purity />
         <Cerastar />
@@ -20,7 +20,7 @@ export default function index() {
         <Strips />
         <Accessories />
       </div>
-      <div id="unternehmen">
+      <div id="unternehmen" data-testid="unternehmen">
         <Company />
       </div>
     </Layout>

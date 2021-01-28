@@ -17,9 +17,7 @@ export function downloadFile(fileName: string) {
   save.download = fileName.substring(fileName.lastIndexOf('/') + 1)
 
   if (navigator.userAgent.toLowerCase().match(/(ipad|iphone|safari)/) && navigator.userAgent.search('Chrome') < 0) {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    document.location = save.href as any
-    // window event not working here
+    document.location.href = save.href
   } else {
     const evt = new MouseEvent('click', {
       view: window,

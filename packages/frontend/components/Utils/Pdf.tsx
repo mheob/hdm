@@ -58,6 +58,7 @@ export default function Pdf({
           <button
             className={`inline-block px-6 py-3 text-sm ${buttonStyle}${buttonWidthFull ? ' w-full' : ''}`}
             onClick={() => setIsOpen(true)}
+            data-testid="open-modal"
           >
             {pdfIcon} {title}
           </button>

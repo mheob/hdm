@@ -39,10 +39,10 @@ export default function Footer({ className = '' }: React.HTMLAttributes<HTMLElem
           {router && router.pathname === '/' ? (
             <button
               className="w-48"
-              id="logo"
               onClick={() => animateScroll.scrollToTop({ duration: 800 })}
               type="button"
               aria-label="Zum Seitenanfang springen"
+              data-testid="logo"
             >
               <Image src="/ci/hdm-logo.svg" alt="Logo der HDM GmbH" width={192} height={49} />
             </button>
@@ -74,9 +74,9 @@ export default function Footer({ className = '' }: React.HTMLAttributes<HTMLElem
       <div className="container my-10 text-right lg:text-center">
         <button
           type="button"
-          id="back-to-top-button"
           onClick={() => animateScroll.scrollToTop({ duration: 800 })}
           aria-label="Go to top"
+          data-testid="back-to-top-button"
         >
           <svg
             className="inline-block w-6 transform -rotate-90"

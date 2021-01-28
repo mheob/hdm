@@ -1,0 +1,500 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Purity component matches snapshot 1`] = `
+@media (min-width: 1024px) {
+  .emotion-0 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -2;
+    background-color: #f7fafc;
+  }
+
+  .emotion-0::before {
+    position: absolute;
+    top: 5%;
+    right: -50%;
+    z-index: -1;
+    width: calc(2.9333 * 90%);
+    height: 90%;
+    background: url(/ci/hdm-bg.svg) no-repeat;
+    opacity: 0.05;
+    content: '';
+  }
+}
+
+.emotion-2 {
+  display: grid;
+  grid-template-areas: 'grid-item-1' 'grid-item-2' 'grid-item-3' 'grid-item-4';
+  grid-template-columns: 1fr;
+  gap: 6rem;
+}
+
+@media (min-width: 1024px) {
+  .emotion-2 {
+    grid-template-areas: 'grid-item-1 grid-item-2' 'grid-item-3 grid-item-4';
+    grid-template-columns: 1.1fr 0.9fr;
+  }
+}
+
+.emotion-2>.first {
+  grid-area: grid-item-1;
+}
+
+.emotion-2>.second {
+  grid-area: grid-item-2;
+}
+
+.emotion-2>.third {
+  grid-area: grid-item-3;
+}
+
+.emotion-2>.fourth {
+  grid-area: grid-item-4;
+}
+
+.emotion-4 {
+  position: absolute;
+  bottom: 5rem;
+  left: 5rem;
+}
+
+.emotion-6 {
+  display: grid;
+  grid-template-areas: 'grid-item-1' 'grid-item-2' 'grid-item-3' 'grid-item-4';
+  grid-template-columns: 1fr;
+  -webkit-column-gap: 6rem;
+  column-gap: 6rem;
+}
+
+@media (min-width: 1024px) {
+  .emotion-6 {
+    grid-template-areas: 'grid-item-2 grid-item-1' 'grid-item-3 grid-item-1' 'grid-item-4 grid-item-1';
+    grid-template-columns: 0.9fr 1.1fr;
+  }
+}
+
+.emotion-6>.first {
+  grid-area: grid-item-1;
+}
+
+.emotion-6>.second {
+  grid-area: grid-item-2;
+}
+
+.emotion-6>.third {
+  grid-area: grid-item-3;
+}
+
+.emotion-6>.fourth {
+  grid-area: grid-item-4;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: flex-end;
+  align-self: flex-end;
+}
+
+<section
+  class="lg:relative overflow-x-hidden mt-12 lg:mt-32 pt-20 lg:pb-20 "
+  id="purity"
+>
+  <div
+    class="emotion-0 emotion-1"
+  />
+  <header
+    class="container mt-6"
+  >
+    <div
+      class="lg:ml-32"
+    >
+      <h2
+        class="text-4xl font-bold lg:text-5xl"
+      >
+        Purity
+      </h2>
+      <p
+        class="mt-4 text-xl leading-snug lg:text-2xl"
+      >
+        Laminatboden 
+        <br />
+         Bio Selection
+      </p>
+    </div>
+  </header>
+  <div
+    class="lg:container emotion-2 emotion-3"
+  >
+    <div
+      class="relative mt-10 ml-6 lg:mt-16 lg:-ml-6 first"
+    >
+      <div
+        style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+      >
+        <div
+          style="box-sizing: border-box; display: block; max-width: 100%;"
+        >
+          <img
+            alt=""
+            aria-hidden="true"
+            role="presentation"
+            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzY4IiBoZWlnaHQ9IjkwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+            style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+          />
+        </div>
+        <img
+          alt="Purity - Natürlich, sauber, rein"
+          decoding="async"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+        />
+      </div>
+      <div
+        class="hidden lg:block emotion-4 emotion-5"
+      >
+        <div
+          style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+        >
+          <div
+            style="box-sizing: border-box; display: block; max-width: 100%;"
+          >
+            <img
+              alt=""
+              aria-hidden="true"
+              role="presentation"
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjMxIiBoZWlnaHQ9IjIzMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+              style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+            />
+          </div>
+          <img
+            alt="HDM - Verantwortung für Mensch und Natur"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="container lg:-mt-4 lg:px-0 second"
+    >
+      <h3
+        class="text-xl font-bold"
+      >
+        Bio ... Logisch!
+      </h3>
+      <p
+        class="mt-8 lg:text-lg"
+      >
+        Natürlich, sauber, rein – Bei den hochwertigen Purity Laminatböden der Bio-Selection ist der Name Programm. Rund 96 % FSC-zertifiziertes Holz, die faktisch formaldehydfreie E0-Qualität und die Schadstofffreiheit dieser Böden sprechen für sich. Die Auszeichnung mit dem Blauen Engel bestätigt es.
+      </p>
+      <p
+        class="mt-8 text-lg"
+      >
+        Die einfache und schnelle Verlegung ist neben den idealen Pflegeeigenschaften ein weiteres Argument.
+      </p>
+      <div>
+        <div>
+          <h3
+            class="mt-8 font-bold "
+          >
+            Kollektion Glow – Böden mit Ausstrahlung
+          </h3>
+          <p>
+            Eine deutlich sicht- und fühlbare Oberflächenstruktur kennzeichnet die Böden der Kollektion Glow. Der Boden gibt Inspiration für die Neugestaltung Ihrer Räume. Die umlaufende Fuge rundet das moderne Verlegebild ab.
+          </p>
+        </div>
+        <div>
+          <h3
+            class="mt-8 font-bold"
+          >
+            Kollektion Pulse – Am Puls der Zeit
+          </h3>
+          <p>
+            Authentische und fühlbare Maserungen folgen den Linien des Holzdekors – Dafür stehen die Laminatböden der Kollektion Pulse. Umlaufende Fugen geben dem Bild der verlegten Fläche Halt, Kontur und einen zeitgemäßen Stil.
+          </p>
+        </div>
+        <div>
+          <h3
+            class="mt-8 font-bold"
+          >
+            Kollektion Stream - Alles andere als Mainstream
+          </h3>
+          <p>
+            Ein Dielenformat von fast 25 cm Breite kennzeichnet diese Bigboards. Highlight ist die Oberflächenstruktur, die für außergewöhnliche Lichtbrechungen auf der Oberfläche sorgt. Kräftige Fugenlinien zeichnen das markante und individuelle Bild der verlegten Fläche.
+          </p>
+        </div>
+        <p
+          class="mt-8 font-semibold"
+        >
+          Ein gutes Stück Natur: 
+          <br />
+           Laminatfußböden aus der Purity Bio Selection.
+        </p>
+      </div>
+    </div>
+    <div
+      class="container flex justify-between h-24 -mt-4 space-x-3 lg:space-x-6 lg:-mt-16 lg:-ml-6 lg:px-0 third"
+    >
+      <div
+        style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+      >
+        <div
+          style="box-sizing: border-box; display: block; max-width: 100%;"
+        >
+          <img
+            alt=""
+            aria-hidden="true"
+            role="presentation"
+            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ0IiBoZWlnaHQ9Ijk2IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIvPg=="
+            style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+          />
+        </div>
+        <img
+          alt="Blauer Engel 176"
+          decoding="async"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+        />
+      </div>
+      <div
+        style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+      >
+        <div
+          style="box-sizing: border-box; display: block; max-width: 100%;"
+        >
+          <img
+            alt=""
+            aria-hidden="true"
+            role="presentation"
+            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODIiIGhlaWdodD0iOTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+            style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+          />
+        </div>
+        <img
+          alt="FSC - zertifiziertes Holz"
+          decoding="async"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+        />
+      </div>
+      <div
+        style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+      >
+        <div
+          style="box-sizing: border-box; display: block; max-width: 100%;"
+        >
+          <img
+            alt=""
+            aria-hidden="true"
+            role="presentation"
+            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTYiIGhlaWdodD0iOTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+            style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+          />
+        </div>
+        <img
+          alt="ohne Formaldehyd"
+          decoding="async"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+        />
+      </div>
+      <div
+        style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+      >
+        <div
+          style="box-sizing: border-box; display: block; max-width: 100%;"
+        >
+          <img
+            alt=""
+            aria-hidden="true"
+            role="presentation"
+            src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTYiIGhlaWdodD0iOTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+            style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+          />
+        </div>
+        <img
+          alt="E0 - DIN EN 717-1"
+          decoding="async"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+        />
+      </div>
+    </div>
+    <div
+      class="container flex flex-col self-end text-center sm:flex-row lg:text-left lg:-mt-6 lg:px-0 fourth"
+    >
+      <button
+        class="inline-block px-6 py-3 mt-4 text-sm text-white rounded-full sm:mt-0 sm:ml-10 bg-hdm hover:bg-hdm-dark"
+      >
+        <svg
+          class=" inline-block w-4 h-4 pb-1 mr-3 fill-current"
+          viewBox="0 0 477.886 477.886"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M476.091 231.332a17.068 17.068 0 00-7.662-7.662L24.695 1.804C16.264-2.41 6.013 1.01 1.8 9.442A17.068 17.068 0 000 17.079v443.733c-.004 9.426 7.633 17.07 17.059 17.075a17.068 17.068 0 007.637-1.8L468.429 254.22c8.436-4.205 11.866-14.452 7.662-22.888z"
+          />
+        </svg>
+         Video ansehen
+      </button>
+    </div>
+  </div>
+  <div
+    class="mt-40"
+  >
+    <header
+      class="container mt-6"
+    >
+      <div
+        class="lg:ml-32"
+      >
+        <h2
+          class="text-4xl font-bold lg:text-5xl"
+        >
+          Purity
+        </h2>
+        <p
+          class="mt-4 text-xl leading-snug lg:text-2xl"
+        >
+          Laminatboden 
+          <br />
+           Home Selection
+        </p>
+      </div>
+    </header>
+    <div
+      class="lg:container lg:mb-12 emotion-6 emotion-7"
+    >
+      <div
+        class="mt-10 ml-6 lg:-mt-16 first"
+      >
+        <div
+          style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+        >
+          <div
+            style="box-sizing: border-box; display: block; max-width: 100%;"
+          >
+            <img
+              alt=""
+              aria-hidden="true"
+              role="presentation"
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzY4IiBoZWlnaHQ9IjkwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+              style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+            />
+          </div>
+          <img
+            alt="Purity - Natürlich, sauber, rein"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+          />
+        </div>
+      </div>
+      <div
+        class="container mt-24 lg:grid lg:mt-20 second"
+      >
+        <p
+          class="lg:text-lg"
+        >
+          In der Home-Selection der Purity-Laminatbodenbeläge by HDM zeichnet sich BLOOM durch beeindruckende Dekorbilder und eine feine Glattkante aus. 
+          <br />
+           
+          <br />
+           Die Schadstofffreiheit dieser Böden spricht für sich, belegt durch die Auszeichnung mit dem Blauen Engel. Die einfache und schnelle Verlegung ist neben den idealen Pflegeeigenschaften ein weiteres Argument.
+        </p>
+        <h3
+          class="mt-8 text-xl font-bold"
+        >
+          BLOOM – Einfach natürlich
+        </h3>
+      </div>
+      <div
+        class="container flex justify-between h-24 mt-12 lg:mt-16 lg:space-x-6 third"
+      >
+        <div
+          style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+        >
+          <div
+            style="box-sizing: border-box; display: block; max-width: 100%;"
+          >
+            <img
+              alt=""
+              aria-hidden="true"
+              role="presentation"
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ0IiBoZWlnaHQ9Ijk2IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIvPg=="
+              style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+            />
+          </div>
+          <img
+            alt="Blauer Engel 176"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+          />
+        </div>
+        <div
+          style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+        >
+          <div
+            style="box-sizing: border-box; display: block; max-width: 100%;"
+          >
+            <img
+              alt=""
+              aria-hidden="true"
+              role="presentation"
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODIiIGhlaWdodD0iOTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+              style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+            />
+          </div>
+          <img
+            alt="FSC - zertifiziertes Holz"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+          />
+        </div>
+        <div
+          style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+        >
+          <div
+            style="box-sizing: border-box; display: block; max-width: 100%;"
+          >
+            <img
+              alt=""
+              aria-hidden="true"
+              role="presentation"
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTYiIGhlaWdodD0iOTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+              style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+            />
+          </div>
+          <img
+            alt="E1 - DIN EN 16156"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+          />
+        </div>
+      </div>
+      <div
+        class="container flex flex-col mt-16 text-center sm:flex-row lg:text-left lg:mt-24 fourth"
+      >
+        <button
+          class="inline-block px-6 py-3 mt-4 text-sm text-white rounded-full sm:mt-0 sm:ml-10 bg-hdm hover:bg-hdm-dark"
+        >
+          <svg
+            class=" inline-block w-4 h-4 pb-1 mr-3 fill-current"
+            viewBox="0 0 477.886 477.886"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M476.091 231.332a17.068 17.068 0 00-7.662-7.662L24.695 1.804C16.264-2.41 6.013 1.01 1.8 9.442A17.068 17.068 0 000 17.079v443.733c-.004 9.426 7.633 17.07 17.059 17.075a17.068 17.068 0 007.637-1.8L468.429 254.22c8.436-4.205 11.866-14.452 7.662-22.888z"
+            />
+          </svg>
+           Video ansehen
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+`;

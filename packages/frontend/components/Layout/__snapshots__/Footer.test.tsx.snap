@@ -1,0 +1,154 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component matches snapshot 1`] = `
+.emotion-0 {
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .emotion-0 {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),url(/ci/hdm-bg.svg);
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+  }
+}
+
+.emotion-2 {
+  font-size: 1.125rem;
+  font-style: normal;
+  line-height: 2.5rem;
+}
+
+<footer
+  class="lg:mt-40 pb-10  emotion-0 emotion-1"
+  id="kontakt"
+>
+  <section
+    class="container lg:flex lg:justify-between lg:space-x-6"
+  >
+    <h2
+      class="py-16 text-4xl font-bold leading-10 lg:pt-0"
+    >
+      Nehmen Sie 
+      <br />
+      Kontakt mit 
+      <br />
+      uns auf
+    </h2>
+    <address
+      class="emotion-2 emotion-3"
+    >
+      Holz Design Moers GmbH 
+      <br />
+      Am Schürmannshütt 23 
+      <br />
+      47441 Moers
+    </address>
+    <address
+      class="mt-6 lg:mt-0 emotion-2 emotion-3"
+    >
+      Telefon:
+       
+      <a
+        class="underline hover:text-hdm-dark"
+        href="tel:+4928411401101"
+      >
+        +49 2841 1401 101
+      </a>
+      <br />
+      Telefax: +49 2841 1401 180 
+      <br />
+      E-Mail:
+       
+      <a
+        class="underline hover:text-hdm-dark"
+        href="mailto:info@hdm.gmbh"
+      >
+        info@hdm.gmbh
+      </a>
+    </address>
+    <div
+      class="mt-24 lg:mt-0"
+    >
+      <a
+        aria-label="Zum Seitenanfang springen"
+        class="w-48"
+        href="/"
+      >
+        <div
+          style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+        >
+          <div
+            style="box-sizing: border-box; display: block; max-width: 100%;"
+          >
+            <img
+              alt=""
+              aria-hidden="true"
+              role="presentation"
+              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjQ5IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIvPg=="
+              style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+            />
+          </div>
+          <img
+            alt="Logo der HDM GmbH"
+            decoding="async"
+            src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+            style="visibility: hidden; position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+          />
+        </div>
+      </a>
+    </div>
+  </section>
+  <section
+    class="container mt-6 text-lg leading-10 lg:flex lg:justify-center"
+  >
+    <p>
+      © 2020 Holz Design Moers GmbH
+    </p>
+    <nav
+      class="flex flex-col mt-2 leading-8 lg:mt-0 lg:flex-row"
+    >
+      <a
+        class="underline lg:ml-8 hover:text-hdm-dark"
+        href="/downloads"
+      >
+        Downloads
+      </a>
+      <a
+        class="underline lg:ml-8 hover:text-hdm-dark"
+        href="/impressum"
+      >
+        Impressum
+      </a>
+      <a
+        class="underline lg:ml-8 hover:text-hdm-dark"
+        href="/datenschutz"
+      >
+        Datenschutz
+      </a>
+    </nav>
+  </section>
+  <div
+    class="container my-10 text-right lg:text-center"
+  >
+    <button
+      aria-label="Go to top"
+      data-testid="back-to-top-button"
+      type="button"
+    >
+      <svg
+        class="inline-block w-6 transform -rotate-90"
+        viewBox="0 0 24.242 45"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M126.031,21.266,105.252.486A1.732,1.732,0,0,0,102.8,2.935L122.359,22.49,102.8,42.045a1.731,1.731,0,0,0,2.448,2.448l20.779-20.779A1.732,1.732,0,0,0,126.031,21.266Z"
+          fill="#0084b0"
+          transform="translate(-102.297 0)"
+        />
+      </svg>
+    </button>
+  </div>
+</footer>
+`;

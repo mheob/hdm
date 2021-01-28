@@ -47,10 +47,10 @@ jobs:
         env:
           CI: true
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: yarn run lint
+        run: yarn lint
 
-      # - name: Run jest
-      #   env:
-      #     CI: true
-      #     NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #   run: yarn run test
+      - name: Run jest
+        env:
+          CI: true
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: yarn test
