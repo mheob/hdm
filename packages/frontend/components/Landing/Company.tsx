@@ -1,13 +1,6 @@
 import styled from '@emotion/styled'
 
 export default function Company({ className = '' }: React.HTMLAttributes<HTMLElement>) {
-  const handleVideoClick = (event: React.MouseEvent<HTMLVideoElement, MouseEvent>) => {
-    event.preventDefault()
-    const element = event.currentTarget
-    if (element.paused) element.play()
-    else element.pause()
-  }
-
   return (
     <section
       className={`bg-gray-100 lg:bg-transparent mt-10 pt-10 lg:max-w-1400 mx-auto overflow-x-hidden lg:mt-24 ${className}`}
@@ -16,19 +9,7 @@ export default function Company({ className = '' }: React.HTMLAttributes<HTMLEle
         <h2 className="text-4xl font-bold lg:text-5xl">Unternehmen</h2>
       </header>
 
-      <div className="mt-12 lg:mt-16">
-        <video
-          className="w-full outline-none"
-          controls
-          poster="/videos/hdm-unternehmen.webp"
-          onClick={handleVideoClick}
-        >
-          <source src="/videos/hdm-unternehmen.webm" type="video/webm" />
-          <source src="/videos/hdm-unternehmen.mp4" type="video/mp4" />
-        </video>
-      </div>
-
-      <div className="lg:bg-gray-100">
+      <div className="lg:bg-gray-100 sm:mt-12 lg:mt-16">
         <Grid className="container pt-10 pb-20 lg:pt-20">
           <div className="first">
             <h3 className="font-bold text-hdm lg:text-xl">
