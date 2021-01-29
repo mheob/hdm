@@ -1,5 +1,5 @@
 import dynamic from 'next/dynamic'
-import Image from 'next/image'
+// import Image from 'next/image'
 import styled from '@emotion/styled'
 
 import PlayIcon from '@/components/UI/Icons/PlayIcon'
@@ -25,7 +25,8 @@ export default function Purity({ className = '' }: React.HTMLAttributes<HTMLElem
 
       <GridBio className="lg:container">
         <div className="relative mt-10 ml-6 lg:mt-16 lg:-ml-6 first">
-          <Image
+          {/* TODO: `Image` is currently not available in SSG */}
+          {/* <Image
             src="/images/hdm-purity-bio-selection.png"
             alt="Purity - Natürlich, sauber, rein"
             width={768}
@@ -38,7 +39,17 @@ export default function Purity({ className = '' }: React.HTMLAttributes<HTMLElem
               width={231}
               height={231}
             />
-          </Badge>
+          </Badge> */}
+          <picture>
+            <source srcSet="/images/hdm-purity-bio-selection.webp" type="image/webp" />
+            <source srcSet="/images/hdm-purity-bio-selection.png" type="image/png" />
+            <img src="/images/hdm-purity-bio-selection.png" alt="Purity - Natürlich, sauber, rein" loading="lazy" />
+          </picture>
+          <Badge
+            className="hidden lg:block"
+            src="/certificates/hdm-oekosiegel.png"
+            alt="HDM - Verantwortung für Mensch und Natur"
+          />
         </div>
         <div className="container lg:-mt-4 lg:px-0 second">
           <h3 className="text-xl font-bold">Bio ... Logisch!</h3>
@@ -86,11 +97,33 @@ export default function Purity({ className = '' }: React.HTMLAttributes<HTMLElem
             </p>
           </div>
         </div>
-        <div className="container flex justify-between h-24 -mt-4 space-x-3 lg:space-x-6 lg:-mt-16 lg:-ml-6 lg:px-0 third">
+        {/* TODO: `Image` is currently not available in SSG */}
+        {/* <div className="container flex justify-between h-24 -mt-4 space-x-3 lg:space-x-6 lg:-mt-16 lg:-ml-6 lg:px-0 third">
           <Image src="/certificates/hdm-blauer-engel-176.png" alt="Blauer Engel 176" width={144} height={96} />
           <Image src="/certificates/hdm-fsc.png" alt="FSC - zertifiziertes Holz" width={82} height={96} />
           <Image src="/certificates/hdm-formaldehydfrei.png" alt="ohne Formaldehyd" width={96} height={96} />
           <Image src="/certificates/hdm-e0.svg" alt="E0 - DIN EN 717-1" width={96} height={96} />
+        </div> */}
+        <div className="container flex justify-between -mt-4 lg:space-x-6 lg:-mt-16 lg:-ml-6 lg:px-0 third">
+          <img
+            className="hidden h-24 lg:inline-block"
+            src="/certificates/hdm-blauer-engel-176.png"
+            alt="Blauer Engel 176"
+            loading="lazy"
+          />
+          <img
+            className="h-20 lg:h-24"
+            src="/certificates/hdm-fsc.png"
+            alt="FSC - zertifiziertes Holz"
+            loading="lazy"
+          />
+          <img
+            className="h-20 lg:h-24"
+            src="/certificates/hdm-formaldehydfrei.png"
+            alt="ohne Formaldehyd"
+            loading="lazy"
+          />
+          <img className="h-20 lg:h-24" src="/certificates/hdm-e0.svg" alt="E0 - DIN EN 717-1" loading="lazy" />
         </div>
         <div className="container flex flex-col self-end text-center sm:flex-row lg:text-left lg:-mt-6 lg:px-0 fourth">
           <Pdf title="Purity Bio Selection" filename="/documents/hdm-purity-bio-selection.pdf" />
@@ -120,15 +153,20 @@ export default function Purity({ className = '' }: React.HTMLAttributes<HTMLElem
         </header>
 
         <GridHome className="lg:container lg:mb-12">
-          <div className="mt-10 ml-6 lg:-mt-16 first">
+          {/* TODO: `Image` is currently not available in SSG */}
+          {/* <div className="mt-10 ml-6 lg:-mt-16 first">
             <Image
               src="/images/hdm-purity-home-selection.png"
               alt="Purity - Natürlich, sauber, rein"
               width={768}
               height={900}
             />
-          </div>
-
+          </div> */}
+          <picture className="mt-10 ml-6 lg:-mt-16 first">
+            <source srcSet="/images/hdm-purity-home-selection.webp" type="image/webp" />
+            <source srcSet="/images/hdm-purity-home-selection.png" type="image/png" />
+            <img src="/images/hdm-purity-home-selection.png" alt="Purity - Natürlich, sauber, rein" />
+          </picture>
           <div className="container mt-24 lg:grid lg:mt-20 second">
             <p className="lg:text-lg">
               In der Home-Selection der Purity-Laminatbodenbeläge by HDM zeichnet sich BLOOM durch beeindruckende
@@ -138,13 +176,27 @@ export default function Purity({ className = '' }: React.HTMLAttributes<HTMLElem
             </p>
             <h3 className="mt-8 text-xl font-bold">BLOOM – Einfach natürlich</h3>
           </div>
-
-          <div className="container flex justify-between h-24 mt-12 lg:mt-16 lg:space-x-6 third">
+          {/* TODO: `Image` is currently not available in SSG */}
+          {/* <div className="container flex justify-between h-24 mt-12 lg:mt-16 lg:space-x-6 third">
             <Image src="/certificates/hdm-blauer-engel-176.png" alt="Blauer Engel 176" width={144} height={96} />
             <Image src="/certificates/hdm-fsc.png" alt="FSC - zertifiziertes Holz" width={82} height={96} />
             <Image src="/certificates/hdm-e1.svg" alt="E1 - DIN EN 16156" width={96} height={96} />
+          </div> */}
+          <div className="container flex justify-between mt-12 lg:mt-16 lg:space-x-6 third">
+            <img
+              className="h-20 lg:h-24"
+              src="/certificates/hdm-blauer-engel-176.png"
+              alt="Blauer Engel 176"
+              loading="lazy"
+            />
+            <img
+              className="h-20 lg:h-24"
+              src="/certificates/hdm-fsc.png"
+              alt="FSC - zertifiziertes Holz"
+              loading="lazy"
+            />
+            <img className="h-20 lg:h-24" src="/certificates/hdm-e1.svg" alt="E1 - DIN EN 16156" loading="lazy" />
           </div>
-
           <div className="container flex flex-col mt-16 text-center sm:flex-row lg:text-left lg:mt-24 fourth">
             <Pdf title="Purity Home Selection" filename="/documents/hdm-purity-home-selection.pdf" />
             <button
@@ -260,7 +312,8 @@ const GridHome = styled.div`
   }
 `
 
-const Badge = styled.div`
+// const Badge = styled.div`
+const Badge = styled.img`
   position: absolute;
   bottom: 5rem;
   left: 5rem;

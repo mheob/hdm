@@ -48,7 +48,7 @@
     "**/*.css": "yarn lint:style",
     "**/*.{js,ts,jsx,tsx}": [
       "yarn lint:js",
-      "yarn test"
+      "yarn test --passWithNoTests"
     ]
   },
   "config": {

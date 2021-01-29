@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Image from 'next/image'
+// import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { animateScroll } from 'react-scroll'
 import styled from '@emotion/styled'
@@ -36,7 +36,8 @@ export default function Footer({ className = '' }: React.HTMLAttributes<HTMLElem
         </Address>
 
         <div className="mt-24 lg:mt-0">
-          {router && router.pathname === '/' ? (
+          {/* TODO: `Image` is currently not available in SSG */}
+          {/* {router && router.pathname === '/' ? (
             <button
               className="w-48"
               onClick={() => animateScroll.scrollToTop({ duration: 800 })}
@@ -50,6 +51,17 @@ export default function Footer({ className = '' }: React.HTMLAttributes<HTMLElem
             <Link href="/">
               <a className="w-48" aria-label="Zum Seitenanfang springen">
                 <Image src="/ci/hdm-logo.svg" alt="Logo der HDM GmbH" width={192} height={49} />
+              </a>
+            </Link>
+          )} */}
+          {router && router.pathname === '/' ? (
+            <button type="button" data-testid="logo" onClick={() => animateScroll.scrollToTop({ duration: 800 })}>
+              <img className="w-48" src="/ci/hdm-logo.svg" alt="Logo der HDM GmbH" loading="lazy" />
+            </button>
+          ) : (
+            <Link href="/">
+              <a>
+                <img className="w-48" src="/ci/hdm-logo.svg" alt="Logo der HDM GmbH" loading="lazy" />
               </a>
             </Link>
           )}

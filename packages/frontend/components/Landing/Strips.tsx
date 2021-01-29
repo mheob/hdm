@@ -1,4 +1,4 @@
-import Image from 'next/image'
+// import Image from 'next/image'
 
 export default function Strips({ className = '' }: React.HTMLAttributes<HTMLElement>) {
   return (
@@ -26,14 +26,27 @@ export default function Strips({ className = '' }: React.HTMLAttributes<HTMLElem
             </p>
 
             <div className="mt-16 lg:w-3/4">
-              <Image src="/images/hdm-fussleisten.jpg" alt="UMA - Fußleisten von HDM" width={706} height={204} />
+              {/* TODO: `Image` is currently not available in SSG */}
+              {/* <Image src="/images/hdm-fussleisten.jpg" alt="UMA - Fußleisten von HDM" width={706} height={204} /> */}
+              <img
+                className="mt-16 lg:w-3/4"
+                src="/images/hdm-fussleisten.jpg"
+                alt="UMA - Fußleisten von HDM"
+                loading="lazy"
+              />
             </div>
           </div>
 
           <div className="lg:w-1/3 lg:-mt-40 lg:mr-12">
-            <div className="block mt-12 lg:-mx-24">
+            {/* TODO: `Image` is currently not available in SSG */}
+            {/* <div className="block mt-12 lg:-mx-24">
               <Image src="/images/hdm-leisten.png" alt="UMA - Leisten" width={768} height={779} />
-            </div>
+            </div> */}
+            <picture className="block mt-12 lg:-mx-24">
+              <source srcSet="/images/hdm-leisten.webp" type="image/webp" />
+              <source srcSet="/images/hdm-leisten.png" type="image/jpeg" />
+              <img src="/images/hdm-leisten.png" alt="UMA - Leisten" loading="lazy" />
+            </picture>
           </div>
         </div>
       </div>
@@ -45,9 +58,15 @@ export default function Strips({ className = '' }: React.HTMLAttributes<HTMLElem
 
         <div className="flex flex-col justify-around lg:mt-40 lg:ml-32 lg:flex-row">
           <div className="lg:-mt-16 lg:w-1/3">
-            <div className="block mt-16 lg:-ml-32">
+            {/* TODO: `Image` is currently not available in SSG */}
+            {/* <div className="block mt-16 lg:-ml-32">
               <Image src="/images/hdm-leisten-massiv.png" alt="UMA - MassivholzLeisten" width={569} height={779} />
-            </div>
+            </div> */}
+            <picture className="block mt-16 lg:-ml-32">
+              <source srcSet="/images/hdm-leisten-massiv.webp" type="image/webp" />
+              <source srcSet="/images/hdm-leisten-massiv.png" type="image/jpeg" />
+              <img src="/images/hdm-leisten-massiv.png" alt="UMA - Leisten" loading="lazy" />
+            </picture>
           </div>
 
           <div className="mt-12 lg:-mt-16 lg:w-2/3 lg:max-w-md">

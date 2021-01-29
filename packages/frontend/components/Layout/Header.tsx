@@ -1,5 +1,5 @@
 import NavLink from 'next/link'
-import Image from 'next/image'
+// import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { Link } from 'react-scroll'
 import Sticky from 'react-stickynode'
@@ -16,8 +16,13 @@ export default function Header({ className = '' }: React.HTMLAttributes<HTMLElem
       <div className="justify-between mt-6 lg:container lg:flex">
         <h1 className="pt-8 mb-10 lg:mb-0" data-testid="main-logo">
           <NavLink href="/">
-            <a className="block w-56 mx-auto" aria-label="HDM - Holz Design Moers GmbH">
+            {/* TODO: `Image` is currently not available in SSG */}
+            {/* <a className="block w-56 mx-auto" aria-label="HDM - Holz Design Moers GmbH">
               <Image src="/ci/hdm-logo.svg" alt="Logo der HDM GmbH" width={224} height={57} />
+            </a> */}
+            <a>
+              <img className="w-56 mx-auto" src="/ci/hdm-logo.svg" alt="Logo der HDM GmbH" loading="lazy" />
+              <span className="sr-only">HDM - Holz Design Moers GmbH</span>
             </a>
           </NavLink>
         </h1>
@@ -85,7 +90,8 @@ export default function Header({ className = '' }: React.HTMLAttributes<HTMLElem
           <strong>Produkt. Idee. Erfolg.</strong> Die Holz Design Moers GmbH bietet ihren Handelspartnern auch in
           Zukunft abverkaufsstarke Produkte, Konzepte und Ideen für eine erfolgreiche Zusammenarbeit.
         </p>
-        {router && router.pathname === '/' ? (
+        {/* TODO: `Image` is currently not available in SSG */}
+        {/* {router && router.pathname === '/' ? (
           <Link to="purity" activeClass="active" spy={true} smooth={true} offset={-25} duration={700}>
             <figure id="landing-eco" className="hidden w-56 -mt-16 text-center group lg:block">
               <Image
@@ -106,6 +112,29 @@ export default function Header({ className = '' }: React.HTMLAttributes<HTMLElem
               title="Mehr über die den BIO ... logischen Laminatboden erfahren"
               width={300}
               height={300}
+            />
+          </figure>
+        )} */}
+        {router && router.pathname === '/' ? (
+          <Link to="purity" activeClass="active" spy={true} smooth={true} offset={-25} duration={700}>
+            <figure id="landing-eco" className="hidden -mt-16 text-center group lg:block">
+              <img
+                className="w-56 transition-all duration-500 transform -rotate-10 group-hover:rotate-0"
+                src="/certificates/hdm-oekosiegel-header.png"
+                alt="HDM - Verantwortung für Mensch und Natur"
+                title="Mehr über die den BIO ... logischen Laminatboden erfahren"
+                loading="lazy"
+              />
+            </figure>
+          </Link>
+        ) : (
+          <figure className="hidden -mt-16 text-center lg:block">
+            <img
+              className="w-56"
+              src="/certificates/hdm-oekosiegel-header.png"
+              alt="HDM - Verantwortung für Mensch und Natur"
+              title="Mehr über die den BIO ... logischen Laminatboden erfahren"
+              loading="lazy"
             />
           </figure>
         )}
