@@ -1,3 +1,20 @@
+# [2.4.0](https://github.com/100herz/hdm/compare/v2.3.1...v2.4.0) (2021-01-29)
+
+
+### Bug Fixes
+
+* **accessibility:** make the site more accessible with the help of AXE ([#108](https://github.com/100herz/hdm/issues/108)) ([3d0976d](https://github.com/100herz/hdm/commit/3d0976df90580ac82863ae1b5cff9f7dd4c3f2ce)), closes [#78](https://github.com/100herz/hdm/issues/78)
+
+
+### Features
+
+* **company:** remove Mr. Döller from the website ([#106](https://github.com/100herz/hdm/issues/106)) ([7491df4](https://github.com/100herz/hdm/commit/7491df42a8515dffc4494121125d3a03b252ef5e)), closes [#104](https://github.com/100herz/hdm/issues/104) [#103](https://github.com/100herz/hdm/issues/103)
+
+
+### Performance Improvements
+
+* **images:** use the new `Image` component from NextJS v10 ([#107](https://github.com/100herz/hdm/issues/107)) ([57c1e7c](https://github.com/100herz/hdm/commit/57c1e7cadbd848ce0cc5ff585ead22a90f0aa62e)), closes [#99](https://github.com/100herz/hdm/issues/99)
+
 # [2.4.0-next.1](https://github.com/100herz/hdm/compare/v2.3.1...v2.4.0-next.1) (2021-01-28)
 
 
