@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Massivholztueren component matches snapshot 1`] = `
+.emotion-0 {
+  display: grid;
+  grid-template-areas: 'grid-item-1' 'grid-item-2' 'grid-item-3';
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 1024px) {
+  .emotion-0 {
+    grid-template-areas: 'grid-item-1 grid-item-2' 'grid-item-3 grid-item-2';
+    grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 8rem;
+    column-gap: 8rem;
+  }
+}
+
+.emotion-0>.first {
+  grid-area: grid-item-1;
+}
+
+.emotion-0>.second {
+  grid-area: grid-item-2;
+}
+
+.emotion-0>.third {
+  grid-area: grid-item-3;
+}
+
+<section
+  class="overflow-x-hidden relative lg:mt-24 "
+  id="massivholztueren"
+>
+  <div
+    class="container pt-20 pb-20 bg-gray-100 emotion-0 emotion-1"
+  >
+    <header
+      class="lg:ml-32 lg:mt-8 first"
+    >
+      <h2
+        class="text-4xl font-bold lg:text-5xl"
+      >
+        Massivholztüren
+      </h2>
+      <p
+        class="mt-4 text-xl leading-snug lg:text-2xl"
+      >
+        Das Lamellen- und 
+        <br />
+         Gittertüren Programm
+      </p>
+    </header>
+    <picture
+      class="block mt-16 -mx-6 lg:ml-0 lg:-mr-32 lg:mt-0 second"
+    >
+      <source
+        srcset="/images/hdm-massivholztueren.webp"
+        type="image/webp"
+      />
+      <source
+        srcset="/images/hdm-massivholztueren.png"
+        type="image/png"
+      />
+      <img
+        alt="Massivholztüren - Sorglos die Schönheit massiven Holzes genießen"
+        loading="lazy"
+        src="/images/hdm-massivholztueren.png"
+      />
+    </picture>
+    <div
+      class="lg:-mt-16 lg:ml-32 third"
+    >
+      <p
+        class="mt-12 lg:text-lg"
+      >
+        Sorglos die Schönheit massiven Holzes genießen. Denn Holz ist pure Natur und bringt eine angenehme, freundliche Atmosphäre ins Haus, unterstrichen von ruhigen Licht- und Schattenspielen der offenen Lamellen- und Gittertüren.
+      </p>
+      <p
+        class="mt-8 lg:text-lg"
+      >
+        Massivholz sorgt für behagliche Wärme und ist nie langweilig.
+      </p>
+      <div
+        class="mt-16 text-center lg:text-left lg:mt-24"
+      />
+    </div>
+  </div>
+</section>
+`;

@@ -1,3 +1,5 @@
+// import Image from 'next/image'
+
 export default function Strips({ className = '' }: React.HTMLAttributes<HTMLElement>) {
   return (
     <section id="strips" className={`overflow-x-hidden py-20 lg:mt-24 ${className}`}>
@@ -23,14 +25,27 @@ export default function Strips({ className = '' }: React.HTMLAttributes<HTMLElem
               Formatvarianten im Sortiment.
             </p>
 
-            <img className="mt-16 lg:w-3/4" src="/images/hdm-fussleisten.jpg" alt="UMA - Fußleisten von HDM" />
+            <div className="mt-16 lg:w-3/4">
+              {/* TODO: `Image` is currently not available in SSG */}
+              {/* <Image src="/images/hdm-fussleisten.jpg" alt="UMA - Fußleisten von HDM" width={706} height={204} /> */}
+              <img
+                className="mt-16 lg:w-3/4"
+                src="/images/hdm-fussleisten.jpg"
+                alt="UMA - Fußleisten von HDM"
+                loading="lazy"
+              />
+            </div>
           </div>
 
           <div className="lg:w-1/3 lg:-mt-40 lg:mr-12">
+            {/* TODO: `Image` is currently not available in SSG */}
+            {/* <div className="block mt-12 lg:-mx-24">
+              <Image src="/images/hdm-leisten.png" alt="UMA - Leisten" width={768} height={779} />
+            </div> */}
             <picture className="block mt-12 lg:-mx-24">
               <source srcSet="/images/hdm-leisten.webp" type="image/webp" />
-              <source srcSet="/images/hdm-leisten.jpg" type="image/jpeg" />
-              <img src="/images/hdm-leisten.jpg" alt="UMA - Leisten" />
+              <source srcSet="/images/hdm-leisten.png" type="image/jpeg" />
+              <img src="/images/hdm-leisten.png" alt="UMA - Leisten" loading="lazy" />
             </picture>
           </div>
         </div>
@@ -43,10 +58,14 @@ export default function Strips({ className = '' }: React.HTMLAttributes<HTMLElem
 
         <div className="flex flex-col justify-around lg:mt-40 lg:ml-32 lg:flex-row">
           <div className="lg:-mt-16 lg:w-1/3">
+            {/* TODO: `Image` is currently not available in SSG */}
+            {/* <div className="block mt-16 lg:-ml-32">
+              <Image src="/images/hdm-leisten-massiv.png" alt="UMA - MassivholzLeisten" width={569} height={779} />
+            </div> */}
             <picture className="block mt-16 lg:-ml-32">
               <source srcSet="/images/hdm-leisten-massiv.webp" type="image/webp" />
-              <source srcSet="/images/hdm-leisten-massiv.jpg" type="image/jpeg" />
-              <img src="/images/hdm-leisten-massiv.jpg" alt="UMA - Leisten" />
+              <source srcSet="/images/hdm-leisten-massiv.png" type="image/jpeg" />
+              <img src="/images/hdm-leisten-massiv.png" alt="UMA - Leisten" loading="lazy" />
             </picture>
           </div>
 

@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cerastar component matches snapshot 1`] = `
+.emotion-0 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -2;
+  overflow-x: hidden;
+  background-color: #f8efef;
+}
+
+.emotion-0::before {
+  position: absolute;
+  top: 3rem;
+  left: 45%;
+  z-index: -1;
+  width: 581px;
+  height: 409px;
+  background: url(/images/hdm-cerastar-muster.png) no-repeat;
+  opacity: 0.7;
+  content: '';
+}
+
+@media (min-width: 1024px) {
+  .emotion-0::before {
+    top: 5rem;
+  }
+}
+
+<section
+  class="container relative lg:grid lg:grid-cols-2 lg:gap-32 mt-32 pt-20 pb-24 lg:mt-24 "
+  id="cerastar"
+>
+  <div
+    class="emotion-0 emotion-1"
+  />
+  <header>
+    <div
+      class="lg:ml-32"
+    >
+      <h2
+        class="text-4xl font-bold lg:text-5xl"
+      >
+        Cerastar
+      </h2>
+      <p
+        class="mt-4 text-xl leading-snug lg:text-2xl"
+      >
+        Der neue Star unter 
+        <br />
+        den Bodenbelägen
+      </p>
+    </div>
+    <picture
+      class="block mt-16 -mx-6 lg:-ml-20 lg:-mr-8"
+    >
+      <source
+        srcset="/images/hdm-cerastar.webp"
+        type="image/webp"
+      />
+      <source
+        srcset="/images/hdm-cerastar.png"
+        type="image/png"
+      />
+      <img
+        alt="Cerastar - der neue Star unten den Bodenbelägen"
+        loading="lazy"
+        src="/images/hdm-cerastar.png"
+      />
+    </picture>
+  </header>
+  <div
+    class="lg:mt-32 lg:pr-16"
+  >
+    <h3
+      class="mt-12 font-bold lg:text-lg"
+    >
+      Cerastar heißt der neue Designbodenbelag mit keramischer Nanocoat Oberflächenversiegelung.
+    </h3>
+    <p
+      class="mt-8 lg:text-lg"
+    >
+      1,2 Mio. feinste Keramikpartikel pro Quadratzentimeter machen die Oberfläche von Cerastar – gegenüber Oberflächen vergleichbarer Bodenbeläge – bis zu dreimal kratzfester und strapazierfähiger.
+    </p>
+    <p
+      class="mt-8 lg:text-lg"
+    >
+      So entsteht eine äußerst abriebfeste Schutzschicht, die deutlich resistenter gegen Mikrokratzer ist. Zugleich verleiht die hochtransparente Versiegelung den Dekoren eine einzigartige brillante Farbtiefe und eleganten Glanz.
+    </p>
+    <p
+      class="mt-8 lg:text-lg"
+    >
+      Weitere Informationen finden Sie unter
+       
+      <a
+        class="underline text-hdm hover:text-hdm-dark"
+        href="https://cerastar.eu"
+      >
+        cerastar.eu
+      </a>
+      .
+    </p>
+    <div
+      class="mt-16 text-center lg:text-left lg:mt-24"
+    />
+  </div>
+</section>
+`;

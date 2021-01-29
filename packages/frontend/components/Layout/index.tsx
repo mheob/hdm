@@ -43,8 +43,8 @@ export default function Layout({
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="theme-color" content="#0084B0" />
 
-        <link rel="apple-touch-icon" sizes="180x180" href="/ci/hdm192.png" />
-        <link rel="manifest" href="/manifest.json" />
+        <link rel="apple-touch-icon" href="/ci/hdm192.png" />
+        <link rel="manifest" href="/app.webmanifest" />
         <link rel="shortcut icon" href="/ci/favicon.svg" type="image/svg+xml" sizes="any" />
 
         <link

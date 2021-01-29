@@ -1,4 +1,5 @@
 import dynamic from 'next/dynamic'
+// import Image from 'next/image'
 import styled from '@emotion/styled'
 
 export default function Massivholztueren({ className = '' }: React.HTMLAttributes<HTMLElement>) {
@@ -14,12 +15,22 @@ export default function Massivholztueren({ className = '' }: React.HTMLAttribute
           </p>
         </header>
 
+        {/* TODO: `Image` is currently not available in SSG */}
+        {/* <div className="mt-16 -mx-6 lg:ml-0 lg:-mr-32 lg:mt-0 second">
+          <Image
+            src="/images/hdm-massivholztueren.png"
+            alt="Massivholztüren - Sorglos die Schönheit massiven Holzes genießen"
+            width={768}
+            height={779}
+          />
+        </div> */}
         <picture className="block mt-16 -mx-6 lg:ml-0 lg:-mr-32 lg:mt-0 second">
           <source srcSet="/images/hdm-massivholztueren.webp" type="image/webp" />
           <source srcSet="/images/hdm-massivholztueren.png" type="image/png" />
           <img
             src="/images/hdm-massivholztueren.png"
             alt="Massivholztüren - Sorglos die Schönheit massiven Holzes genießen"
+            loading="lazy"
           />
         </picture>
 

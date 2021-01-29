@@ -1,0 +1,127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component matches snapshot 1`] = `
+.emotion-0 {
+  position: relative;
+}
+
+.emotion-0::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -2;
+  background-color: #f7fafc;
+  content: '';
+}
+
+.emotion-0::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: calc(2.9333 * 90%);
+  height: 90%;
+  background-image: url(/ci/hdm-bg.svg);
+  background-repeat: no-repeat;
+  opacity: 0.05;
+  content: '';
+}
+
+@media (min-width: 1024px) {
+  .emotion-0 {
+    position: static;
+  }
+
+  .emotion-0::after {
+    left: 6rem;
+    width: calc(2.9333 * 100%);
+    height: 100%;
+  }
+}
+
+<header
+  class="relative overflow-x-hidden "
+>
+  <div
+    class="justify-between mt-6 lg:container lg:flex"
+  >
+    <h1
+      class="pt-8 mb-10 lg:mb-0"
+      data-testid="main-logo"
+    >
+      <a
+        href="/"
+      >
+        <img
+          alt="Logo der HDM GmbH"
+          class="w-56 mx-auto"
+          loading="lazy"
+          src="/ci/hdm-logo.svg"
+        />
+        <span
+          class="sr-only"
+        >
+          HDM - Holz Design Moers GmbH
+        </span>
+      </a>
+    </h1>
+    <div
+      class="sticky-outer-wrapper"
+    >
+      <div
+        class="sticky-inner-wrapper "
+        style="position: relative; top: 0px; z-index: 101;"
+      >
+        <nav
+          aria-label="Hauptnavigation nicht auf der Startseite aber in der mobilen Ansicht."
+          class="flex justify-between py-3 font-semibold bg-white lg:bg-transparent lg:text-lg lg:container lg:mb-0 lg:space-x-12 lg:justify-end lg:mt-10 lg:py-0"
+        >
+          <a
+            class="px-4 py-2 my-2 hover:text-hdm"
+            href="/#produkte"
+          >
+            Produkte
+          </a>
+          <a
+            class="px-4 py-2 my-2 hover:text-hdm"
+            href="/#unternehmen"
+          >
+            Unternehmen
+          </a>
+          <a
+            class="px-4 py-2 my-2 hover:text-hdm"
+            href="/#kontakt"
+          >
+            Kontakt
+          </a>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <section
+    class="container pt-12 pb-20 lg:flex lg:flex-row lg:justify-between lg:pt-32 lg:pb-24 emotion-0 emotion-1"
+  >
+    <p
+      class="text-xl leading-10 lg:text-3xl lg:max-w-3xl lg:ml-24"
+    >
+      <strong>
+        Produkt. Idee. Erfolg.
+      </strong>
+       Die Holz Design Moers GmbH bietet ihren Handelspartnern auch in Zukunft abverkaufsstarke Produkte, Konzepte und Ideen für eine erfolgreiche Zusammenarbeit.
+    </p>
+    <figure
+      class="hidden -mt-16 text-center lg:block"
+    >
+      <img
+        alt="HDM - Verantwortung für Mensch und Natur"
+        class="w-56"
+        loading="lazy"
+        src="/certificates/hdm-oekosiegel-header.png"
+        title="Mehr über die den BIO ... logischen Laminatboden erfahren"
+      />
+    </figure>
+  </section>
+</header>
+`;

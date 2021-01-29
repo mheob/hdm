@@ -18,7 +18,6 @@ export default function Imprint() {
         </p>
         <p className="mt-8">
           <strong>Vertreten durch:</strong> <br />
-          Ralph Döller <br />
           Sven Schlayer <br />
           Fernando Soler Wittke
         </p>

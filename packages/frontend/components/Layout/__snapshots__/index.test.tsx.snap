@@ -1,0 +1,265 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout component matches snapshot 1`] = `
+.emotion-0 {
+  position: relative;
+}
+
+.emotion-0::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -2;
+  background-color: #f7fafc;
+  content: '';
+}
+
+.emotion-0::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: calc(2.9333 * 90%);
+  height: 90%;
+  background-image: url(/ci/hdm-bg.svg);
+  background-repeat: no-repeat;
+  opacity: 0.05;
+  content: '';
+}
+
+@media (min-width: 1024px) {
+  .emotion-0 {
+    position: static;
+  }
+
+  .emotion-0::after {
+    left: 6rem;
+    width: calc(2.9333 * 100%);
+    height: 100%;
+  }
+}
+
+.emotion-2 {
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .emotion-2 {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),url(/ci/hdm-bg.svg);
+    background-repeat: no-repeat;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+  }
+}
+
+.emotion-4 {
+  font-size: 1.125rem;
+  font-style: normal;
+  line-height: 2.5rem;
+}
+
+<div
+  class="antialiased"
+>
+  <header
+    class="relative overflow-x-hidden "
+  >
+    <div
+      class="justify-between mt-6 lg:container lg:flex"
+    >
+      <h1
+        class="pt-8 mb-10 lg:mb-0"
+        data-testid="main-logo"
+      >
+        <a
+          href="/"
+        >
+          <img
+            alt="Logo der HDM GmbH"
+            class="w-56 mx-auto"
+            loading="lazy"
+            src="/ci/hdm-logo.svg"
+          />
+          <span
+            class="sr-only"
+          >
+            HDM - Holz Design Moers GmbH
+          </span>
+        </a>
+      </h1>
+      <div
+        class="sticky-outer-wrapper"
+      >
+        <div
+          class="sticky-inner-wrapper "
+          style="position: relative; top: 0px; z-index: 101;"
+        >
+          <nav
+            aria-label="Hauptnavigation nicht auf der Startseite aber in der mobilen Ansicht."
+            class="flex justify-between py-3 font-semibold bg-white lg:bg-transparent lg:text-lg lg:container lg:mb-0 lg:space-x-12 lg:justify-end lg:mt-10 lg:py-0"
+          >
+            <a
+              class="px-4 py-2 my-2 hover:text-hdm"
+              href="/#produkte"
+            >
+              Produkte
+            </a>
+            <a
+              class="px-4 py-2 my-2 hover:text-hdm"
+              href="/#unternehmen"
+            >
+              Unternehmen
+            </a>
+            <a
+              class="px-4 py-2 my-2 hover:text-hdm"
+              href="/#kontakt"
+            >
+              Kontakt
+            </a>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <section
+      class="container pt-12 pb-20 lg:flex lg:flex-row lg:justify-between lg:pt-32 lg:pb-24 emotion-0 emotion-1"
+    >
+      <p
+        class="text-xl leading-10 lg:text-3xl lg:max-w-3xl lg:ml-24"
+      >
+        <strong>
+          Produkt. Idee. Erfolg.
+        </strong>
+         Die Holz Design Moers GmbH bietet ihren Handelspartnern auch in Zukunft abverkaufsstarke Produkte, Konzepte und Ideen für eine erfolgreiche Zusammenarbeit.
+      </p>
+      <figure
+        class="hidden -mt-16 text-center lg:block"
+      >
+        <img
+          alt="HDM - Verantwortung für Mensch und Natur"
+          class="w-56"
+          loading="lazy"
+          src="/certificates/hdm-oekosiegel-header.png"
+          title="Mehr über die den BIO ... logischen Laminatboden erfahren"
+        />
+      </figure>
+    </section>
+  </header>
+  <main />
+  <footer
+    class="lg:mt-40 pb-10  emotion-2 emotion-3"
+    id="kontakt"
+  >
+    <section
+      class="container lg:flex lg:justify-between lg:space-x-6"
+    >
+      <h2
+        class="py-16 text-4xl font-bold leading-10 lg:pt-0"
+      >
+        Nehmen Sie 
+        <br />
+        Kontakt mit 
+        <br />
+        uns auf
+      </h2>
+      <address
+        class="emotion-4 emotion-5"
+      >
+        Holz Design Moers GmbH 
+        <br />
+        Am Schürmannshütt 23 
+        <br />
+        47441 Moers
+      </address>
+      <address
+        class="mt-6 lg:mt-0 emotion-4 emotion-5"
+      >
+        Telefon:
+         
+        <a
+          class="underline hover:text-hdm-dark"
+          href="tel:+4928411401101"
+        >
+          +49 2841 1401 101
+        </a>
+        <br />
+        Telefax: +49 2841 1401 180 
+        <br />
+        E-Mail:
+         
+        <a
+          class="underline hover:text-hdm-dark"
+          href="mailto:info@hdm.gmbh"
+        >
+          info@hdm.gmbh
+        </a>
+      </address>
+      <div
+        class="mt-24 lg:mt-0"
+      >
+        <a
+          href="/"
+        >
+          <img
+            alt="Logo der HDM GmbH"
+            class="w-48"
+            loading="lazy"
+            src="/ci/hdm-logo.svg"
+          />
+        </a>
+      </div>
+    </section>
+    <section
+      class="container mt-6 text-lg leading-10 lg:flex lg:justify-center"
+    >
+      <p>
+        © 2020 Holz Design Moers GmbH
+      </p>
+      <nav
+        class="flex flex-col mt-2 leading-8 lg:mt-0 lg:flex-row"
+      >
+        <a
+          class="underline lg:ml-8 hover:text-hdm-dark"
+          href="/downloads"
+        >
+          Downloads
+        </a>
+        <a
+          class="underline lg:ml-8 hover:text-hdm-dark"
+          href="/impressum"
+        >
+          Impressum
+        </a>
+        <a
+          class="underline lg:ml-8 hover:text-hdm-dark"
+          href="/datenschutz"
+        >
+          Datenschutz
+        </a>
+      </nav>
+    </section>
+    <div
+      class="container my-10 text-right lg:text-center"
+    >
+      <button
+        aria-label="Go to top"
+        data-testid="back-to-top-button"
+        type="button"
+      >
+        <svg
+          class="inline-block w-6 transform -rotate-90"
+          viewBox="0 0 24.242 45"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M126.031,21.266,105.252.486A1.732,1.732,0,0,0,102.8,2.935L122.359,22.49,102.8,42.045a1.731,1.731,0,0,0,2.448,2.448l20.779-20.779A1.732,1.732,0,0,0,126.031,21.266Z"
+            fill="#0084b0"
+            transform="translate(-102.297 0)"
+          />
+        </svg>
+      </button>
+    </div>
+  </footer>
+</div>
+`;

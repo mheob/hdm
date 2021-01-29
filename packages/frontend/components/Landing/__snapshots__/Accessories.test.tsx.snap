@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accessories component matches snapshot 1`] = `
+@media (min-width: 1024px) {
+  .emotion-0 {
+    background-image: linear-gradient(rgba(247, 250, 252, 0.95), rgba(247, 250, 252, 0.95)),url(/ci/hdm-bg.svg);
+    background-repeat: no-repeat;
+    -webkit-background-position: left center;
+    background-position: left center;
+    -webkit-background-size: 100% auto;
+    background-size: 100% auto;
+  }
+}
+
+<section
+  class="bg-gray-100 overflow-x-hidden lg:mt-24 "
+  id="accessories"
+>
+  <div
+    class="emotion-0 emotion-1"
+  >
+    <div
+      class="container py-20"
+    >
+      <header
+        class="lg:mt-16 lg:ml-32"
+      >
+        <h2
+          class="text-4xl font-bold lg:text-5xl"
+        >
+          DAZU
+          <sup
+            class="font-normal"
+          >
+            ®
+          </sup>
+        </h2>
+        <p
+          class="mt-4 text-xl leading-snug lg:text-2xl"
+        >
+          Das Zubehörprogramm
+        </p>
+      </header>
+      <div
+        class="lg:justify-between lg:ml-32 lg:flex lg:mt-8"
+      >
+        <div
+          class="lg:w-1/3 lg:-mt-4 lg:mr-12"
+        >
+          <picture
+            class="block mt-12 lg:-mx-24"
+          >
+            <source
+              srcset="/images/hdm-dazu-zubehoer.webp"
+              type="image/webp"
+            />
+            <source
+              srcset="/images/hdm-dazu-zubehoer.jpg"
+              type="image/jpeg"
+            />
+            <img
+              alt="Möbelbauplatten - modernen Regalböden und Möbelbauplatten"
+              loading="lazy"
+              src="/images/hdm-dazu-zubehoer.jpg"
+            />
+          </picture>
+        </div>
+        <div
+          class="lg:w-1/2"
+        >
+          <p
+            class="mt-12 lg:text-lg"
+          >
+            Alles was zum Anbringen von Dekorpaneele, zur Bodenverlegung, zum Bau von Mobiliar oder dem dekorativen Innenausbau notwendig ist, hat Holz Design Moers im DAZU
+            <sup>
+              ®
+            </sup>
+            -Zubehörprogramm.
+          </p>
+          <p
+            class="mt-12 lg:text-lg"
+          >
+            Verlegung und Montage einfach gemacht - mit dem DAZU
+            <sup>
+              ®
+            </sup>
+            -Zubehörprogramm.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`;

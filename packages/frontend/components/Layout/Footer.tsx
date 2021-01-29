@@ -1,4 +1,5 @@
 import Link from 'next/link'
+// import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { animateScroll } from 'react-scroll'
 import styled from '@emotion/styled'
@@ -35,14 +36,32 @@ export default function Footer({ className = '' }: React.HTMLAttributes<HTMLElem
         </Address>
 
         <div className="mt-24 lg:mt-0">
+          {/* TODO: `Image` is currently not available in SSG */}
+          {/* {router && router.pathname === '/' ? (
+            <button
+              className="w-48"
+              onClick={() => animateScroll.scrollToTop({ duration: 800 })}
+              type="button"
+              aria-label="Zum Seitenanfang springen"
+              data-testid="logo"
+            >
+              <Image src="/ci/hdm-logo.svg" alt="Logo der HDM GmbH" width={192} height={49} />
+            </button>
+          ) : (
+            <Link href="/">
+              <a className="w-48" aria-label="Zum Seitenanfang springen">
+                <Image src="/ci/hdm-logo.svg" alt="Logo der HDM GmbH" width={192} height={49} />
+              </a>
+            </Link>
+          )} */}
           {router && router.pathname === '/' ? (
-            <button id="logo" onClick={() => animateScroll.scrollToTop({ duration: 800 })}>
-              <img className="w-48" src="/ci/hdm-logo.svg" alt="Logo der HDM GmbH" />
+            <button type="button" data-testid="logo" onClick={() => animateScroll.scrollToTop({ duration: 800 })}>
+              <img className="w-48" src="/ci/hdm-logo.svg" alt="Logo der HDM GmbH" loading="lazy" />
             </button>
           ) : (
             <Link href="/">
               <a>
-                <img className="w-48" src="/ci/hdm-logo.svg" alt="Logo der HDM GmbH" />
+                <img className="w-48" src="/ci/hdm-logo.svg" alt="Logo der HDM GmbH" loading="lazy" />
               </a>
             </Link>
           )}
@@ -65,7 +84,12 @@ export default function Footer({ className = '' }: React.HTMLAttributes<HTMLElem
       </section>
 
       <div className="container my-10 text-right lg:text-center">
-        <button id="back-to-top-button" onClick={() => animateScroll.scrollToTop({ duration: 800 })}>
+        <button
+          type="button"
+          onClick={() => animateScroll.scrollToTop({ duration: 800 })}
+          aria-label="Go to top"
+          data-testid="back-to-top-button"
+        >
           <svg
             className="inline-block w-6 transform -rotate-90"
             xmlns="http://www.w3.org/2000/svg"

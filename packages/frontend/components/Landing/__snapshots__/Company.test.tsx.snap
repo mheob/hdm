@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Downloads component matches snapshot 1`] = `
+.emotion-0 {
+  display: grid;
+  grid-template-areas: 'grid-item-1' 'grid-item-2';
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 1024px) {
+  .emotion-0 {
+    grid-template-areas: 'grid-item-1 grid-item-2';
+    grid-template-columns: 1fr 1fr;
+    -webkit-column-gap: 4rem;
+    column-gap: 4rem;
+  }
+}
+
+.emotion-0>.first {
+  grid-area: grid-item-1;
+}
+
+.emotion-0>.second {
+  grid-area: grid-item-2;
+}
+
+<section
+  class="bg-gray-100 lg:bg-transparent mt-10 pt-10 lg:max-w-1400 mx-auto overflow-x-hidden lg:mt-24 "
+>
+  <header
+    class="container lg:mt-16 lg:ml-24"
+  >
+    <h2
+      class="text-4xl font-bold lg:text-5xl"
+    >
+      Unternehmen
+    </h2>
+  </header>
+  <div
+    class="lg:bg-gray-100 sm:mt-12 lg:mt-16"
+  >
+    <div
+      class="container pt-10 pb-20 lg:pt-20 emotion-0 emotion-1"
+    >
+      <div
+        class="first"
+      >
+        <h3
+          class="font-bold text-hdm lg:text-xl"
+        >
+          Holz Design Moers GmbH ist strategischer Partner für Baumarktgruppen, Baufachmärkte und den Fachhandel.
+        </h3>
+        <p
+          class="mt-8 lg:mt-16 lg:text-lg lg:ml-24"
+        >
+          Als Vollsortimenter für den Innenausbau bietet das Unternehmen seinen Handelspartnern ein umfangreiches Portfolio zur Verkleidung und Gestaltung von Boden, Wand und Decke: Laminat- und Designböden, Wand- und Deckenpaneele, dazu ein großes Massivholz- und Holzwerkstoffsortiment: Leisten sowie Regalböden und Möbelbauplatten.
+        </p>
+        <p
+          class="mt-8 lg:text-lg lg:ml-24"
+        >
+          Das Angebot wird durch ein umfassendes Zubehörprogramm ergänzt und komplettiert.
+        </p>
+      </div>
+      <div
+        class="mt-8 lg:mt-0 second"
+      >
+        <p
+          class="lg:text-lg lg:mx-12"
+        >
+          Bereits 
+          <strong
+            class="text-hdm"
+          >
+            1968
+          </strong>
+           präsentierte Firmengründer Arnold Dammers in Moers das weltweit erste Dekorpaneel.
+        </p>
+        <p
+          class="mt-8 lg:text-lg lg:mx-12"
+        >
+          <strong
+            class="text-hdm"
+          >
+            1981
+          </strong>
+           entwickelte Dammers die dekorativ ummantelte Leiste, die sich heute als UMA®-Leiste im Markt etabliert hat. HDM gilt als Erfinder der beiden trendsetzenden Produkte für den dekorativen Innenausbau.
+        </p>
+        <p
+          class="mt-8 lg:text-lg lg:mx-12"
+        >
+          <strong
+            class="text-hdm"
+          >
+            1989
+          </strong>
+           folgte die Entwicklung einer Elektronenstrahlgehärteten Flächenveredlung, die unter dem Markennamen ELESGO® eingeführt wurde. Die besonders kratzfeste Oberfläche veredelt unter anderem Labortische, Möbelfronten und liefert die Ideen für viele weitere Anwendungen.
+        </p>
+        <p
+          class="mt-8 lg:text-lg lg:mx-12"
+        >
+          Im Jahr 
+          <strong
+            class="text-hdm"
+          >
+            2000
+          </strong>
+           lancierte das Moerser Unternehmen den ersten Superglanz- Laminatboden mit Elesgo-Oberfläche.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+`;
