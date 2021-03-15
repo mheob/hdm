@@ -15,6 +15,8 @@ export function withTestRouter(tree: React.ReactElement, router: Partial<NextRou
     prefetch = async () => undefined,
     beforePopState = () => null,
     isFallback = false,
+    isLocaleDomain = false,
+    isPreview = false,
     isReady = false,
     events = {
       on: () => null,
@@ -38,6 +40,8 @@ export function withTestRouter(tree: React.ReactElement, router: Partial<NextRou
         prefetch,
         beforePopState,
         isFallback,
+        isLocaleDomain,
+        isPreview,
         isReady,
         events,
       }}
