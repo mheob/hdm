@@ -3,5 +3,11 @@
   "baseBranches": ["release/v2"],
   "assignees": ["mheob"],
   "reviewers": ["mheob"],
-  "labels": ["dependencies"]
+  "labels": ["dependencies"],
+  "packageRules": [
+    {
+      "depTypeList": ["devDependencies"],
+      "enabled": false
+    }
+  ]
 }

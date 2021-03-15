@@ -26,6 +26,7 @@
     "commit": "git-cz",
     "dev": "yarn workspaces run next",
     "export": "yarn workspaces run export",
+    "postinstall": "husky install config/husky",
     "lint": "yarn lint:js && yarn lint:style",
     "lint:js": "yarn workspaces run eslint '**/*.{js,ts,tsx}' --quiet --fix --ignore-path '../../config/.eslintignore'",
     "lint:style": "yarn workspaces run stylelint '**/*.css' --fix --ignore-path '../../config/.stylelintignore'",
@@ -33,22 +34,9 @@
     "test:cov": "yarn workspaces run test:cov",
     "test:watch": "yarn workspaces run test:watch"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged",
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
-  },
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
-    ]
-  },
-  "lint-staged": {
-    "**/*.css": "yarn lint:style",
-    "**/*.{js,ts,jsx,tsx}": [
-      "yarn lint:js",
-      "yarn test --passWithNoTests"
     ]
   },
   "config": {
@@ -64,24 +52,23 @@
     "extends": "./config/.stylelintrc.json"
   },
   "devDependencies": {
-    "@commitlint/cli": "11.0.0",
-    "@commitlint/config-conventional": "11.0.0",
-    "@emotion/eslint-plugin": "11.0.0",
-    "@typescript-eslint/eslint-plugin": "4.14.1",
-    "@typescript-eslint/parser": "4.14.1",
+    "@commitlint/cli": "12.0.1",
+    "@commitlint/config-conventional": "12.0.1",
+    "@emotion/eslint-plugin": "11.2.0",
+    "@typescript-eslint/eslint-plugin": "4.17.0",
+    "@typescript-eslint/parser": "4.17.0",
     "commitizen": "4.2.3",
     "cross-env": "7.0.3",
     "cz-conventional-changelog": "3.3.0",
-    "eslint": "7.18.0",
-    "eslint-config-prettier": "7.2.0",
+    "eslint": "7.22.0",
+    "eslint-config-prettier": "8.1.0",
     "eslint-plugin-prettier": "3.3.1",
     "eslint-plugin-react": "7.22.0",
-    "husky": "4.3.8",
-    "lint-staged": "10.5.3",
+    "husky": "5.1.3",
     "prettier": "2.2.1",
-    "stylelint": "13.9.0",
+    "stylelint": "13.12.0",
     "stylelint-config-rational-order": "0.1.2",
-    "stylelint-config-recommended": "3.0.0",
-    "typescript": "4.1.3"
+    "stylelint-config-recommended": "4.0.0",
+    "typescript": "4.2.3"
   }
 }

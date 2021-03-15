@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
-import { PDFDocumentProxy } from 'pdfjs-dist'
 import { Document, Page } from 'react-pdf/dist/esm/entry.webpack'
+import React, { useState } from 'react'
 
 import Modal from '@/components/UI/Modal'
-import { useWindowDimensions } from '@/hooks/use-window-dimensions'
+import { PDFDocumentProxy } from 'pdfjs-dist'
 import { downloadFile } from '@/utils/files'
+import { useWindowDimensions } from '@/hooks/use-window-dimensions'
 
 interface PdfProps extends React.HTMLAttributes<HTMLElement> {
   title: string
